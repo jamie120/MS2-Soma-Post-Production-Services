@@ -1,3 +1,82 @@
+/*---------- Header Styling ----------*/
+
+#social-icons-banner li a{
+    color: black;
+}
+
+#social-icons-banner li {
+    display: inline-block;
+    font-size: 40px;
+    margin: 0;
+}
+
+#social-icons-banner {
+    width: 100%;
+    align-self: right;
+    text-align: right;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.logo {
+    height: 150px;
+    width: 170px;
+    margin: 10px;
+}
+
+
+@media (max-width: 769px) {
+    #social-icons-banner{
+        text-align: center;
+        padding: 0px;
+    }
+}
+
+/*---------- Navbar Styling ----------*/
+
+.navbar {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.nav-link span {
+    margin-left: 10px;
+}
+
+a.nav-link {
+    color: black;
+}
+
+div#navbarItems {
+    padding: 0;
+    justify-content: flex-end;
+}
+
+.navbar-toggler-icon i {
+    font-size: 1.8rem;
+}
+
+.navbar span {
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 769px) {
+    div#navbarItems {
+        padding: 0;
+        justify-content: center;
+    }
+}
+@media (max-width: 575px) {
+    .nav-item-break {
+        padding: 8px;
+        display: none;
+    }
+}
+
+/*---------- Footer Styling ----------*/
+
+
 footer {
     background-color: rgb(196, 196, 196);
     height: 100%;
