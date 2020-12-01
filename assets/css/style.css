@@ -36,6 +36,18 @@
     #social-icons-banner{
         text-align: center;
         padding: 0px;
+        margin-top: 0;
+    }
+    #social-icons-banner li {
+    display: inline-block;
+    font-size: 20px;
+    margin: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    #social-icons-banner {
+        display: none;
     }
 }
 
@@ -68,17 +80,26 @@ div#navbarItems {
     margin-bottom: 20px;
 }
 
+#toggle-button {
+    padding-right: 24px;
+}
+
 @media (max-width: 769px) {
     div#navbarItems {
         padding: 0;
         justify-content: center;
     }
 }
+
 @media (max-width: 575px) {
     .nav-item-break {
         padding: 8px;
         display: none;
     }
+    .navbar-toggler-icon i {
+    font-size: 2rem;
+    vertical-align: center;
+}
 }
 
 /*---------- Carousel Styling ----------*/
@@ -172,6 +193,7 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
     padding: 5px;
     border-radius: 10%
 }
+
 @media (max-width: 768px) {
     .service-images{
         margin-top: 40px;
@@ -203,13 +225,6 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
         border-radius: 10%;
     }
 }
-
-
-
-
-
-
-
 
 /*---------- Footer Styling ----------*/
 
