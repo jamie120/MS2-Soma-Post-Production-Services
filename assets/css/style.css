@@ -159,6 +159,57 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
     }
 }
 
+/*---------- Services Styling ----------*/
+
+
+#service-links {
+    background-color: rgb(34, 34, 34);
+}
+
+.service-images{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 5px;
+    border-radius: 10%
+}
+@media (max-width: 768px) {
+    .service-images{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding: 5px;
+        height: 350px;
+        width: 480px;
+        border-radius: 10%;
+    }
+}
+@media (min-width: 767px) {
+    .service-images{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding: 5px;
+        height: 175px;
+        width: 240px;
+        border-radius: 10%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .service-images{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding: 5px;
+        height: 263px;
+        width: 360px;
+        border-radius: 10%;
+    }
+}
+
+
+
+
+
+
+
 
 /*---------- Footer Styling ----------*/
 
