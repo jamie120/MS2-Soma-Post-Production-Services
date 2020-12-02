@@ -182,6 +182,20 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
 
 /*---------- Services Styling ----------*/
 
+.center-text {
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#business-info > h2 {
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+
+/*---------- Services Styling ----------*/
+
 
 #service-links {
     background-color: rgb(34, 34, 34);
