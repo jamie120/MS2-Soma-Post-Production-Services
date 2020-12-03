@@ -15,8 +15,22 @@
     background-color: rgb(34, 34, 34)
 }
 
+#page-header-rates {
+    height: 200px;
+    background-color: rgb(34, 34, 34)
+}
+
 .dark-background {
     background-color: rgb(34, 34, 34)
+}
+
+/*---------- Select-Form Styling ----------*/
+
+#rates-table {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
 }
 
 /*---------- Site Header Styling ----------*/
@@ -144,6 +158,22 @@ div#navbarItems {
     font-weight: 400;
     font-size: 1.8rem;
     margin: 0 auto;
+    text-align: center;
+}
+
+#page-header-rates > h2 {
+    color: rgb(235, 235, 235);
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#page-header-rates > #rates-heading {
+    margin-top: 50px;
+    color: rgb(235, 235, 235);
+    display: inline-block;
+    width: 100%;
 }
 
 
