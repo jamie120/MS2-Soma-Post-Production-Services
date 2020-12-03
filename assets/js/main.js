@@ -32,16 +32,35 @@ $("#stem-mastering-prices").change(function(){
 $("#mixing-prices").change(function(){
      var status = this.value;
    if(status=="1-10") {
-     $('#price-box').text("1-10 Price");
+     $('#price-box').text("From £54 per track");
    } else if(status=="11-20") {
-     $('#price-box').text("11-20 Price");
+     $('#price-box').text("From £72 per track");
    } else if(status=="21-30") {
-     $('#price-box').text("21-30 Price");
+     $('#price-box').text("From £90 per track");
    } else if(status=="31-40") {
-     $('#price-box').text("31-40 Price");
+     $('#price-box').text("From £108 per track");
    } else if(status=="41-50") {
-     $('#price-box').text("41-50 Price");
+     $('#price-box').text("From £126 per track");
    } else if(status=="51-60") {
-     $('#price-box').text("51-60 Price");
+     $('#price-box').text("From £144 per track");
    };
+});
+
+//RATES TABLE LOGIC
+
+$("#rates-table").change(function(){
+    var status = this.value;
+   if(status=="mastering") {
+        $("#mastering-table, #stem-mastering-table, #mixing-table, #timed-mastering-table").css("display", "none");
+        $( "#mastering-table" ).fadeIn( "slow" )
+   } else if(status=="stem-mastering") {
+        $("#mastering-table, #stem-mastering-table, #mixing-table, #timed-mastering-table").css("display", "none");
+        $( "#stem-mastering-table" ).fadeIn( "slow" )
+   } else if(status=="timed-mastering") {
+        $("#mastering-table, #stem-mastering-table, #mixing-table, #timed-mastering-table").css("display", "none");
+        $( "#timed-mastering-table" ).fadeIn( "slow" )
+   } else if(status=="mixing") {
+        $("#mastering-table, #stem-mastering-table, #mixing-table, #timed-mastering-table").css("display", "none");
+        $( "#mixing-table" ).fadeIn( "slow" )
+    };
 });
