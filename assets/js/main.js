@@ -1,5 +1,17 @@
 
 
+$("#mastering-prices").change(function(){
+     var status = this.value;
+   if(status=="standard") {
+     $('#price-box').text("standard pricing");
+   } else if(status=="priority") {
+     $('#price-box').text("priority pricing");
+   } else if(status=="vinyl") {
+     $('#price-box').text("vinyl pricing");
+   };
+});
+
+
 $("#mixing-prices").change(function(){
      var status = this.value;
    if(status=="1-10") {
