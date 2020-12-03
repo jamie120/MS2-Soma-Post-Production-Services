@@ -1,4 +1,7 @@
+//LOGIC FOR PRICING OPTIONS ON SERVICES PAGES
 
+
+//MASTERING
 
 $("#mastering-prices").change(function(){
      var status = this.value;
@@ -11,6 +14,20 @@ $("#mastering-prices").change(function(){
    };
 });
 
+//STEM MASTERING
+
+$("#stem-mastering-prices").change(function(){
+     var status = this.value;
+   if(status=="1-4") {
+     $('#price-box').text("1-4 pricing");
+   } else if(status=="5-8") {
+     $('#price-box').text("5-8 pricing");
+   } else if(status=="9-12") {
+     $('#price-box').text("9-12 pricing");
+   };
+});
+
+//MIXING
 
 $("#mixing-prices").change(function(){
      var status = this.value;
