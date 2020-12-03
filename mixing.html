@@ -18,19 +18,37 @@
     <title>Soma - Post Production Services</title>
 </head>
 <body>
+    <!--TOP NAVIGATION -->
+    <div class="container-fluid" id="top-nav">
+        <div class="container d-flex justify-content-center justify-content-md-end">
+            <a class="top-nav-links" href="index.html">
+                <p>CONTACT US</p>
+            </a>
+            <span>|</span>
+            <a class="top-nav-links" href="services.html">
+                <p>FAQ</p>
+            </a>
+            <span>|</span>
+            <a class="top-nav-links" href="gallery.html">
+                <p>JOIN MAILING LIST</p>
+            </a>
+        </div> 
+    </div>
+
+    <!--BANNER & MAIN NAVBAR -->
     <div class="container" id="banner">
         <div class="row">
             <div class="col logoContainer d-flex justify-content-center justify-content-md-start">
                 <img class="logo" src="assets/images/logo.png" alt="">
             </div>
-            <div class="col">
+            <div class="col align-self-center">
                 <ul id="social-icons-banner">
                     <li><a class="nav-link" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square hvr-grow"></i></a></li>
                     <li><a class="nav-link" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram-square hvr-grow"></i></a></li>
                     <li><a class="nav-link" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square hvr-grow"></i></a></li>
                 </ul>
                 <nav class="navbar navbar-expand-sm shadow-none" id="navbar">
-                    <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button id="toggle-button" class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
                     </button> 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -49,8 +67,9 @@
             </nav>
             </div>
         </div>
-        
     </div>
+    
+    <!--SERVICE INFORMATION -->
     <div class="container-fluid" id="mixing-info">
         <div class="container">
             <div class="row">
@@ -66,6 +85,7 @@
     </div>
     <div class="container-fluid" id="small-page-break"></div>
 
+    <!--RATES AND PRICES -->
     <div class="container" id="service-prices">
         <div class="row">
             <div class="col-md-6" id="price">
@@ -82,7 +102,7 @@
                             <option value="51-60">51-60 Tracks</option>
                         </select>
                     </div>
-                <form>
+                </form>
             </div>
             <div class="col-md-6">
                 <div class="row">
@@ -90,15 +110,14 @@
                         <h2 class="center-text">Total Cost:</h2>
                     </div>
                     <div class="col-md-6 d-flex justify-content-center">
-                        <div id="price-box">
-                            <p>price</p>
-                        </div>
+                            <p id="price-box"></p>
                     </div>
                 </div>    
             </div>
         </div>   
     </div>
 
+    <!--AUDIO EXAMPLES -->
     <div class="container-fluid dark-background">
         <div class="container">
             <div class="row">
@@ -126,6 +145,7 @@
         </div>
     </div>
 
+    <!--FOOTER-->
     <footer class="footer mt-auto">
         <div class="container">
             <div class="row">
@@ -150,6 +170,7 @@
             </div>    
         </div>
     </footer>
+
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
