@@ -65,6 +65,27 @@
     }
 }
 
+/*---------- Top Navbar Styling ----------*/
+
+#top-nav {
+    height: 40px;
+    background-color: rgb(34, 34, 34);
+}
+
+#top-nav > .container > span {
+    color: white;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.top-nav-links > p {
+    color: white;
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 0.7rem;
+}
+
 /*---------- Navbar Styling ----------*/
 
 .navbar {
@@ -379,20 +400,19 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
 
 /*---------- Price / Basket Styling ----------*/
 
-#price-box {
-    height: 70px;
-    width: 170px;
-    border: 1px solid black;
-    background-color: rgb(196, 196, 196);
-    margin: 10px;
-}
 
-#price-box > p {
+
+#price-box {
+    height: 80px;
+    width: 170px;
     color: black;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 400;
     text-align: center;
     padding: 10px;
+    border: 1px solid black;
+    background-color: rgb(196, 196, 196);
+    margin: 0 auto;
 }
 
 #service-prices {
@@ -407,7 +427,7 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
     color: white;
 }
 
-.mixing-text > h2, p {
+.mixing-text > h2 {
     margin-top: 60px;
 }
 
