@@ -331,6 +331,7 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
     }
 
 }
+
 @media (min-width: 767px) {
     .service-images{
         margin-top: 40px;
@@ -433,16 +434,17 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
 
 
 #price-box {
-    height: 80px;
+    height: 100px;
     width: 170px;
     color: black;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     border: 1px solid black;
     background-color: rgb(196, 196, 196);
     margin: 0 auto;
+    margin-top: 20px;
 }
 
 #service-prices {
@@ -550,6 +552,129 @@ table, caption {
     color: black;
 }
 
+/*---------- Service Finder Styling ----------*/
+
+#service-finder-container {
+    background-color: #472C2C;
+    padding: 80px;
+}
+
+.icon-element {
+    height: 200px;
+    width: 50%;
+    margin : 10px;
+}
+
+#refresh-btn {
+    background-color: rgb(36,36,36);
+    border: 1px solid white;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    line-height: 0;
+}
+
+.icon-element button {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(36,36,36);
+    border: 1px white solid !important;
+    color: white;
+    font-size: 16px;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#question {
+    background-color: rgb(36,36,36);
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    height: 100%;
+    width: 100%;
+    border-radius: 30%;
+    object-fit: contain;
+    padding: 25px;
+    padding-bottom: 70px;
+}
+
+@media (max-width: 992px) {
+    .icon-element {
+    height: 200px;
+    width: 30%;
+    }
+    .icon-element button {
+    font-size: 14px;
+    }
+
+    #service-finder-container .container {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .row__A {
+    order: 2;
+    }
+
+    .row__B {
+    order: 1;
+    }
+
+    .row__C {
+    order: 2;
+    }
+}
+
+@media (max-width: 767px) {
+    .icon-element {
+    height: 200px;
+    width: 40%;
+    }
+}
+
+@media (max-width: 576px) {
+
+.icon-element button {
+    font-size: 18px;
+    }
+}
+
+@media (max-width: 450px) {
+
+.icon-element {
+    height: 200px;
+    width: 70%;
+    }
+}
+
+@media (max-width: 375px) {
+
+.icon-element {
+    height: 200px;
+    width: 90%;
+    }
+}
 
 /*---------- Footer Styling ----------*/
 

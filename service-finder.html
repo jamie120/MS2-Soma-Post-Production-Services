@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap Core-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!-- Hover CSS -->
+    <link href="assets/css/hover.css" rel="stylesheet" media="all">
+    <!--Manual CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Soma - Post Production Services</title>
+</head>
+<body>
+    <!--TOP NAVIGATION -->
+    <div class="container-fluid" id="top-nav">
+        <div class="container d-flex justify-content-center justify-content-md-end">
+            <a class="top-nav-links" href="index.html">
+                <p>CONTACT US</p>
+            </a>
+            <span>|</span>
+            <a class="top-nav-links" href="services.html">
+                <p>FAQ</p>
+            </a>
+            <span>|</span>
+            <a class="top-nav-links" href="gallery.html">
+                <p>JOIN MAILING LIST</p>
+            </a>
+        </div> 
+    </div>
+
+    <!--BANNER & MAIN NAVBAR -->
+    <div class="container" id="banner">
+        <div class="row">
+            <div class="col logoContainer d-flex justify-content-center justify-content-md-start">
+                <a href="index.html"><img class="logo" src="assets/images/logo.png" alt=""></a>
+            </div>
+            <div class="col align-self-center">
+                <ul id="social-icons-banner">
+                    <li><a class="nav-link" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square hvr-grow"></i></a></li>
+                    <li><a class="nav-link" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram-square hvr-grow"></i></a></li>
+                    <li><a class="nav-link" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square hvr-grow"></i></a></li>
+                </ul>
+                <nav class="navbar navbar-expand-sm shadow-none" id="navbar">
+                    <button id="toggle-button" class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                    </button> 
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="container" id="navbarItems">
+                        <div class="row d-block navbar-links">
+                            <ul class="navbar-nav">
+                                <li><a class="nav-link" href="mastering-landing.html">MASTERING</a></li>
+                                <span class="nav-item-break">|</span>
+                                <li><a class="nav-link" href="mixing.html">MIXING</a></li>
+                                <span class="nav-item-break">|</span>
+                                <li><a class="nav-link" href="rates.html">RATES</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            </div>
+        </div>
+    </div>
+
+    <!--PAGE HEADER-->
+    <div class="container-fluid d-flex align-items-center" id="page-header">
+        <h2>SERVICE FINDER</h2>
+    </div>
+
+
+    <!--SERVICE FINDER CONTENT-->
+
+    <div class="container-fluid" id="service-finder-container">
+        <div class="container">
+            <div class="row row__A">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <div class="d-flex align-items-center icon-element">
+                        <img class="icon" src="assets/images/service-finder-icons/dj-mixer.png" alt="dj-mixer">
+                        <button class="button-option" id="dj-btn">DJPROMOMIX</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <div class="d-flex align-items-center icon-element">
+                        <img class="icon" src="assets/images/service-finder-icons/microphone.png" alt="microphone">
+                        <button class="button-option" id="live-btn">LIVE RECORDING</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row row__B">
+                <div class="col d-flex justify-content-center align-items-center">
+                    <h1 id="question">What type of audio are you seeking to release?</h1>
+                </div>
+            </div>
+            <div class="row row__B">
+                <div class="col d-flex justify-content-center">
+                    <input id="refresh-btn" type="button" value="Refresh Page" onClick="location.href=location.href">
+                </div>
+            </div>
+            <div class="row row__C">
+                <div class="col-lg-6  d-flex justify-content-center align-items-center">
+                    <div class="d-flex align-items-center icon-element">
+                        <img class="icon" src="assets/images/service-finder-icons/synthesizer-icon-md.png" alt="synthesizer">
+                        <button class="button-option" id="electronic-btn">ELECTRONIC</button>
+                    </div>
+                </div>
+                <div class="col-lg-6  d-flex justify-content-center align-items-center">
+                    <div class="d-flex align-items-center icon-element">
+                        <img class="icon" src="assets/images/service-finder-icons/podcast.png" alt="podcast">
+                        <button class="button-option" id="podcast-btn">PODCAST</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer class="footer mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div id="newsletter-signup">
+                        <p>Join our mailing list for news and special offers</p>
+                        <input type="email" placeholder="Email Address"><br>
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="copyright-credits">
+                        <ul id="social-icons-footer">
+                            <li><a class="nav-link" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square hvr-grow"></i></a></li>
+                            <li><a class="nav-link" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram-square hvr-grow"></i></a></li>
+                            <li><a class="nav-link" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square hvr-grow"></i></a></li>
+                        </ul>
+                        <p class="footer-text">Copyright 2020 - SOMA Post Production Services</p>
+                        <p class="footer-text">Site Design by Jamie Rolls</p>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </footer>
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <!-- Main JavaScript File -->
+	<script src="assets/js/main.js" defer></script>
+</body>
+</html>
