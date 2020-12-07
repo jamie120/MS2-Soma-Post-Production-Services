@@ -8,13 +8,13 @@ $(document).ready(function(){
     var requireMixing = 
     `<div class="row row__A>
         <div class="col">
-            <h1 class='text-box-style' id='happy-with-mix'>Are you happy with the mix-down of the track?</h1>
+            <h1 class='text-box-style hide-on-append' id='happy-with-mix'>Are you happy with the mix-down of the track?</h1>
         </div>
     </div>
     <div class="row row__A>
         <div class="col">
-            <button class='button-option text-box-style' id='yes-mix-btn'>YES</button>
-            <button class='button-option text-box-style' id='no-mix-btn'>NO</button>
+            <button class='button-option text-box-style hide-on-append' id='yes-mix-btn'>YES</button>
+            <button class='button-option text-box-style hide-on-append' id='no-mix-btn'>NO</button>
         </div>
     </div>`
 
@@ -59,6 +59,67 @@ $(document).ready(function(){
         </div>
     </div>`
 
+    var calcStems = 
+    `<div class="row">
+        <div class="col">
+            <h2 class='text-box-style hide-on-append layer-3-q' id='how-many-stems'>How many stems will you provide for mastering?</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <label class='text-box-style hide-on-append layer-3-q' id='amount-stems-label' for='amount-stems'>Choose amount of tracks:</label>  
+            <select class='text-box-style hide-on-append layer-3-q' id='amount-stems' name='tracks'>
+                <option value='1-4'>1-4</option>
+                <option value='5-8'>5-8</option>
+                <option value='9-12'>9-12</option>
+                <option value='1-4-V'>1-4 Vinyl Master</option>
+                <option value='5-8-V'>5-8 Vinyl Master</option>
+                <option value='9-12-V'>9-12 Vinyl Master</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <div id="stem-calc-text"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <button class='text-box-style hide-on-append layer-3-q' id='calc-stem-master'>CALCULATE</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <a href="stem-mastering.html"><button class='text-box-style'>GOTO OUR STEM-MASTERING SERVICES PAGE</button></a>
+        </div>
+    </div>`
+
+
+    var calcMix = 
+    `<div class="row">
+        <div class="col d-flex justify-content-center">
+            <h2 class='text-box-style hide-on-append layer-2-q' id="mix-service-suggestion">Maybe you could benefit from our mixing services. How many tracks does your track have?</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col d-flex justify-content-around">   
+            <label class='text-box-style hide-on-append layer-2-q' id='amount-tracks-label' for='amount-tracks'>Choose amount of tracks:</label>
+            <select class='text-box-style hide-on-append layer-2-q' id='amount-tracks' name='tracks'>
+                <option value='1-10'>1-10</option>
+                <option value='11-20'>11-20</option>
+                <option value='21-30'>21-30</option>
+                <option value='31-40'>31-40</option>
+                <option value='41-50'>41-50</option>
+                <option value='51-60'>51-60</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <button class='text-box-style hide-on-append layer-2-q' id='calc-mix'>CALCULATE</button>
+        </div>
+    </div>`
+
     // https://stackoverflow.com/questions/17883692/how-to-set-time-delay-in-javascript  -SUPPORT FOR SETTING DELAY TAKEN FROM HERE
 
     $("#dj-btn").click(function() {
@@ -93,62 +154,61 @@ $(document).ready(function(){
     });
 
     $("#live-btn").click(function() {
-        $("#question").html("<h1>You have selected LIVE RECORDING</h1>");
-        $(".button-option").css("display","none")
-        $(".row__A").css("display","none");
-        $(".row__B").css("display","none");
-        $("#service-finder-content").append(requireMixing);
+        fadeIcons();
+        var delayInMilliseconds = 1000; //1 second
+        setTimeout(function() {
+            $("#question").html("<h1>You have selected LIVE RECORDING</h1>");
+            $(".button-option").css("display","none")
+            $("#service-finder-content").append(requireMixing);
+            fadeInAllAfterFirst();
+        }, delayInMilliseconds);
     });
 
     $("#electronic-btn").click(function() {
-        $("#question").html("<h1>You have selected ELECTRONIC MUSIC</h1>");
-        $(".button-option").css("display","none");
-        $(".row__A").css("display","none");
-        $(".row__B").css("display","none");
-        $("#service-finder-content").append(requireMixing);
+        fadeIcons();
+        var delayInMilliseconds = 1000; //1 second
+        setTimeout(function() {
+            $("#question").html("<h1>You have selected ELECTRONIC MUSIC</h1>");
+            $(".button-option").css("display","none");
+            $(".row__A").css("display","none");
+            $(".row__B").css("display","none");
+            $("#service-finder-content").append(requireMixing);
+            fadeInAllAfterFirst();
+        }, delayInMilliseconds);
     });
 
     $(document).on('click', '#yes-mix-btn', function(){
-        $(".button-option").css("display","none");
-        $("#happy-with-mix").css("display","none");
-        $("#service-text-container").append(`<h2 class='text-box-style' id="stem-mastering-suggestion">Are you interested in stem mastering? This can provide more precise mastering and tonal balance control?</h2>`);
-        $("#service-text-container").append("<button class='button-option text-box-style' id='yes-stem-btn'>YES</button>");
-        $("#service-text-container").append("<button class='button-option text-box-style' id='no-stem-btn'>NO</button>");
+        $(".button-option").fadeToggle( 800, "linear" );
+        $("#happy-with-mix").fadeToggle( 800, "linear" );
+        var delayInMilliseconds = 400; //1 second
+        setTimeout(function() {
+            $("#service-text-container").append(`<h2 class='text-box-style hide-on-append layer-2-q' id="stem-mastering-suggestion">Are you interested in stem mastering? This can provide more precise mastering and tonal balance control?</h2>`);
+            $("#service-text-container").append("<button class='button-option hide-on-append layer-2-q text-box-style' id='yes-stem-btn'>YES</button>");
+            $("#service-text-container").append("<button class='button-option hide-on-append layer-2-q text-box-style' id='no-stem-btn'>NO</button>");
+            fadeInAllAfterFirstSecond();
+        }, delayInMilliseconds);
     });
 
     $(document).on('click', '#no-mix-btn', function(){
-        $(".button-option").css("display","none");
-        $("#happy-with-mix").css("display","none");
-        $("#service-text-container").append(`<h2 class='text-box-style' id="mix-service-suggestion">Maybe you could benefit from our mixing services. How many tracks does your track have?</h2>`);
-        $("#service-text-container").append(
-            "<label class='text-box-style' id='amount-tracks-label' for='amount-tracks'>Choose amount of tracks:</label> \
-            <select class='text-box-style' id='amount-tracks' name='tracks'> \
-                <option value='1-10'>1-10</option> \
-                <option value='11-20'>11-20</option> \
-                <option value='21-30'>21-30</option> \
-                <option value='31-40'>31-40</option> \
-                <option value='41-50'>31-40</option> \
-                <option value='51-60'>31-40</option> \
-            </select>"); 
-        $("#service-text-container").append("<button class='text-box-style' id='calc-mix'>CALCULATE</button>");
-
+        $("#yes-mix-btn").fadeToggle( 600, "linear" );
+        $("#no-mix-btn").fadeToggle( 600, "linear" );
+        $("#happy-with-mix").fadeToggle( 600, "linear" );
+        var delayInMilliseconds = 300; //1 second
+        setTimeout(function() {
+            $("#service-finder-content").append(calcMix);
+            fadeInAllAfterFirstSecond();
+        }, delayInMilliseconds);
     });
 
     $(document).on('click', '#yes-stem-btn', function(){
-        $(".button-option").css("display","none");
-        $("#stem-mastering-suggestion").css("display","none");
-        $("#service-text-container").append("<h2 class='text-box-style' id='how-many-stems'>How many stems will you provide for mastering?</h2>");
-        $("#service-text-container").append(
-            "<label class='text-box-style' id='amount-stems-label' for='amount-stems'>Choose amount of tracks:</label> \
-            <select class='text-box-style' id='amount-stems' name='tracks'> \
-                <option value='1-10'>1-10</option> \
-                <option value='11-20'>11-20</option> \
-                <option value='21-30'>21-30</option> \
-                <option value='31-40'>31-40</option> \
-                <option value='41-50'>31-40</option> \
-                <option value='51-60'>31-40</option> \
-            </select>");
-        $("#service-text-container").append("<button class='text-box-style' id='calc-stem-master'>CALCULATE</button>");
+        $("#yes-stem-btn").fadeToggle( 600, "linear" );
+        $("#no-stem-btn").fadeToggle( 600, "linear" );
+        $("#stem-mastering-suggestion").fadeToggle( 600, "linear" );
+        var delayInMilliseconds = 1000;
+        setTimeout(function() {
+            $("#service-finder-content").append(calcStems);
+            fadeInAllAfterFirstThird();
+        }, delayInMilliseconds);
     });
 
     $(document).on('click', '#no-stem-btn', function(){
@@ -160,28 +220,49 @@ $(document).ready(function(){
     });
 
     $(document).on('click', '#calc-stem-master', function(){
-        alert("pressed")
-        var tracks = $("#tracks").val();
-        var price = ((tracks * 40).toFixed(2));
-        $("#how-many-stems").css("display","none");
-        $("#amount-stems").css("display","none");
-        $("#amount-stems-label").css("display","none");
-        $("#calc-stem-master").css("display","none");
-        $("#service-text-container").append(`<h2 class='text-box-style' >You mastering is estimated to cost: £${price} based on ${tracks} number of stems provided by you </h2>`);
+        var choice = $("#amount-stems").val();
+        var price = 40
+        $("#calc-stem-master").text("RECALCULATE");
+        var delayInMilliseconds = 600;
+        setTimeout(function() {
+            calculateStemPrice(choice, price)
+        }, delayInMilliseconds);
     });
 
     $(document).on('click', '#calc-mix', function(){
-        alert("pressed")
-        var tracks = $("#tracks").val();
+        var tracks = $("#amount-tracks").val();
+        alert(tracks)
         var price = ((tracks * 40).toFixed(2));
-        $("#mix-service-suggestion").css("display","none");
-        $("#amount-tracks").css("display","none");
-        $("#amount-tracks-label").css("display","none");
-        $("#calc-mix").css("display","none");
-        $("#service-text-container").append(`<h2 class='text-box-style' >You mixing is estimated to cost: £${price} based on ${tracks} number of tracks provided by you </h2>`);
+        alert(price)
+        $(".layer-2-q").fadeToggle( 600, "linear" );
+        var delayInMilliseconds = 600;
+        setTimeout(function() {
+            $("#service-text-container").append(`<h2 class='text-box-style hide-on-append' id="mix-calc-text" >You mixing is estimated to cost: £${price} based on ${tracks} number of tracks provided by you </h2>`);
+            $("#mix-calc-text").fadeToggle( 600, "linear" );
+        }, delayInMilliseconds);
     });
 
-    //CALCULATE MASTER LOGIC //
+    //CALCULATE STEM MASTER LOGIC //
+
+    function calculateStemPrice(choice, price){
+        if (choice == "1-4-V" || choice == "5-8-V" || choice == "9-12-V") {
+            if (choice == "1-4-V") {
+                $("#stem-calc-text").html(`<h2 class='text-box-style' id="stem-calc-text" >Your mastering is estimated to cost: £${price} based on 1-4 stems provided by you, with Vinyl Services attached </h2>`);
+            } else if (choice == "5-8-V") {
+                $("#stem-calc-text").html(`<h2 class='text-box-style' id="stem-calc-text" >Your mastering is estimated to cost: £${price + 10} based 5-8 stems provided by you, with Vinyl Services attached </h2>`);
+            } else {
+                $("#stem-calc-text").html(`<h2 class='text-box-style' id="stem-calc-text" >Your mastering is estimated to cost: £${price + 20} based on 9-12 stems provided by you, with Vinyl Services attached </h2>`);
+            };
+        } else if (choice == "1-4") {
+            $("#stem-calc-text").html(`<h2 class='text-box-style' id="stem-calc-text" >You mastering is estimated to cost: £${price} based on ${choice} number of stems provided by you </h2>`);
+        } else if (choice == "5-8") {
+            $("#stem-calc-text").html(`<h2 class='text-box-style' id="stem-calc-text" >You mastering is estimated to cost: £${price + 10} based on ${choice} number of stems provided by you </h2>`);
+        } else {
+            $("#stem-calc-text").html(`<h2 class='text-box-style' id="stem-calc-text" >You mastering is estimated to cost: £${price + 20} based on ${choice} number of stems provided by you </h2>`);
+        };
+    }
+
+    //CALCULATE STANDARD MASTER LOGIC //
 
     var vinyl = false
     var priority = false
@@ -230,6 +311,18 @@ $(document).ready(function(){
     function fadeInAllAfterFirst() {
         $( ".hide-on-append:hidden" ).first().fadeIn( 800, function() {
             $( ".hide-on-append:hidden" ).fadeIn( 600 );
+        });
+    }
+
+    function fadeInAllAfterFirstSecond() {
+        $( ".layer-2-q:hidden" ).first().fadeIn( 600, function() {
+            $( ".layer-2-q:hidden" ).fadeIn( 600 );
+        });
+    }
+
+    function fadeInAllAfterFirstThird() {
+        $( ".layer-3-q:hidden" ).first().fadeIn( 600, function() {
+            $( ".layer-3-q:hidden" ).fadeIn( 600 );
         });
     }
 
