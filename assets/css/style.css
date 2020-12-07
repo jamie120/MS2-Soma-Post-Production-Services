@@ -685,6 +685,12 @@ table, caption {
     }
 }
 
+/*---------- Service finder - animation specific styling ----------*/
+
+.hide-on-append {
+    display: none;
+}
+
 /*---------- Footer Styling ----------*/
 
 
