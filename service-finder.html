@@ -78,7 +78,7 @@
     <!--SERVICE FINDER CONTENT-->
 
     <div class="container-fluid" id="service-finder-container">
-        <div class="container">
+        <div class="container" id="service-finder-content">
             <div class="row row__A">
                 <div class="col-lg-6 d-flex justify-content-center align-items-center">
                     <div class="d-flex align-items-center icon-element">
@@ -93,17 +93,17 @@
                     </div>
                 </div>
             </div>
-            <div class="row row__B">
+            <div class="row" id="service-text-container">
                 <div class="col d-flex justify-content-center align-items-center">
                     <h1 id="question">What type of audio are you seeking to release?</h1>
                 </div>
             </div>
-            <div class="row row__B">
+            <div class="row">
                 <div class="col d-flex justify-content-center">
                     <input id="refresh-btn" type="button" value="Refresh Page" onClick="location.href=location.href">
                 </div>
             </div>
-            <div class="row row__C">
+            <div class="row row__B">
                 <div class="col-lg-6  d-flex justify-content-center align-items-center">
                     <div class="d-flex align-items-center icon-element">
                         <img class="icon" src="assets/images/service-finder-icons/synthesizer-icon-md.png" alt="synthesizer">
@@ -156,5 +156,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
     <!-- Main JavaScript File -->
 	<script src="assets/js/main.js" defer></script>
+    <!-- Service-Helper JavaScript File -->
+	<script src="assets/js/service-helper.js" defer></script>
 </body>
 </html>
