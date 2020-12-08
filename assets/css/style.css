@@ -24,6 +24,14 @@
     background-color: rgb(34, 34, 34)
 }
 
+.dark-brown {
+    background-color: #472C2C;
+}
+
+.white {
+    color: white;
+}
+
 /*---------- Select-Form Styling ----------*/
 
 #rates-table {
@@ -98,6 +106,21 @@
     padding: 5px;
     margin-top: 10px;
     font-size: 0.7rem;
+}
+
+/*---------- Mailing List Modal Styling ----------*/
+
+#mail-modal-text input, #mail-modal-text label {
+    color: white;
+}
+
+.myModalLabel, .myModalLabel button {
+    color: white;
+}
+
+.close {
+    color: white; 
+    opacity: 1;
 }
 
 /*---------- Navbar Styling ----------*/
