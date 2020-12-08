@@ -94,7 +94,6 @@ $(document).ready(function(){
         </div>
     </div>`
 
-
     var calcMix = 
     `<div class="row">
         <div class="col d-flex justify-content-center">
@@ -116,11 +115,19 @@ $(document).ready(function(){
     </div>
     <div class="row">
         <div class="col d-flex justify-content-center">
+            <div id="mix-calc-text"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col d-flex justify-content-center">
             <button class='text-box-style hide-on-append layer-2-q' id='calc-mix'>CALCULATE</button>
         </div>
     </div>`
 
     // https://stackoverflow.com/questions/17883692/how-to-set-time-delay-in-javascript  -SUPPORT FOR SETTING DELAY TAKEN FROM HERE
+
+
+    //INITIAL SELECTION LOGIC //
 
     $("#dj-btn").click(function() {
         fadeIcons();
@@ -142,15 +149,6 @@ $(document).ready(function(){
             $("#service-text-container").append(timedMaster);
             fadeInAllAfterFirst();
         }, delayInMilliseconds);
-    });
-
-    $(document).on('click', '#calc-timed-master', function(){
-        var min = $("#minutes-input").val();
-        var price = ((min/60) * 40).toFixed(2);
-        $("#how-long-timed-master").css("display","none");
-        $("#minutes-input").css("display","none");
-        $("#calc-timed-master").css("display","none");
-        $("#service-text-container").append(`<h2 class='text-box-style' >Your mastering is estimated to cost: £${price} based on the length indicated by you of ${min} minutes </h2>`);
     });
 
     $("#live-btn").click(function() {
@@ -176,6 +174,8 @@ $(document).ready(function(){
             fadeInAllAfterFirst();
         }, delayInMilliseconds);
     });
+
+    //USER CHOICES - STEM & MIXING //
 
     $(document).on('click', '#yes-mix-btn', function(){
         $(".button-option").fadeToggle( 800, "linear" );
@@ -219,9 +219,20 @@ $(document).ready(function(){
         checkSelector(vinyl, priority)
     });
 
+    //CALCULATION BUTTONS //
+
+    $(document).on('click', '#calc-timed-master', function(){
+        var min = $("#minutes-input").val();
+        var price = ((min/60) * 40).toFixed(0);
+        $("#how-long-timed-master").css("display","none");
+        $("#minutes-input").css("display","none");
+        $("#calc-timed-master").css("display","none");
+        $("#service-text-container").append(`<h2 class='text-box-style' >Your mastering is estimated to cost: £${price} based on a length of ${min} minutes. </h2>`);
+    });
+
     $(document).on('click', '#calc-stem-master', function(){
         var choice = $("#amount-stems").val();
-        var price = 40
+        var price = 40;
         $("#calc-stem-master").text("RECALCULATE");
         var delayInMilliseconds = 600;
         setTimeout(function() {
@@ -230,17 +241,33 @@ $(document).ready(function(){
     });
 
     $(document).on('click', '#calc-mix', function(){
-        var tracks = $("#amount-tracks").val();
-        alert(tracks)
-        var price = ((tracks * 40).toFixed(2));
-        alert(price)
-        $(".layer-2-q").fadeToggle( 600, "linear" );
+        var choice = $("#amount-tracks").val();
+        var price = 60;
+        $("#calc-mix").text("RECALCULATE");
         var delayInMilliseconds = 600;
         setTimeout(function() {
-            $("#service-text-container").append(`<h2 class='text-box-style hide-on-append' id="mix-calc-text" >You mixing is estimated to cost: £${price} based on ${tracks} number of tracks provided by you </h2>`);
-            $("#mix-calc-text").fadeToggle( 600, "linear" );
+            calculateMixPrice(choice, price)
         }, delayInMilliseconds);
     });
+
+    //CALCULATE MIX LOGIC //
+
+    function calculateMixPrice(choice, price) {
+        if (choice == "1-10") {
+            $("#mix-calc-text").html(`<h2 class='text-box-style' id="mix-calc-text" >You mixing is estimated to cost: £${price} based on ${choice} number of tracks provided by you </h2>`);
+        } else if (choice == "11-20") {
+            $("#mix-calc-text").html(`<h2 class='text-box-style' id="mix-calc-text" >You mixing is estimated to cost: £${price + 20} based on ${choice} number of tracks provided by you </h2>`);
+        } else if (choice == "21-30") {
+            $("#mix-calc-text").html(`<h2 class='text-box-style' id="mix-calc-text" >You mixing is estimated to cost: £${price + 40} based on ${choice} number of tracks provided by you </h2>`);
+        } else if (choice == "31-40") {
+            $("#mix-calc-text").html(`<h2 class='text-box-style' id="mix-calc-text" >You mixing is estimated to cost: £${price + 60} based on ${choice} number of tracks provided by you </h2>`);
+        } else if (choice == "41-50") {
+            $("#mix-calc-text").html(`<h2 class='text-box-style' id="mix-calc-text" >You mixing is estimated to cost: £${price + 80} based on ${choice} number of tracks provided by you </h2>`);
+        } else {
+            $("#mix-calc-text").html(`<h2 class='text-box-style' id="mix-calc-text" >You mixing is estimated to cost: £${price + 100} based on ${choice} number of tracks provided by you </h2>`);
+        };
+    }
+    
 
     //CALCULATE STEM MASTER LOGIC //
 
@@ -306,7 +333,7 @@ $(document).ready(function(){
         }
     };
 
-    //ANIMATION LOGIC //
+    //SUPPORTING ANIMATION FUNCTIONS //
 
     function fadeInAllAfterFirst() {
         $( ".hide-on-append:hidden" ).first().fadeIn( 800, function() {
