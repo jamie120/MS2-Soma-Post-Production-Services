@@ -100,7 +100,8 @@
             </div>
             <div class="row">
                 <div class="col d-flex justify-content-center">
-                    <input id="refresh-btn" type="button" value="RESET CHOICES" onClick="location.href=location.href">
+                    <!-- Button trigger modal-->
+                    <button id="refresh-btn" type="button" class="" data-toggle="modal" data-target="#modalConfirmDelete">RESET CHOICES</button>
                 </div>
             </div>
             <div class="row row__B">
@@ -117,6 +118,29 @@
                     </div>
                 </div>
             </div>
+            <!--Modal: modalConfirmDelete-->
+            <div class="modal fade" id="modalConfirmDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm modal-notify" role="document">
+                    <!--Content-->
+                    <div class="modal-content text-center">
+                        <!--Header-->
+                        <div id="modal-heading" class="modal-header d-flex justify-content-center">
+                            <p class="heading" id="modal-heading-text">Are you sure? - The Service Helper will be Reset</p>
+                        </div>
+                        <!--Body-->
+                        <div id="modal-body" class="modal-body">
+                            <i class="fas fa-times fa-4x animated rotateIn"></i>
+                        </div>
+                        <!--Footer-->
+                        <div id="modal-footer" class="modal-footer flex-center">
+                            <a href="" id="yes-btn" class="btn dark-background modal-footer-text">Yes</a>
+                            <a type="button" class="btn dark-background waves-effect modal-footer-text" data-dismiss="modal">No</a>
+                        </div>
+                    </div>
+                    <!--/.Content-->
+                </div>
+            </div>
+            <!--Modal: modalConfirmDelete-->
         </div>
     </div>
 

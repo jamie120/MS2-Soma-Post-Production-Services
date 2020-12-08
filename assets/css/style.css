@@ -691,6 +691,37 @@ table, caption {
     display: none;
 }
 
+/*---------- Service Finder - Modal Styling ----------*/
+
+#modal-body {
+    background-color: #472C2C;
+}
+
+#modal-body i {
+    color: white;
+}
+
+#modal-heading {
+    background-color: rgb(34, 34, 34);
+}
+
+#modal-heading-text {
+    color: white;
+}
+
+#modal-footer {
+    background-color: rgb(34, 34, 34);
+}
+
+.modal-footer-text {
+    border: 1px solid white;
+}
+
+#yes-btn {
+    background-color: rgb(34, 34, 34);
+    color: white;
+}
+
 /*---------- Footer Styling ----------*/
 
 
