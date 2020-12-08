@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap Core-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!-- Hover CSS -->
+    <link href="assets/css/hover.css" rel="stylesheet" media="all">
+    <!--Manual CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_ay2av5pwPBy3wqNOgCBCc");
+        })();
+    </script>
+    <title>Soma - Post Production Services</title>
+</head>
+<body>
+    <!--TOP NAVIGATION -->
+    <div class="container-fluid" id="top-nav">
+        <div class="container d-flex justify-content-center justify-content-md-end">
+            <a class="top-nav-links" href="contact.html">
+                <p>CONTACT US</p>
+            </a>
+            <span>|</span>
+            <a class="top-nav-links" href="services.html">
+                <p>FAQ</p>
+            </a>
+            <span>|</span>
+            <a data-toggle="modal" data-target="#modalJoinMail" class="top-nav-links">
+                <p>JOIN MAILING LIST</p>
+            </a>
+            <!--Modal: modalJoinMail-->
+            <div class="modal fade" id="modalJoinMail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm modal-notify" role="document">
+                    <form onsubmit="return sendMail(this);">
+                        <div class="modal-content">
+                            <div class="modal-header dark-background">
+                                <h4 class="modal-title w-100 myModalLabel">Join Mailing List</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body dark-brown">
+                                <div id="mail-modal-text" class="md-form">
+                                    <i class="fas fa-envelope prefix white-text"></i>
+                                    <input type="email" name="email" id="form29" class="form-control validate" required>
+                                    <label data-error="wrong" data-success="right" for="form29">Your email</label>                     
+                                </div>
+                            </div>
+                            <div class="modal-footer dark-background">
+                                <button type="button" class="btn btn-blue-grey btn-sm" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-dark btn-sm">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--Modal: modalJoinMail-->
+            <!--Success message modal-->
+            <div class="modal fade" id="modalJoinSuccess" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm modal-notify" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header dark-background">
+                            <h4 class="modal-title w-100 myModalLabel">Thanks for signing up, check your inbox for an exculsive discount!</h4> 
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Success message modal-->
+        </div> 
+    </div>
+
+    <!--BANNER & MAIN NAVBAR -->
+    <div class="container" id="banner">
+        <div class="row">
+            <div class="col logoContainer d-flex justify-content-center justify-content-md-start">
+                <a href="index.html"><img class="logo" src="assets/images/logo.png" alt=""></a>
+            </div>
+            <div class="col align-self-center">
+                <ul id="social-icons-banner">
+                    <li><a class="nav-link" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square hvr-grow"></i></a></li>
+                    <li><a class="nav-link" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram-square hvr-grow"></i></a></li>
+                    <li><a class="nav-link" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square hvr-grow"></i></a></li>
+                </ul>
+                <nav class="navbar navbar-expand-sm shadow-none" id="navbar">
+                    <button id="toggle-button" class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                    </button> 
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="container" id="navbarItems">
+                        <div class="row d-block navbar-links">
+                            <ul class="navbar-nav">
+                                <li><a class="nav-link" href="mastering-landing.html">MASTERING</a></li>
+                                <span class="nav-item-break">|</span>
+                                <li><a class="nav-link" href="mixing.html">MIXING</a></li>
+                                <span class="nav-item-break">|</span>
+                                <li><a class="nav-link" href="rates.html">RATES</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            </div>
+        </div>
+    </div>
+
+    <!--PAGE HEADER-->
+    <div class="container-fluid d-flex align-items-center" id="page-header">
+        <h2>CONTACT US</h2>
+    </div>
+
+
+    <!--CONTACT FORM-->
+    <div class="container">
+        <section class="mb-4">
+
+            <!--Section description-->
+            <p id="contact-header" class="text-center w-responsive mx-auto mb-5">Leave us a message using the contact form below. We will get back to you with an answer to your query as quickly as possible.</p>
+            
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-8 mb-md-0 mb-5">
+                    <form id="contact-form" name="contact-form" onsubmit="return sendCopyMail(this);">
+
+                        <!--Grid row 1-->
+                        <div class="row">
+
+                            <!--Grid column - name-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="name" name="name" class="form-control">
+                                    <label for="name" class="">Your name</label>
+                                </div>
+                            </div>
+                            <!--Grid column - name-->
+
+                            <!--Grid column - email-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="email" name="email" class="form-control">
+                                    <label for="email" class="">Your email</label>
+                                </div>
+                            </div>
+                            <!--Grid column - email-->
+
+                        </div>
+                        <!--Grid row 1-->
+
+                        <!--Grid row 2-->
+                        <div class="row">
+                            <!--Grid column - subject-->
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="subject" name="subject" class="form-control">
+                                    <label for="subject" class="">Subject</label>
+                                </div>
+                            </div>
+                            <!--Grid column - subject-->
+                        </div>
+                        <!--Grid row 2-->
+
+                        <!--Grid row 3-->
+                        <div class="row">
+                            <!--Grid column message-->
+                            <div class="col-md-12">
+                                <div class="md-form">
+                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                    <label for="message">Your message</label>
+                                </div>
+                            <!--Grid column message-->
+                            </div>
+                        </div>
+                        <!--Grid row 3-->
+                        <div class="text-center text-md-left">
+                            <button type="submit" class="btn btn-dark btn-sm">SEND MESSAGE</button>
+                        </div>
+                    </form>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-4 text-center">
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p>Birmingham, West Midlands, UK</p>
+                        </li>
+                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                            <p>+447720902039</p>
+                        </li>
+                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                            <p>contact@somapostproduction.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+            </div>
+        </section>
+    </div>
+    
+    <!--Success message modal-->
+    <div class="modal fade" id="modalContactSubmit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-notify" role="document">
+            <div class="modal-content">
+                <div class="modal-header dark-background">
+                    <h4 class="modal-title w-100 myModalLabel">Thanks for message, we have emailed you a copy of your message and will get back to you as soon as possible!</h4> 
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Success message modal-->
+
+    <!--FOOTER-->
+    <footer class="footer mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div id="newsletter-signup">
+                        <p>Join our mailing list for news and special offers</p>
+                        <input type="email" placeholder="Email Address"><br>
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="copyright-credits">
+                        <ul id="social-icons-footer">
+                            <li><a class="nav-link" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square hvr-grow"></i></a></li>
+                            <li><a class="nav-link" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram-square hvr-grow"></i></a></li>
+                            <li><a class="nav-link" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square hvr-grow"></i></a></li>
+                        </ul>
+                        <p class="footer-text">Copyright 2020 - SOMA Post Production Services</p>
+                        <p class="footer-text">Site Design by Jamie Rolls</p>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </footer>
+
+        <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <!-- Main JavaScript File -->
+	<script src="assets/js/main.js" defer></script>
+    <!-- Service-Helper JavaScript File -->
+	<script src="assets/js/service-helper.js" defer></script>
+    <!-- Email Js JavaScript File -->
+    <script src="assets/js/sendEmail.js"></script>
+</body>
+</html>
