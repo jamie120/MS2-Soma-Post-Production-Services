@@ -2,26 +2,36 @@
 
 #small-page-break {
     height: 50px;
-    background-color: rgb(196, 196, 196)
+    background-color: rgb(196, 196, 196);
+}
+
+#small-page-break-indexpage {
+    height: 50px;
+    background-color: rgb(196, 196, 196);
 }
 
 #small-page-break-dark {
     height: 50px;
-    background-color: rgb(34, 34, 34)
+    background-color: rgb(34, 34, 34);
 }
 
+#small-page-break-dark-indexpage {
+    height: 50px;
+    background-color: rgb(34, 34, 34);
+    display:none;
+}
 #page-header {
     height: 150px;
-    background-color: rgb(34, 34, 34)
+    background-color: rgb(34, 34, 34);
 }
 
 #page-header-rates {
     height: 200px;
-    background-color: rgb(34, 34, 34)
+    background-color: rgb(34, 34, 34);
 }
 
 .dark-background {
-    background-color: rgb(34, 34, 34)
+    background-color: rgb(34, 34, 34);
 }
 
 .dark-brown {
@@ -122,10 +132,6 @@
     color: white; 
     opacity: 1;
 }
-
-/*---------- Service Helper Modal Styling -----------*/
-
-
 
 /*---------- Navbar Styling ----------*/
 
@@ -228,9 +234,19 @@ div#navbarItems {
     font-size: 3rem;
 }
 
-.stroke-text {
-  color: white;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+#stroke-text-1 {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 2px black, 0 0 28px rgb(1, 89, 70), 0 0 6px rgb(1, 89, 70);
+}
+
+#stroke-text-2 {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 2px black, 0 0 28px rgb(92, 8, 14), 0 0 6px rgb(92, 8, 14);
+}
+
+#stroke-text-3 {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 2px black, 0 0 28px blue, 0 0 6px rgb(23,9,92);
 }
 
 .carousel-caption div p {
@@ -271,6 +287,18 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
 
 /* ------------------------ */
 
+@media (max-width: 991px) {
+    #photo-carousel {
+        display: none;
+    }
+    #small-page-break-indexpage{
+        display: none;
+    }
+    #small-page-break-dark-indexpage{
+        display: block;
+    }
+}
+
 @media (max-width: 769px) {
     .carousel-control-next, .carousel-control-prev {
     font-size: 2rem;
@@ -281,6 +309,15 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
     line-height: 1;
     }
 }
+
+@media (max-width: 400px) {
+    .carousel-caption div p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 0.8;
+    }
+}
+
 
 /*---------- Services Styling ----------*/
 
@@ -392,7 +429,7 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
     }
 }
 
-@media (min-width: 990px) {
+@media (min-width: 992px) {
     .service-images{
         margin-top: 40px;
         margin-bottom: 40px;
