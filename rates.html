@@ -15,13 +15,19 @@
     <link href="assets/css/hover.css" rel="stylesheet" media="all">
     <!--Manual CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_ay2av5pwPBy3wqNOgCBCc");
+        })();
+    </script>
     <title>Soma - Post Production Services</title>
 </head>
 <body>
     <!--TOP NAVIGATION -->
     <div class="container-fluid" id="top-nav">
         <div class="container d-flex justify-content-center justify-content-md-end">
-            <a class="top-nav-links" href="index.html">
+            <a class="top-nav-links" href="contact.html">
                 <p>CONTACT US</p>
             </a>
             <span>|</span>
@@ -29,9 +35,50 @@
                 <p>FAQ</p>
             </a>
             <span>|</span>
-            <a class="top-nav-links" href="gallery.html">
+            <a data-toggle="modal" data-target="#modalJoinMail" class="top-nav-links">
                 <p>JOIN MAILING LIST</p>
             </a>
+            <!--Modal: modalJoinMail-->
+            <div class="modal fade" id="modalJoinMail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm modal-notify" role="document">
+                    <form onsubmit="return sendMail(this);">
+                        <div class="modal-content">
+                            <div class="modal-header dark-background">
+                                <h4 class="modal-title w-100 myModalLabel">Join Mailing List</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body dark-brown">
+                                <div id="mail-modal-text" class="md-form">
+                                    <i class="fas fa-envelope prefix white-text"></i>
+                                    <input type="email" name="email" id="form29" class="form-control validate" required>
+                                    <label data-error="wrong" data-success="right" for="form29">Your email</label>                     
+                                </div>
+                            </div>
+                            <div class="modal-footer dark-background">
+                                <button type="button" class="btn btn-blue-grey btn-sm" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-dark btn-sm">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--Modal: modalJoinMail-->
+            <!--Success message modal-->
+            <div class="modal fade" id="modalJoinSuccess" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm modal-notify" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header dark-background">
+                            <h4 class="modal-title w-100 myModalLabel">Thanks for signing up, check your inbox for an exculsive discount!</h4> 
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Success message modal-->
         </div> 
     </div>
 
@@ -283,5 +330,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
     <!-- Main JavaScript File -->
 	<script src="assets/js/main.js" defer></script>
+    <!-- Service-Helper JavaScript File -->
+	<script src="assets/js/service-helper.js" defer></script>
+    <!-- Email Js JavaScript File -->
+    <script src="assets/js/sendEmail.js"></script>
 </body>
 </html>

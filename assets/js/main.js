@@ -64,3 +64,9 @@ $("#rates-table").change(function(){
         $( "#mixing-table" ).fadeIn( "slow" )
     };
 });
+
+//SERVICE FINDER PROMPT - MODAL
+
+setTimeout(function() {
+    $('#serviceFinderPrompt').modal('show');}, 
+        5000);
