@@ -70,3 +70,20 @@ $("#rates-table").change(function(){
 setTimeout(function() {
     $('#serviceFinderPrompt').modal('show');}, 
         5000);
+
+//FAQ EXPAND ANSWERS
+
+$('.question').click(function() { 
+    var id = $(this).attr('id');
+    id = id.replace('question', 'answer');
+    if ($("#" + id).is(":hidden")) {
+        $("#" + id).slideDown("slow");
+    } else {
+        $("#" + id).hide();
+    }
+    //CHANGE ICON & SR TEXT
+    id = id.replace('answer', 'icon');
+    $("#" + id).find('i').toggleClass("fa-plus").toggleClass("fa-minus")
+    $("#" + id).find('span').text("Collapse")
+
+});
