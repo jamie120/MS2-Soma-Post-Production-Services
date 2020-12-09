@@ -197,9 +197,11 @@
             <div class="row">
                 <div class="col">
                     <div id="newsletter-signup">
-                        <p>Join our mailing list for news and special offers</p>
-                        <input type="email" placeholder="Email Address"><br>
-                        <button type="submit">Subscribe</button>
+                        <form onsubmit="return sendMail(this);">
+                            <p>Join our mailing list for news and special offers</p>
+                            <input type="email" name="email" placeholder="Email Address"><br>
+                            <button type="submit">Subscribe</button>
+                        </form>
                     </div>
                 </div>
                 <div class="col">
