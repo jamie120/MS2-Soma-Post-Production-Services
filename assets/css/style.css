@@ -123,6 +123,10 @@
     opacity: 1;
 }
 
+/*---------- Service Helper Modal Styling -----------*/
+
+
+
 /*---------- Navbar Styling ----------*/
 
 .navbar {
@@ -232,7 +236,7 @@ div#navbarItems {
 .carousel-caption div p {
     font-size: 3rem;
     font-weight: 600;
-    line-height: 0.8;
+    line-height: 0.6;
 }
 
 /* 
