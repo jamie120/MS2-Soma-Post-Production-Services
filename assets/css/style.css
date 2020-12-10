@@ -38,6 +38,10 @@
     background-color: #472C2C;
 }
 
+.dark-brown {
+    background-color: #472C2C;
+}
+
 .white {
     color: white;
 }
@@ -568,6 +572,38 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
 
 #contact-header {
     margin-top: 40px;
+}
+
+#contact-us-banner {
+    object-fit: cover;
+    max-height: 350px;
+    width: 100%;
+}
+
+#contact-form-container {
+    background-color: rgba(196, 196, 196, 0.3);
+    border-radius: 30px;
+    padding: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 1px solid rgba(119, 119, 119, 0.6);
+}
+
+.list-unstyled p {
+    overflow-wrap: break-word;
+    margin-top: 5px;
+}
+
+#contact-header {
+    border: 1px solid rgba(119, 119, 119, 0.6);
+    background-color: rgba(196, 196, 196, 0.4);
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 300;
+}
+
+#mail-btn {
+    color: black;
 }
 
 /*---------- Mixer Page Styling ----------*/

@@ -120,14 +120,25 @@
     <div class="container-fluid d-flex align-items-center" id="page-header">
         <h2>CONTACT US</h2>
     </div>
+    <!--BANNER CONTACT US-->
 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col px-0">
+                <div>
+                    <img id="contact-us-banner" class="img-fluid" src="assets/images/contact-us-banner.jpeg" alt="mixing-desk-banner">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--CONTACT FORM-->
-    <div class="container">
+    <div class="container-fluid">
+        <div class="container box-shadow" id="contact-form-container">
         <section class="mb-4">
 
             <!--Section description-->
-            <p id="contact-header" class="text-center w-responsive mx-auto mb-5">Leave us a message using the contact form below. We will get back to you with an answer to your query as quickly as possible.</p>
+            <p id="contact-header" class="box-shadow text-center w-responsive mx-auto mb-5">Leave us a message using the contact form below. We will get back to you with an answer to your query as quickly as possible.</p>
             
             <div class="row">
 
@@ -185,7 +196,7 @@
                         </div>
                         <!--Grid row 3-->
                         <div class="text-center text-md-left">
-                            <button type="submit" class="btn btn-dark btn-sm">SEND MESSAGE</button>
+                            <button type="submit" class="btn btn-dark btn-sm hvr-grow-small">SEND MESSAGE</button>
                         </div>
                     </form>
                 </div>
@@ -194,20 +205,23 @@
                 <!--Grid column-->
                 <div class="col-md-4 text-center">
                     <ul class="list-unstyled mb-0">
-                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                        <li><i class="fas fa-map-marker-alt fa-2x hvr-grow"></i>
                             <p>Birmingham, West Midlands, UK</p>
                         </li>
-                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                        <li><i class="fas fa-phone mt-4 fa-2x hvr-grow"></i>
                             <p>+447720902039</p>
                         </li>
-                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                        <li><a id="mail-btn" href="mailto:contact@somapostproduction.com" target="_blank">
+                            <i class="fas fa-envelope mt-4 fa-2x hvr-grow"></i>
                             <p>contact@somapostproduction.com</p>
+                            </a>
                         </li>
                     </ul>
                 </div>
                 <!--Grid column-->
             </div>
         </section>
+        </div>
     </div>
     
     <!--Success message modal-->
