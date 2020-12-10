@@ -42,6 +42,22 @@
     color: white;
 }
 
+/*--
+BOX SHADOW CODE COPIED FROM THIS URL
+https://css-tricks.com/make-a-smooth-shadow-friend/
+--*/
+
+.box-shadow {
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 25px 20px rgba(0, 0, 0, 0.12)
+    ;
+}
+
 /*---------- Select-Form Styling ----------*/
 
 #rates-table {
@@ -339,15 +355,25 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
     background-color: rgb(34, 34, 34);
 }
 
+.service-info {
+    margin-top: -60px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid rgba(119, 119, 119, 0.6);
+    border-radius: 20px;
+}
+
 .image-caption {
     border: 1px solid black;
     background-color: rgba(119, 119, 119, 0.6);
     border-radius: 20px;
     z-index: 3;
-    position: absolute;
+    position: relative;
     margin-left: auto;
-    margin-right: auto;
     text-align: center;
+    bottom: 50%;
+    left: 0;
+    right: 0;
 }
 
 .service-images{
@@ -355,6 +381,9 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
     margin-bottom: 40px;
     padding: 5px;
     border-radius: 10%;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid rgba(119, 119, 119, 0.6);
 }
 
 .image-caption > p {
@@ -362,13 +391,15 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
     font-weight: 400;
 }
 
+
+
 @media (max-width: 768px) {
     .service-images{
         margin-top: 40px;
         margin-bottom: 40px;
         padding: 5px;
-        height: 350px;
-        width: 480px;
+        max-width: 100%;
+        height: auto;
         border-radius: 10%;
     }
     .image-caption > p {
@@ -380,23 +411,47 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
 
     .image-caption {
         border: 1px solid black;
-        background-color: rgba(119, 119, 119, 0.6);
+        background-color: rgba(119, 119, 119, 0.8);
         height: 80px;
         width: 300px;
         border-radius: 20px;
         z-index: 3;
-        position: absolute;
+        position: relative;
         margin-left: auto;
         margin-right: auto;
-        left: 0;
-        right: 0;
-        bottom: 175px;
+        bottom: 50%;
         text-align: center;
     }
 
+    .service-info {
+        margin-top: -75px;
+    }
 }
 
-@media (min-width: 767px) {
+@media (max-width: 575px) {
+    .image-caption {
+        border: 1px solid black;
+        background-color: rgba(119, 119, 119, 0.8);
+        height: 72px;
+        width: 50%;
+        border-radius: 20px;
+        z-index: 3;
+        position: relative;
+        margin-left: auto;
+        bottom: 50%;
+        text-align: center;
+    }
+
+    .image-caption > p {
+        color: white;
+        font-weight: 400;
+        font-size: 1.4rem;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 768px) {
     .service-images{
         margin-top: 40px;
         margin-bottom: 40px;
@@ -407,17 +462,17 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
     }
     .image-caption {
         border: 1px solid black;
-        background-color: rgba(119, 119, 119, 0.6);
+        background-color: rgba(119, 119, 119, 0.8);
         height: 45px;
         width: 200px;
         border-radius: 20px;
         z-index: 3;
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
+        position: relative;
+        margin: 0 auto;
         left: 0;
         right: 0;
-        bottom: 100px;
+        bottom: 50%;
+        left: 0;
         text-align: center;
     }
 
@@ -427,6 +482,7 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
         font-size: 1.2rem;
         margin-top: 8px;
     }
+
 }
 
 @media (min-width: 992px) {
@@ -437,6 +493,8 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
         height: 220px;
         width: 300px;
         border-radius: 10%;
+        bottom: 60%;
+        left: 7px;
     }
 
     .image-caption {
@@ -446,18 +504,21 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
     width: 250px;
     border-radius: 20px;
     z-index: 3;
-    position: absolute;
+    position: relative;
     margin-left: auto;
-    margin-right: auto;
     left: 0;
     right: 0;
-    bottom: 110px;
+    bottom: 5%;
     text-align: center;
     }
 
     .image-caption > p {
     font-size: 1.5rem;
     margin-top: 12px;
+    }
+
+    .service-info {
+        margin-top: 5px;
     }
 }
 
@@ -470,21 +531,6 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
         width: 360px;
         border-radius: 10%;
     }
-    .image-caption {
-        border: 1px solid black;
-        background-color: rgba(119, 119, 119, 0.6);
-        height: 60px;
-        width: 250px;
-        border-radius: 20px;
-        z-index: 3;
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
-        bottom: 132px;
-        text-align: center;
-    }
 
     .image-caption > p {
         font-size: 1.5rem;
@@ -495,20 +541,22 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
 
 /*---------- Price / Basket Styling ----------*/
 
-
-
-#price-box {
+.price-box {
     height: 100px;
     width: 170px;
+    padding: 15px;
+    border: 1px solid black;
+    background-color: rgb(196, 196, 196);
+     margin-top: 20px;
+}
+
+#price-box-text {
     color: black;
     font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
-    padding: 15px;
-    border: 1px solid black;
-    background-color: rgb(196, 196, 196);
     margin: 0 auto;
-    margin-top: 20px;
+   
 }
 
 #service-prices {
@@ -880,7 +928,7 @@ footer {
     0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072),
     0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 25px 20px rgba(0, 0, 0, 0.12)
+    0 18px 15px rgba(0, 0, 0, 0.12)
     ;
 }
 
