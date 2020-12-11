@@ -636,8 +636,10 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
 
 #contact-us-banner {
     object-fit: cover;
-    max-height: 350px;
+    max-height: 250px;
     width: 100%;
+    border-top: 1px solid rgba(119, 119, 119, 0.6);
+    border-bottom: 1px solid rgba(119, 119, 119, 0.6);
 }
 
 #contact-form-container {
@@ -1005,6 +1007,14 @@ footer {
     display: none;
 }
 
+#faq-container {
+    padding: 100px 15px;
+}
+
+.question a {
+    font-weight: 400;
+}
+
 .answer p {
     margin: 20px;
     text-align: left;
@@ -1018,13 +1028,14 @@ footer {
     margin: 30px;
     padding: 20px;
     box-shadow:
-    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-    0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 18px 15px rgba(0, 0, 0, 0.12)
+    0 2.8px 2.2px rgba(184, 184, 184, 0.034),
+    0 6.7px 5.3px rgba(158, 158, 158, 0.048),
+    0 12.5px 10px rgba(165, 165, 165, 0.06),
+    0 22.3px 17.9px rgba(194, 194, 194, 0.072),
+    0 41.8px 33.4px rgba(175, 175, 175, 0.086),
+    0 18px 15px rgba(160, 160, 160, 0.12)
     ;
+    color: white;
 }
 
 .question i {
@@ -1032,8 +1043,13 @@ footer {
     color: black;
 }
 
+#page-break-faq {
+    margin-bottom: 40px;
+    width: 80%;
+}
+
 @media (max-width: 992px) {
     .answer p {
     text-align: center;
-}
+    }
 }
