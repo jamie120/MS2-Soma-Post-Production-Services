@@ -359,11 +359,11 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
 }
 
 #business-info p a {
-    color: #607d8b;
+    color: #46e3e9;
 }
 
 #business-info p a:hover {
-    color: white;
+    color: rgb(248, 116, 7);
 }
 
 #business-info > h2 {
@@ -376,6 +376,20 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
     color: white;
 }
 
+#business-info a h3 {
+    border: 1px solid black;
+    background-color: rgba(119, 119, 119, 0.6);
+    border-radius: 20px;
+    position: relative;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+
 .more-info-link {
     border: 1px solid rgba(119, 119, 119, 0.6);
     border-radius: 20px;
@@ -386,7 +400,7 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
     background-color: rgba(119, 119, 119, 0.6);
 }
 
-.more-info-link:hover {
+.more-info-link:hover, #business-info a h3:hover {
     background-color: #607d8b;
 }
 
@@ -612,8 +626,12 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
 
 /*---------- Contact Us Page Styling ----------*/
 
-#contact-header {
-    margin-top: 40px;
+#contact-form {
+    margin-left: 15px;
+}
+
+#contact-us-page-background {
+    padding: 100px 15px;
 }
 
 #contact-us-banner {
@@ -623,11 +641,9 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
 }
 
 #contact-form-container {
-    background-color: rgba(196, 196, 196, 0.3);
+    background-color: rgb(228, 228, 228);
     border-radius: 30px;
     padding: 40px;
-    margin-top: 40px;
-    margin-bottom: 40px;
     border: 1px solid rgba(119, 119, 119, 0.6);
 }
 
@@ -639,9 +655,10 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
 #contact-header {
     border: 1px solid rgba(119, 119, 119, 0.6);
     background-color: rgba(196, 196, 196, 0.4);
-    padding: 10px;
-    border-radius: 20px;
+    padding: 20px;
+    border-radius: 10px;
     font-weight: 300;
+    width: 97%;
 }
 
 #mail-btn {
@@ -1018,4 +1035,5 @@ footer {
 @media (max-width: 992px) {
     .answer p {
     text-align: center;
+}
 }
