@@ -51,18 +51,21 @@ $("#mixing-prices").change(function(){
 $("#rates-table").change(function(){
     var status = this.value;
    if(status=="mastering") {
-        $("#mastering-table, #stem-mastering-table, #mixing-table, #timed-mastering-table").css("display", "none");
+        $("#mastering-table, #stem-mastering-table, #mixing-table, #timed-mastering-table, #rates-hr").css("display", "none");
         $( "#mastering-table" ).fadeIn( "slow" )
    } else if(status=="stem-mastering") {
-        $("#mastering-table, #stem-mastering-table, #mixing-table, #timed-mastering-table").css("display", "none");
+        $("#mastering-table, #stem-mastering-table, #mixing-table, #timed-mastering-table, #rates-hr").css("display", "none");
         $( "#stem-mastering-table" ).fadeIn( "slow" )
    } else if(status=="timed-mastering") {
-        $("#mastering-table, #stem-mastering-table, #mixing-table, #timed-mastering-table").css("display", "none");
+        $("#mastering-table, #stem-mastering-table, #mixing-table, #timed-mastering-table, #rates-hr").css("display", "none");
         $( "#timed-mastering-table" ).fadeIn( "slow" )
    } else if(status=="mixing") {
-        $("#mastering-table, #stem-mastering-table, #mixing-table, #timed-mastering-table").css("display", "none");
+        $("#mastering-table, #stem-mastering-table, #mixing-table, #timed-mastering-table, #rates-hr").css("display", "none");
         $( "#mixing-table" ).fadeIn( "slow" )
-    };
+   } else if(status=="none") {
+        $("#mastering-table, #stem-mastering-table, #mixing-table, #timed-mastering-table, #rates-hr").css("display", "none");
+        $("#rates-hr").css("display", "block");
+   }
 });
 
 //SERVICE FINDER PROMPT - MODAL
