@@ -4,7 +4,29 @@
     margin: 40px auto;
     padding: 5px;
     border-radius: 10%;
-    
+    border: 1px solid rgba(119, 119, 119, 0.6);
+}
+
+#page-break-mastering {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#service-links-light {
+    padding-bottom: 20px;
+}
+
+.image-caption-landing {
+    border: 1px solid black;
+    background-color: rgba(119, 119, 119, 0.8);
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 3;
 }
 
 @media (max-width: 768px) {
@@ -18,19 +40,12 @@
     }
 
     .image-caption-landing {
-    border: 1px solid black;
-    background-color: rgba(119, 119, 119, 0.6);
     height: 72px;
     width: 300px;
-    border-radius: 20px;
     z-index: 3;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
+    
     bottom: 175px;
-    text-align: center;
+   
     }
 
     .image-caption-landing p {
@@ -51,19 +66,9 @@
         border-radius: 10%;
     }
     .image-caption-landing {
-        border: 1px solid black;
-        background-color: rgba(119, 119, 119, 0.6);
         height: 45px;
         width: 200px;
-        border-radius: 20px;
-        z-index: 3;
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
         bottom: 120px;
-        text-align: center;
     }
 
     .image-caption-landing p {
@@ -85,19 +90,9 @@
     }
 
     .image-caption-landing {
-    border: 1px solid black;
-    background-color: rgba(119, 119, 119, 0.6);
     height: 60px;
     width: 250px;
-    border-radius: 20px;
-    z-index: 3;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
     bottom: 140px;
-    text-align: center;
     }
 
     .image-caption-landing > p {
@@ -117,19 +112,9 @@
     }
 
     .image-caption-landing {
-    border: 1px solid black;
-    background-color: rgba(119, 119, 119, 0.6);
     height: 72px;
     width: 300px;
-    border-radius: 20px;
-    z-index: 3;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
     bottom: 175px;
-    text-align: center;
     }
 
     .image-caption-landing p {

@@ -14,6 +14,8 @@ $("#mastering-prices").change(function(){
    };
 });
 
+$("#mastering-prices").chosen({disable_search_threshold: 10});
+
 //STEM MASTERING
 
 $("#stem-mastering-prices").change(function(){
@@ -26,6 +28,8 @@ $("#stem-mastering-prices").change(function(){
      $('#price-box-text').text("9-12 pricing");
    };
 });
+
+$("#stem-mastering-prices").chosen({disable_search_threshold: 10});
 
 //MIXING
 
@@ -45,6 +49,8 @@ $("#mixing-prices").change(function(){
      $('#price-box-text').text("From £144 per track");
    };
 });
+
+$("#mixing-prices").chosen({disable_search_threshold: 10});
 
 //RATES TABLE LOGIC
 

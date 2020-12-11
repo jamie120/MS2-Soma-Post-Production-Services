@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- Chosen - jQuery Plugin -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css"/>
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <!-- Material Design Bootstrap -->
@@ -121,7 +123,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 d-flex justify-content-center">
-                    <img class="img-fluid" id="mixer-image-mixer-page" src="assets/images/services/mixing-service.jpg" alt="mixer">
+                    <img class="img-fluid service-page-image" src="assets/images/services/mixing-service.jpg" alt="mixer">
                 </div>
                 <div class="col-md-6 mixing-text">
                     <h2>MIXING</h2>
@@ -130,7 +132,7 @@
             </div>
         </div>        
     </div>
-    <div class="container-fluid" id="small-page-break"></div>
+    <div class="container-fluid small-page-break"></div>
 
     <!--RATES AND PRICES -->
     <div class="container" id="service-prices">
@@ -139,8 +141,8 @@
                 <form>
                     <div class="form-group">
                         <label for="mixing-prices"></label>
-                        <select class="form-control box-shadow" id="mixing-prices">
-                            <option>CHOOSE AMOUNT OF TRACKS: </option>
+                        <select data-placeholder="CHOOSE AMOUNT OF TRACKS:" class="form-control chosen-select box-shadow" id="mixing-prices">
+                            <option></option>
                             <option value="1-10">1-10 Tracks</option>
                             <option value="11-20">11-20 Tracks</option>
                             <option value="21-30">21-30 Tracks</option>
@@ -165,6 +167,9 @@
             </div>
         </div>   
     </div>
+
+    <div class="container-fluid small-page-break"></div>
+
 
     <!--AUDIO EXAMPLES -->
     <div class="container-fluid dark-background">
@@ -224,6 +229,8 @@
 
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Chosen - jQuery Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->

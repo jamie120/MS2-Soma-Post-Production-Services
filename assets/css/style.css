@@ -1,8 +1,10 @@
 /*---------- Page Layout Elements ----------*/
 
-#small-page-break {
+.small-page-break {
     height: 50px;
     background-color: rgb(196, 196, 196);
+    border-bottom: 1px solid rgba(119, 119, 119, 0.6);
+    border-top: 1px solid rgba(119, 119, 119, 0.6);
 }
 
 #small-page-break-indexpage {
@@ -50,6 +52,13 @@
     width: 70%;
 }
 
+.service-page-image {
+    border-radius: 20px;
+    margin: 60px;
+    border: 1px solid rgba(119, 119, 119, 0.6);
+    padding: 5px;
+}
+
 /*--
 BOX SHADOW CODE COPIED FROM THIS URL
 https://css-tricks.com/make-a-smooth-shadow-friend/
@@ -74,6 +83,7 @@ https://css-tricks.com/make-a-smooth-shadow-friend/
   border-radius: 4px;
   background-color: #f1f1f1;
 }
+
 
 /*---------- Site Header Styling ----------*/
 
@@ -690,11 +700,6 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
     padding: 10px;
 }
 
-#mixer-image-mixer-page {
-    border-radius: 20px;
-    margin: 60px;
-}
-
 .embedded-audio-element {
     padding: 10px;
     height: 40px;
@@ -744,7 +749,6 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
 #mastering-table, #stem-mastering-table, #mixing-table, #timed-mastering-table {
     display: none;
 }
-
 
 /*---------- Table Styling ----------*/
 
