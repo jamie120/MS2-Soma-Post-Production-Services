@@ -443,7 +443,7 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
 }
 
 .image-caption:hover {
-    background-color: #607d8b;
+    background-color: rgb(96,125,139);
 }
 
 .service-images{
