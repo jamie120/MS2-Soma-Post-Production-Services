@@ -199,7 +199,7 @@ A live version of the site is available [here.](insert link here to live site)
 
 ## Wireframe designs
 
-* Wireframes were designed using using Balsamiq, for three primary breakpoints. Desktop, Tablet and Mobile. 
+Wireframes were designed using using Balsamiq, for three primary breakpoints. Desktop, Tablet and Mobile. 
 
 
 - Desktop Wireframes.
@@ -214,9 +214,22 @@ A live version of the site is available [here.](insert link here to live site)
 
 ![Mobile - ](https://github.com/jamie120/MS2-Soma-Post-Production-Services/blob/master/assets/images/balsamiq-wireframes/soma-tablet-wireframe.png "Mobile - Wireframe screenshot")
 
-* Furthermore theme design was mocked up using Figma. This was completed for the desktop design and the styles/colors will be adopted throughout responsively.
+Furthermore theme design was mocked up using Figma. This was completed for the desktop design and the styles/colors will be adopted throughout responsively.
 
-Full workspace & diagrams hosted on figma.com can be found here: [Figma.com - Jamie Rolls - MS1](https://www.figma.com/file/imQzaWMTA9Faz6ezvda34b/MS1-Jamie-Rolls-D-R-Plastering-Services?node-id=0%3A1)
+- Home Page / Services.
+
+![Home / Services](https://github.com/jamie120/MS2-Soma-Post-Production-Services/blob/master/assets/images/figma-wireframes/figma-home-services.png "Desktop - Wireframe screenshot")
+
+- Mastering Landing / Rates.
+
+![Home / Services](https://github.com/jamie120/MS2-Soma-Post-Production-Services/blob/master/assets/images/figma-wireframes/figma-landing-rates.png "Desktop - Wireframe screenshot")
+
+- Service Finder.
+
+![Home / Services](https://github.com/jamie120/MS2-Soma-Post-Production-Services/blob/master/assets/images/figma-wireframes/figma-service-finder.png "Desktop - Wireframe screenshot")
+
+
+Full workspace & diagrams hosted on figma.com can be found here: [Figma.com - Jamie Rolls - MS1](https://www.figma.com/file/YN2IshRoXVvqyn0lXn32kL/MS2?node-id=0%3A1)
 
 <!--
 ## Responsive Design
