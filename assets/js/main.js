@@ -1,3 +1,5 @@
+alert("linked")
+
 //LOGIC FOR PRICING OPTIONS ON SERVICES PAGES
 
 
