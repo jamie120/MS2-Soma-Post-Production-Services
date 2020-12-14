@@ -170,42 +170,55 @@ A live version of the site is available [here.](insert link here to live site)
 
 #### Rates
 
-* The rates page will contain tables of information, detailing the pricing structure for all main services offered by the business. In total there will be four tables of content. 
+* The rates page will contain tables of information, detailing the pricing structure for all main services offered by the business. 
+* A clean design will be adopted, displaying only information of interest to its user, based on the users input.
+* In total there will be four tables of content. 
 
     1. Standard Mastering.
     2. Stem-Mastering.
     3. Timed-Mastering.
     4. Mixing.
 
-When initially visiting the page, no tables will be displayed. A select menu will be at the top of the page, once a selection is made the corresponding table will be displayed below the menu. Page content will update according to how the user engages with the select menu. 
+* On initial visit to the page, no rates table will be displayed. A select menu at the top of the page, will trigger a corresponding table to be displayed below it. Page content will update according to how the user engages with the select menu. 
+
+#### Service Finder
+
+* The service finder page will host an interactive expereience for the site user. Its aimw is to provide a bespoke response to each user based on information gathered throughout a series of choices and inputs. 
+
+* The purpose of this is to support potential clients in finding an appropriate service based on their project requirements. It provides automated feedback to potential clients, reducing the need for the direct interaction with the business. 
+
+* This service is always active, therefore it has potential to present financial benefits the business, through suggesting services and engaging customers. As well as providing a support role to users outside of business hours.
+
+* The page content will update, display and hide content based on user input. A flow chart has been developed to explain how the user journey will present itself:
+
+* ![FLOW DIAGRAM](https://github.com/jamie120/MS2-Soma-Post-Production-Services/blob/master/assets/images/service-helper-flowchart.png "Desktop - Wireframe screenshot")
 
 
-<!--
+
 # Skeleton
 
 ## Wireframe designs
 
-* The wireframes were designed using Figma. I started with a single home page design, worked on developing a page structure which would support the requirements of the home page.
+* Wireframes were designed using using Balsamiq, for three primary breakpoints. Desktop, Tablet and Mobile. 
 
 
 - Desktop Wireframes.
 
-![Desktop - ](https://github.com/jamie120/ms1_d_r_plastering/blob/master/assets/images/wireframes/figma-desktop-screenshot.png "Desktop - Wireframe screenshot")
+![Desktop - ](https://github.com/jamie120/MS2-Soma-Post-Production-Services/blob/master/assets/images/balsamiq-wireframes/soma-desktop-wireframe.png "Desktop - Wireframe screenshot")
 
 - Tablet Wireframes.
 
-![Tablet - ](https://github.com/jamie120/ms1_d_r_plastering/blob/master/assets/images/wireframes/figma-tablet-screenshot.png "Tablet - Wireframe screenshot")
+![Tablet - ](https://github.com/jamie120/MS2-Soma-Post-Production-Services/blob/master/assets/images/balsamiq-wireframes/soma-mobile-wireframe.png "Tablet - Wireframe screenshot")
 
 - Mobile Wireframes.
 
-![Mobile - ](https://github.com/jamie120/ms1_d_r_plastering/blob/master/assets/images/wireframes/figma-mobile-screenshot.png "Mobile - Wireframe screenshot")
+![Mobile - ](https://github.com/jamie120/MS2-Soma-Post-Production-Services/blob/master/assets/images/balsamiq-wireframes/soma-tablet-wireframe.png "Mobile - Wireframe screenshot")
 
-- 'Get a Quote' pop up form Wireframe.
-
-![Form - ](https://github.com/jamie120/ms1_d_r_plastering/blob/master/assets/images/wireframes/get-quote-popup.png "Form - Wireframe screenshot")
+* Furthermore theme design was mocked up using Figma. This was completed for the desktop design and the styles/colors will be adopted throughout responsively.
 
 Full workspace & diagrams hosted on figma.com can be found here: [Figma.com - Jamie Rolls - MS1](https://www.figma.com/file/imQzaWMTA9Faz6ezvda34b/MS1-Jamie-Rolls-D-R-Plastering-Services?node-id=0%3A1)
 
+<!--
 ## Responsive Design
 
 Once all the wireframes were developed for viewing on a larger desktop sized display. I worked to create separate wireframes for both tablet and mobile screen sizes. 
