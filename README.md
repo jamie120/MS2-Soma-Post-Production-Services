@@ -231,86 +231,121 @@ Furthermore theme design was mocked up using Figma. This was completed for the d
 
 Full workspace & diagrams hosted on figma.com can be found here: [Figma.com - Jamie Rolls - MS1](https://www.figma.com/file/YN2IshRoXVvqyn0lXn32kL/MS2?node-id=0%3A1)
 
-<!--
+
 ## Responsive Design
 
-Once all the wireframes were developed for viewing on a larger desktop sized display. I worked to create separate wireframes for both tablet and mobile screen sizes. 
-This required me to decide how best the content should be displayed on smaller devices. I ensured to keep the 'user' at the heart of any design choices. Making decisions on content order was important, as less content is viewable on smaller screen sizes without the need to scroll. To ensure engagement was maintained and users are able to find key content quickly, some content was shifted or even removed on smaller screens, using responsive design.
+To ensure the site looked good and operated well on smaller screens, content/layout was reviewed for each breakpoint to ensure user experience remained positive throughout. 
 
+* Top Nav links
+    * The contact/faq/join mailing list links will remain visible at all breakpoints. They will centralise below the large breakpoint.
+* Nav Bar / banner
+    * The navbar / logo banner has three states.
+        * The first at large breakpoints and above, all content is visible and aligned left / right of the screen.
+        * The second state centralises all content and resizes social icons - this state will be most common for viewing the site on tablet size devices.
+        * The third state collapses all links down to a 'burger' icon, removes social icons and justifies the logo left and navbar right - this state will be most common for viewing on mobile size devices.
+* Home Page 
+    * Image carousel hidden on tablet and mobile due to obtrusive nature and the space taken vs its value on smaller devices.
+    * The three services elements use Bootstrap grid. Three column structure each filling 4 parts of the grid at the large breakpoints and above. Otherwise each service occupies full width (12) on tablet and mobile. This makes best use of space on all devices.
+* Contact
+    * Elements justify centrally on smaller screens to distribute white space more evenly, which looks more pleasing to the eye.
+* FAQ
+    * Q&A use Bootstrap grid. Two columns each filling 6 parts of the grid at the large breakpoint and above. Otherwise default to 12 each. Serving tablet and mobile displays best.
+* Services
+    * All elements using the Bootstrap grid take full width below the large breakpoint. Above this elements are split accross the grid evenly to make use of extra space.
+* Rates
+    * All content remains present throughout each breakpoints. Use of Bootstrap containers maintains good spacing around and between elements. With additional padding and margin added as required to ensure positive viewing experience on all devices.
+* Service Finder
+    * On larger devices (Bootstrap LG breakpoint and above) The service finder is initially presented with the question surrounded by choices. On small screens this becomes more linear (top to bottom) to maintain a positive user experience. This was achieved using element order attributes alongside media queries and toggling css classes.
+    * Image logos for the services had to be manually resized at various breakpoints throughout - down to <300px width
 
 ## Changes In Functionality and Design
-
-It was decided that the 'get a quote' form was to be different from the contact us form. As they serve two different purposes.
-I have since decided to use a modal for the pop up form (Get a Quote), as opposed to the contact form originally developed using wireframes.
-
-Multiple Testimonials were added to the home page - using a Bootstrap carousel - this will support user confidence in the business, by providing more examples.
 
 
 # Surface
 
 ## Colours
 
-A palette of four colours was chosen for use across the site. Each colour compliments each other and the images used to display purpose to the business. The colours can be used to create contrast between each other and continuity between pages.
+A dark theme was chosen for use throughout the site. The colors are dark grey in tone, with the use of white text throughout the site for contrast.
 
-Colour Palette - Three main obvious colours compliment the design of the site. These are displayed below:
+* Color is introduced accross the site with photographs and using hover effects on links.
 
-- ![#b89f91](https://via.placeholder.com/15/b89f91/000000?text=+) `#b89f91` - Logo & Buttons
-- ![#dca518](https://via.placeholder.com/15/dca518/000000?text=+) `#dca518` - Page breaks and footer
-- ![#707070](https://via.placeholder.com/15/707070/000000?text=+) `#707070`- Page header
+Colour Palette - Three main colours that compliment the design are:
 
-Various other shades of grey are used appropriately, to highlight, surround and drop shadows on elements to support the sign design and ease of navigation.
+ - ![rgb(119, 119, 119)](https://via.placeholder.com/15/777777/000000?text=+) - `rgb(119, 119, 119)`- Footer & Borders
+ - ![rgb(34, 34, 34)](https://via.placeholder.com/15/222222/000000?text=+) - `rgb(34, 34, 34)`Dark Background
+ - ![rgb(235, 235, 235)](https://via.placeholder.com/15/ebebeb/000000?text=+) - `rgb(235, 235, 235)` - Page Headers
+ - ![rgb(96,125,139)](https://via.placeholder.com/15/607d8b/000000?text=+) - `rgb(96, 125, 139)` - Button Hover
+ - ![rgb(71,44,44)](https://via.placeholder.com/15/4c2c2c/000000?text=+) - `rgb(76, 44, 44)` Dark Brown Background 
 
+* Various strengths of opacity are used in combination with the colors above, using the 'rgba' attribute. 
+
+* Coloured shadow is dropped behind the carousel caption text, on the index.html page. Three separate colours are used to blend with the corresponding image. Resulting in a visually please result.
+
+* Other various shades of grey are used to highlight, surround and drop shadows on elements.
+
+<!--
 ## Fonts
 
 Roboto was chosen as the font to be used site wide, due to its clean professional look. It was imported from 'Google Fonts', I applied the font-family directly to the body, with a fall-back font of sans-serif.
+
+-->
 
 # Features
 
 ## Sitewide
 
-### Get a Quote Form
+### Top Nav Links
 
-* A modal form is viewable upon clicking the 'get a quote' button on any page it is present. The modal form was achieved by using supporting code from the MD Bootstrap library. https://mdbootstrap.com/docs/jquery/modals/forms/
-* The buttons slightly grow in size when hovered upon. 
-* Although not functioning as a form and actually submitting data, for design purposes and to demonstrate the user journey it is linked to a response page.
+* The top nav links remain on all pages thoughout the site. 
+    * The contact us, links the user to the contact.html page.
+    * FAQ links the user to the faq.html page.
+    * Join mailing list - launches a modal where the use can input their email address and click subscribe. Upon completing this action, an automated email will be send to the provided email address, confirming sign up and welcoming the user to the mailing list. The user can also close the modal if desired, by clicking the 'close' button present in the element.
 
 ### Nav Bar
 
 * The site uses Bootstrap to create a collapsed navbar on small devices. This enables users to view more relevant content on smaller screens, with the option to expand the navbar if required.
+* The navbar and logo banner become centralized on tablet size devices.
+* Links to social media contain a hover effect to indicate a user can interact with the icons.
 
-* The navbar and logo banner becomes fixed to the top of all pages if a user scrolls down to see more content on a page.
+### Footer
 
-* Links to social media are fixed to the navbar - with a hover effect to indicate a user can interact with the icons.
+* The site footer has social icons pinned to it, with the same hover effect as the banner/nav section.
+* A join mailing list feature is present on the footer. Users can input their email address and click subscribe. Upon completing this action, an automated email will be send to the provided email address, confirming sign up and welcoming the user to the mailing list.
 
-### Contact Information
+## Index (Home)
 
-* Users can engage with the contact information across the site in two ways:
-    * Firstly the phone icon can be clicked to obtain a contact name and number presented in a pop-up modal.
-    * Secondly the 'email us' text + icon can be clicked to open the users default mail app to contact the business by email, if a webserver a new tab will be opened.
+### Image Carousel 
 
-## Home Page
+* An automated scrolling image carousel is displayed on the home page on the largest screen sizes. This is achieved using supporting code from the Bootstrap carousel component. https://getbootstrap.com/docs/4.0/components/carousel/
+* There are also nav buttons, should the site user wish to view the next or previous image as desired.
+* The images have overlaid caption text - which has been styled bespokly to the image behind, matching colours and creating a drop shadow.
 
-### Testimonials 
+### Service Finder link & Modal
 
-* An automated scrolling testimonial section is displayed on the home page. This is achieved using supporting code from the Bootstrap carousel component. https://getbootstrap.com/docs/4.0/components/carousel/
+* Upon visiting the home page, after a duration of 5 seconds a modal appears informing the user of the service finder feature. The user can engage with the modal to goto the service finder page, or close the modal and continue browsing the homepage.
+* A link the service finder is available on the home page, situated just above the services information. As a user hovers over this, the link/button highlights to a blue colour to gain attention.
 
-### Hero Image Buttons
+### Services
 
-* A user can easily navigate to the services page by clicking on the first of the hero-image overlaid buttons. This provides a quick and easy way to navigagte to what is expected to be one of the most visited pages on the website.
-* The second button, when clicked, opens a the get a quote modal. The function of this button was also chosen in anticipation that requesting a quote will one of the most conducted tasks by users of the site.
-* Both buttons animate when hovered upon - they increase in scale by 10% - drawing attention of the user.
-
-## About Page
-### Google Map Feature
-
-* An embedded Google map on the about page, indicates a fixed area in which the business operates. This is a nice touch to the website and provides the website user with a clear view of the business operating area. This map was embedded using code from the following site: https://www.embedgooglemap.net/en/?gclid=CjwKCAjwmMX4BRAAEiwA-zM4JoyJB_AMMTM8hXyyqUkgRPOhXRWv6NyhWXqxULExeMFMwcGrFYMOzRoCLf0QAvD_BwE
+* The three main services offered by the business each have an element on the homepage. 
+* Each contains an image, a short brief and an indication on price. 
+* The images and overlaid text link the user the relevant service page if clicked.
+* Below the short brief, a call to action button stating "more info", prompts the user. This also links the user to the relevant service page.
+* Each button highlights blue, when hovered over.
 
 ## Contact Page
 
-### Contact Us Form
+### Contact Form
 
-* A user may wish to make a general enquiry, as opposed to requesting a quote. Therefore a general contact form is available on the contact page. It forwards the user to a response page once the form is submitted, providing visual feedback to the user.
+* A user may wish to contact the business. Therefore a general contact form is available on the contact page. 
+* All inputs of the contact form have validation rules, so that a user can't submit the form until all fields are filled out correctly. 
+* Once a message is submitted, a modal appears to inform the user the message has successfully submitted. The user also receives an email confirming reciept of the message with a copy of the message submitted for reference.
+* The email icon in the contact form, can be clicked. This will open the users default mail client, to compose an email to contact@somapostproduction.com
+* All three contact icons have a hover effect, englarging the icons by 10% to gain user attention.
 
+
+
+<!--
 # Future Features
 
 * I would like to add functionality for the business to be able to update their Gallery images themselves, with newly completed projects. This would need to be via an intuitive user friendly approach, with no knowledge of coding and would require other technologies not currently used in this project.
