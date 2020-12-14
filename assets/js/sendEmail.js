@@ -16,7 +16,6 @@ function sendMail(contactForm) {
 }
 
 function sendCopyMail(contactForm) {
-    alert("triggered")
     emailjs.send("gmail", "contactForm", {
         from_name: contactForm.name.value,
         from_email: contactForm.email.value,
@@ -31,7 +30,6 @@ function sendCopyMail(contactForm) {
             console.log("FAILED", error);
         }
     );
-    $('#modalJoinMail').modal('hide');
-    $('#modalJoinSuccess').modal('show');
+    $('#modalContactSubmit').modal('show');
     return false;
 }
