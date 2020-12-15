@@ -52,6 +52,10 @@
     width: 70%;
 }
 
+.blue-background {
+    background-color: #607d8b;
+}
+
 .service-page-image {
     border-radius: 20px;
     margin: 60px;
@@ -910,6 +914,19 @@ table, caption {
     margin-bottom: 20px;
 }
 
+.text-box-active {
+    background-color: #607d8b;
+    border: 1px solid black !important;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
 #question {
     background-color: rgba(119, 119, 119, 0.6);
     border: 1px solid black !important;
@@ -931,6 +948,10 @@ table, caption {
     object-fit: contain;
     padding: 25px;
     padding-bottom: 70px;
+}
+
+.hover-blue:hover {
+    background-color: #607d8b;
 }
 
 @media (max-width: 992px) {
