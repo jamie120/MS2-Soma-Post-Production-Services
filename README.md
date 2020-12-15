@@ -183,7 +183,7 @@ A live version of the site is available [here.](insert link here to live site)
 
 #### Service Finder
 
-* The service finder page will host an interactive expereience for the site user. Its aimw is to provide a bespoke response to each user based on information gathered throughout a series of choices and inputs. 
+* The service finder page will host an interactive expereience for the site user. Its aim is to provide a bespoke response to each user based on information gathered throughout a series of choices and inputs. 
 
 * The purpose of this is to support potential clients in finding an appropriate service based on their project requirements. It provides automated feedback to potential clients, reducing the need for the direct interaction with the business. 
 
@@ -299,7 +299,7 @@ Roboto was chosen as the font to be used site wide, due to its clean professiona
 * The top nav links remain on all pages thoughout the site. 
     * The contact us, links the user to the contact.html page.
     * FAQ links the user to the faq.html page.
-    * Join mailing list - launches a modal where the use can input their email address and click subscribe. Upon completing this action, an automated email will be send to the provided email address, confirming sign up and welcoming the user to the mailing list. The user can also close the modal if desired, by clicking the 'close' button present in the element.
+    * Join mailing list - launches a modal where the use can input their email address and click subscribe. Upon completing this action, an automated email will be send to the provided email address, confirming sign up and welcoming the user to the mailing list (acheived using emailjs service). The user can also close the modal if desired, by clicking the 'close' button present in the element.
 
 ### Nav Bar
 
@@ -339,10 +339,26 @@ Roboto was chosen as the font to be used site wide, due to its clean professiona
 
 * A user may wish to contact the business. Therefore a general contact form is available on the contact page. 
 * All inputs of the contact form have validation rules, so that a user can't submit the form until all fields are filled out correctly. 
-* Once a message is submitted, a modal appears to inform the user the message has successfully submitted. The user also receives an email confirming reciept of the message with a copy of the message submitted for reference.
+* Once a message is submitted, a modal appears to inform the user the message has successfully submitted. The user also receives an email confirming reciept of the message with a copy of the message submitted for reference, this is acheived using the emailjs service.
 * The email icon in the contact form, can be clicked. This will open the users default mail client, to compose an email to contact@somapostproduction.com
 * All three contact icons have a hover effect, englarging the icons by 10% to gain user attention.
 
+## FAQ Page
+
+* Users can interact with the questions displayed on the screen, to reveal the answers by clicking on the question or the '+' icon.
+* To achieve the expand/collapse effect for all questions with a single function, the HTML elements were given corresponding ID's - Jquery was used to capture a question ID attribute and target the related answer using this information. (assets/js/main.js line 83)
+* The icon changes to a '-' once the answer is expanded, indicating it will collapse the answer if clicked again. This was acheived with JQuery - toggleClass() feature. The screenreader text also changes from expand to collapse.
+
+## Service Finder
+
+* This page offers its users a fully automated service identifier.
+* Content fades in to create a more premium look and feel whilst navigating the questions.
+* Information is displayed according to user responses and actions - the logic is coded with JQuery and JavaScript to hide, display and add HTML elements to/from the page. It is also used to toggle CSS classes.
+* A reset button is always available to click. This will refresh the page - initialsing the service finder.
+* Prices estimates update automatically and can be recalculated without restarting the service finder process.
+* Once a user reaches the end of the questions - they are presented with a price estimate and a call to action button. This will take the user to the relevant services page.
+* A separate js script was created for the service finder - (assets/js/service-helper.js) - this contains all relevant logic relating the the utility.
+* HTML was stored in variables at the beginning of the script. This made the code much easier to read and edit if required.
 
 
 <!--
