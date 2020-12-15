@@ -11,7 +11,7 @@ $("#mastering-prices").change(function(){
      $('#price-box-text').text("£50");
    } else if(status=="vinyl") {
      $('#price-box-text').text("£30");
-   };
+   }
 });
 
 $("#mastering-prices").chosen({disable_search_threshold: 10});
@@ -26,7 +26,7 @@ $("#stem-mastering-prices").change(function(){
      $('#price-box-text').text("£50");
    } else if(status=="9-12") {
      $('#price-box-text').text("£60");
-   };
+   }
 });
 
 $("#stem-mastering-prices").chosen({disable_search_threshold: 10});
@@ -47,7 +47,7 @@ $("#mixing-prices").change(function(){
      $('#price-box-text').text("£140");
    } else if(status=="51-60") {
      $('#price-box-text').text("£160");
-   };
+   }
 });
 
 $("#mixing-prices").chosen({disable_search_threshold: 10});
@@ -58,16 +58,16 @@ $("#rates-table").change(function(){
     var status = this.value;
    if(status=="mastering") {
         $("#mastering-table, #stem-mastering-table, #mixing-table, #timed-mastering-table, #rates-hr").css("display", "none");
-        $( "#mastering-table" ).fadeIn( "slow" )
+        $( "#mastering-table" ).fadeIn( "slow" );
    } else if(status=="stem-mastering") {
         $("#mastering-table, #stem-mastering-table, #mixing-table, #timed-mastering-table, #rates-hr").css("display", "none");
-        $( "#stem-mastering-table" ).fadeIn( "slow" )
+        $( "#stem-mastering-table" ).fadeIn( "slow" );
    } else if(status=="timed-mastering") {
         $("#mastering-table, #stem-mastering-table, #mixing-table, #timed-mastering-table, #rates-hr").css("display", "none");
-        $( "#timed-mastering-table" ).fadeIn( "slow" )
+        $( "#timed-mastering-table" ).fadeIn( "slow" );
    } else if(status=="mixing") {
         $("#mastering-table, #stem-mastering-table, #mixing-table, #timed-mastering-table, #rates-hr").css("display", "none");
-        $( "#mixing-table" ).fadeIn( "slow" )
+        $( "#mixing-table" ).fadeIn( "slow" );
    } else if(status=="none") {
         $("#mastering-table, #stem-mastering-table, #mixing-table, #timed-mastering-table, #rates-hr").css("display", "none");
         $("#rates-hr").css("display", "block");
@@ -92,7 +92,7 @@ $('.question').click(function() {
     }
     //CHANGE ICON & SR TEXT
     id = id.replace('answer', 'icon');
-    $("#" + id).find('i').toggleClass("fa-plus").toggleClass("fa-minus")
-    $("#" + id).find('span').text("Collapse")
+    $("#" + id).find('i').toggleClass("fa-plus").toggleClass("fa-minus");
+    $("#" + id).find('span').text("Collapse");
 
 });
