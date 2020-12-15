@@ -841,9 +841,18 @@ table, caption {
 
 /*---------- Service Finder Styling ----------*/
 
+
+
 #service-finder-container {
     background-color: #472C2C;
     padding: 80px;
+}
+
+#service-finder-content {
+    border: 1px solid white;
+    padding: 40px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 20px;
 }
 
 .icon-element {
@@ -853,8 +862,8 @@ table, caption {
 }
 
 #refresh-btn {
-    background-color: rgb(36,36,36);
-    border: 1px solid white;
+    background-color: rgba(119, 119, 119, 0.6);
+    border: 1px solid black;
     border-radius: 20px;
     text-align: center;
     color: white;
@@ -873,8 +882,8 @@ table, caption {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: rgb(36,36,36);
-    border: 1px white solid !important;
+    background-color: rgba(119, 119, 119, 0.6);
+    border: 1px solid black !important;
     color: white;
     font-size: 16px;
     padding: 10px 10px;
@@ -883,10 +892,15 @@ table, caption {
     border-radius: 10px;
 }
 
+
+.icon-element button:hover, #refresh-btn:hover {
+    background-color: #607d8b;
+}
+
 .text-box-style {
-    background-color: rgb(36,36,36);
+    background-color: rgba(119, 119, 119, 0.6);
+    border: 1px solid black !important;
     color: white;
-    border: 1px solid white;
     border-radius: 20px;
     text-align: center;
     padding: 20px;
@@ -897,9 +911,9 @@ table, caption {
 }
 
 #question {
-    background-color: rgb(36,36,36);
+    background-color: rgba(119, 119, 119, 0.6);
+    border: 1px solid black !important;
     color: white;
-    border: 1px solid white;
     border-radius: 20px;
     text-align: center;
     padding: 20px;
