@@ -3,7 +3,14 @@ $(document).ready(function(){
     var timedMaster = 
     `<h1 class='text-box-style hide-on-append' id='how-long-timed-master'>Maybe you could benefit from our timed mastering service. How long is your mix/podcast?</h1>
     <input class='text-box-style hide-on-append' id='minutes-input' type='text' placeholder='length in minutes'>
-    <button class='text-box-style hide-on-append' id='calc-timed-master'>CALCULATE</button>`
+    <button class='text-box-style hide-on-append hover-blue' id='calc-timed-master'>CALCULATE</button>
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <a href="rates.html"><button class='text-box-style hover-blue'>GOTO OUR RATES PAGE TO SEE MORE ABOUT TIMED MASTERING</button></a>
+            </div>
+        </div>
+    </div>`
 
     var requireMixing = 
     `<div class="row row__A>
@@ -13,8 +20,8 @@ $(document).ready(function(){
     </div>
     <div class="row row__A>
         <div class="col">
-            <button class='button-option text-box-style hide-on-append' id='yes-mix-btn'>YES</button>
-            <button class='button-option text-box-style hide-on-append' id='no-mix-btn'>NO</button>
+            <button class='button-option text-box-style hide-on-append hover-blue' id='yes-mix-btn'>YES</button>
+            <button class='button-option text-box-style hide-on-append hover-blue' id='no-mix-btn'>NO</button>
         </div>
     </div>`
 
@@ -34,10 +41,10 @@ $(document).ready(function(){
     </div>
     <div class="row">
         <div class="col d-flex justify-content-center">
-            <button class='button-option text-box-style' id='yes-priority-btn'>YES</button>
+            <button class='button-option text-box-style hover-blue' id='yes-priority-btn'>YES</button>
         </div>
         <div class="col d-flex justify-content-center">
-            <button class='button-option text-box-style' id='no-priority-btn'>NO</button>
+            <button class='button-option text-box-style hover-blue' id='no-priority-btn'>NO</button>
         </div>
     </div>
     <div class="row">
@@ -47,15 +54,15 @@ $(document).ready(function(){
     </div>
     <div class="row">
         <div class="col d-flex justify-content-center">
-            <button class='button-option text-box-style' id='yes-vinyl-btn'>YES</button>
+            <button class='button-option text-box-style hover-blue' id='yes-vinyl-btn'>YES</button>
         </div>
         <div class="col d-flex justify-content-center">
-            <button class='button-option text-box-style' id='no-vinyl-btn'>NO</button>
+            <button class='button-option text-box-style hover-blue' id='no-vinyl-btn'>NO</button>
         </div>
     </div>
     <div class="row">
         <div class="col d-flex justify-content-center">
-            <a href="mastering.html"><button class='text-box-style'>GOTO OUR MASTERING SERVICES PAGE</button></a>
+            <a href="mastering.html"><button class='text-box-style hover-blue'>GOTO OUR MASTERING SERVICES PAGE</button></a>
         </div>
     </div>`
 
@@ -85,12 +92,12 @@ $(document).ready(function(){
     </div>
     <div class="row">
         <div class="col d-flex justify-content-center">
-            <button class='text-box-style hide-on-append layer-3-q' id='calc-stem-master'>CALCULATE</button>
+            <button class='text-box-style hide-on-append layer-3-q hover-blue' id='calc-stem-master'>CALCULATE</button>
         </div>
     </div>
     <div class="row">
         <div class="col d-flex justify-content-center">
-            <a href="stem-mastering.html"><button class='text-box-style'>GOTO OUR STEM-MASTERING SERVICES PAGE</button></a>
+            <a href="stem-mastering.html"><button class='text-box-style hover-blue'>GOTO OUR STEM-MASTERING SERVICES PAGE</button></a>
         </div>
     </div>`
 
@@ -120,7 +127,12 @@ $(document).ready(function(){
     </div>
     <div class="row">
         <div class="col d-flex justify-content-center">
-            <button class='text-box-style hide-on-append layer-2-q' id='calc-mix'>CALCULATE</button>
+            <button class='text-box-style hide-on-append layer-2-q hover-blue' id='calc-mix'>CALCULATE</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <a href="mixing.html"><button class='text-box-style hover-blue'>GOTO OUR MIXING SERVICES PAGE</button></a>
         </div>
     </div>`
 
@@ -183,8 +195,8 @@ $(document).ready(function(){
         var delayInMilliseconds = 400; //1 second
         setTimeout(function() {
             $("#service-text-container").append(`<h2 class='text-box-style hide-on-append layer-2-q' id="stem-mastering-suggestion">Are you interested in stem mastering? This can provide more precise mastering and tonal balance control?</h2>`);
-            $("#service-text-container").append("<button class='button-option hide-on-append layer-2-q text-box-style' id='yes-stem-btn'>YES</button>");
-            $("#service-text-container").append("<button class='button-option hide-on-append layer-2-q text-box-style' id='no-stem-btn'>NO</button>");
+            $("#service-text-container").append("<button class='button-option hide-on-append hover-blue layer-2-q text-box-style' id='yes-stem-btn'>YES</button>");
+            $("#service-text-container").append("<button class='button-option hide-on-append hover-blue layer-2-q text-box-style' id='no-stem-btn'>NO</button>");
             fadeInAllAfterFirstSecond();
         }, delayInMilliseconds);
     });
@@ -291,6 +303,8 @@ $(document).ready(function(){
 
     //CALCULATE STANDARD MASTER LOGIC //
 
+    //https://stackoverflow.com/questions/5783280/jquery-check-if-div-with-certain-class-name-exists//
+
     var vinyl = false
     var priority = false
     var price = 25
@@ -299,22 +313,58 @@ $(document).ready(function(){
         vinyl = true
         $("#standard-mastering-calc").html("");
         checkSelector(vinyl, priority)
+        $('#yes-vinyl-btn').toggleClass("text-box-style").toggleClass("text-box-active")
+        $('#no-vinyl-btn').toggleClass(function() {
+            if ($(this).hasClass('text-box-active')) {
+            $('#no-vinyl-btn').toggleClass("text-box-style")
+                return "text-box-active";
+            } else {
+                return "";
+            }
+        });
     });
 
     $(document).on('click', '#no-vinyl-btn', function(){
         vinyl = false
         $("#standard-mastering-calc").html("");
         checkSelector(vinyl, priority)
+        $('#no-vinyl-btn').toggleClass("text-box-style").toggleClass("text-box-active")
+        $('#yes-vinyl-btn').toggleClass(function() {
+            if ($(this).hasClass('text-box-active')) {
+            $('#yes-vinyl-btn').toggleClass("text-box-style")
+                return "text-box-active";
+            } else {
+                return "";
+            }
+        });
     });
 
     $(document).on('click', '#yes-priority-btn', function(){
         priority = true
         checkSelector(vinyl, priority)
+        $('#yes-priority-btn').toggleClass("text-box-style").toggleClass("text-box-active")
+        $('#no-priority-btn').toggleClass(function() {
+            if ($(this).hasClass('text-box-active')) {
+            $('#no-priority-btn').toggleClass("text-box-style")
+                return "text-box-active";
+            } else {
+                return "";
+            }
+        });
     });
 
     $(document).on('click', '#no-priority-btn', function(){
         priority = false
         checkSelector(vinyl, priority)
+        $('#no-priority-btn').toggleClass("text-box-style").toggleClass("text-box-active")
+        $('#yes-priority-btn').toggleClass(function() {
+            if ($(this).hasClass('text-box-active')) {
+            $('#yes-priority-btn').toggleClass("text-box-style")
+                return "text-box-active";
+            } else {
+                return "";
+            }
+        });
     });
     
     function checkSelector(vinyl, priority) {
