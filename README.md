@@ -356,19 +356,19 @@ Roboto was chosen as the font to be used site wide, due to its clean professiona
 * Information is displayed according to user responses and actions - the logic is coded with JQuery and JavaScript to hide, display and add HTML elements to/from the page. It is also used to toggle CSS classes.
 * A reset button is always available to click. This will refresh the page - initialsing the service finder.
 * Prices estimates update automatically and can be recalculated without restarting the service finder process.
-* Once a user reaches the end of the questions - they are presented with a price estimate and a call to action button. This will take the user to the relevant services page.
-* A separate js script was created for the service finder - (assets/js/service-helper.js) - this contains all relevant logic relating the the utility.
-* HTML was stored in variables at the beginning of the script. This made the code much easier to read and edit if required.
+* Once a user reaches the end of the questions - they are presented with a price estimate and a call to action button which will take the user to the relevant services page.
+* A separate js script was created for the service finder - (assets/js/service-helper.js) - this contains all relevant logic relating the service finder utility.
+    * HTML is stored in variables at the beginning of the script. This made the code much easier to read and edit if required.
 
 
-<!--
+
 # Future Features
 
-* I would like to add functionality for the business to be able to update their Gallery images themselves, with newly completed projects. This would need to be via an intuitive user friendly approach, with no knowledge of coding and would require other technologies not currently used in this project.
+* If this site were for a real business, they may wish to be able to add to, update and edit the FAQ section of the site. Therefore adding this functionality would be beneficial to the functionality of the site.
 
-* I would also like to add more functionality to the services page, enabling the user to click the images on the services page to view more images which have been filtered only to display those related to that specific service.
+* Adding a shopping cart utility and giving the user the ability to place orders on the site, would be a natural progression of the site functionality.
 
-* I also wish to animate the buttons used throughout the site, to provide visual feedback to users when they are interacting with button elements.
+* Offering audio uploading functionality directly from the site would be a good idea to improve the customer journey. This could be achieved by embedding a html form which POSTs data to a server.
 
 
 # Technologies Used
@@ -377,46 +377,63 @@ Roboto was chosen as the font to be used site wide, due to its clean professiona
 
 * HTML - base language used for this project.
 * CSS - used for styling HTML code site wide.
+* JavaScript - used to make elements of the site interactive and support HTML & CSS styling.
 
 ## Libraries
 
 * [Bootstrap](https://getbootstrap.com/) (4.5.2) - with supporting JS Script and tooltips. Used for the responsive grid system, styling elements and navbar creation.
 * [FontAwseome](https://fontawesome.com/) (5.15.1) - used for all icons on the site.
-* [MD Bootstrap](https://mdbootstrap.com) (4.19.1) - with supporting JS Script.
+* [MD Bootstrap](https://mdbootstrap.com) (4.19.1) - with supporting JS Script - used for modals and contact form.
 * [Google Fonts](https://fonts.google.com/) - used for the Roboto fonts.
 * [Hover.css](https://ianlunn.github.io/Hover/) - used for animation effects on social icons and various buttons throughout the site.
-* [Adobe Stock](https://stock.adobe.com/uk/) - used for images on homepage and services pages - License purchased for the project by Jamie Rolls.
-* [JQuery](https://jquery.com/) (3.5.1) - used in conjunction with the Bootstrap library.
+* [JQuery](https://jquery.com/) (3.5.1) - used throughout the site to target and manipulate HTML elements and also in conjunction with the Bootstrap library.
+* [Chosen](https://harvesthq.github.io/chosen/) (1.8.7) - used to replace the standard select menus sitewide
 
 ## Tools
 
 * [Gitpod](https://www.gitpod.io) - used as IDE for this project.
 * [Git](https://git-scm.com/) - used for version control.
 * [Github](https://github.com/) - used to host repository and live website.
-* [Figma](https://www.figma.com/) - used for creation of wireframes.
+* [Balsamiq](https://balsamiq.com/) - used to develop initial scratch wireframes.
+* [Figma](https://www.figma.com/) - used for creation of website theme/wireframe.
 * [Am I Responsive](http://ami.responsivedesign.is/) - used for testing purposes and for the screenshot at the top of my README filed to display the web pages on different devices.
-* [Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) - used for testing and debugging.
+* [Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) - used for testing and debugging the site.
 * [w3 html validator](https://validator.w3.org/) - used to test and validate my html code.
 * [w3 css validator](https://jigsaw.w3.org/) - used to test and validate my css code.
+* [jshint](https://jshint.com/) - used to test and validate all js code.
 
 # Testing
 
-## Testing User Stories
-* **As a visitor to the site, I want to easily be able to navigate the site and engage with the business if desired.**
-    * The site is easy to navigate, there are multiple ways to engage with the business easily available to the user.
+## User Stories
 
-* **As a visitor to the site, I want to learn more about the services offered and view some of the work previously completed by the business, so that I can establish if what I require is offered.**
-    * The services page was easily located, services offered are clear. Gallery was easily located, photos of completed work is clear to me.
+#### User Story 1
+##### As a visitor to the site, I want to easily identify the business offer/purpose and be able to easily navigate the site to learn more if desired.
+* Upon visiting the site, it is clear that the business offers audio services. 
+* There is a navbar at the top of the page which clearly directs me to key pages.
+* There are also several links at the top of each page, which allows me to reach a contact page, faq page and join a mailing list.
 
-* **As a potential client, I want to leave a message/query but I would rather not call.** 
-    * I was able to easily find the contact page, where a form is available for me to use. Alternatively there are 'email' links around the site, which open my mailbox to write an email if desired.
+#### User Story 2
+##### As a visitor to the site, I want to learn more about the services offered and listen to some of the work previously completed by the business.
+* The home page indicates to me as a user, there are three main services offered - indicated by three elements at the bottom part of this page - and the main navbar.
+* By clicking on one of these elements, I am taken to a main page relating to that selected service. On this page there are several audio examples, which play within the browser. 
 
-* **As a potential client, I want to easily be able to contact somebody directly - so that I can arrange to receive a quote.**
-    * Upon visiting the site, it was clear that I could request to get a quote very easily. I was able to locate a direct phone number, or I could send a message using a form. Alternatively I could email directly.
+#### User Story 3
+##### As a potential client, I know what service I require and would like to see the business rates.
+* Upon vising the site, I can see one of the main three links in the navbar is 'RATES'.
+* On the rates page, i'm not overwhelmed with unneccessary information - the rates page allows me to select only the service I wish to see prices for.
 
-* **As a potential client, I want to easily find the contact details of the business, as I would rather speak to somebody directly.**
-    * On each page I was able to locate a direct phone number with ease.
+#### User Story 4
+##### As a potential client, I want to speak to somebody at the company to discuss a more bespoke service.
+* I am able to vising the contact us page to leave a message to request a callback. 
+* I can call the business directly, there is a phone number available on the contact us page.
+* Upon visiting the FAQ, this question has a response and encourages me to call.
 
+#### User Story 5
+##### As a potential client, I'm not sure which service would benefit my project the most. I need some support finding the right one.
+* Whilst browsing the site, I had come accross a feature called 'service-finder' I can get to this from the home page(index.html) and each of the services pages.
+* A pop-up appeared after a few seconds on the home page(index.html). This appears to take me to an interactive app, the service finder. It was able to identify exactly what service I need.
+
+<!--
 ## Testing Features
 
 - All the features detailed in the [Features](#features) section have been thoroughly tested for functionality.
