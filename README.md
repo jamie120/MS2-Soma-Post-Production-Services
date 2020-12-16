@@ -410,6 +410,8 @@ Roboto was chosen as the font to be used site wide, due to its clean professiona
 * [w3 html validator](https://validator.w3.org/) - used to test and validate my html code.
 * [w3 css validator](https://jigsaw.w3.org/) - used to test and validate my css code.
 * [jshint](https://jshint.com/) - used to test and validate all js code.
+* [ezgif](https://ezgif.com/) - used in testing.md to capture interactive elements into gifs.
+* [Diagrams.net](https://app.diagrams.net/) - used to create flowchart diagram for the service finder.
 
 # Testing
 
