@@ -360,8 +360,6 @@ Roboto was chosen as the font to be used site wide, due to its clean professiona
 * A separate js script was created for the service finder - (assets/js/service-helper.js) - this contains all relevant logic relating the service finder utility.
     * HTML is stored in variables at the beginning of the script. This made the code much easier to read and edit if required.
 
-
-
 # Future Features
 
 * If this site were for a real business, they may wish to be able to add to, update and edit the FAQ section of the site. Therefore adding this functionality would be beneficial to the functionality of the site.
@@ -370,6 +368,13 @@ Roboto was chosen as the font to be used site wide, due to its clean professiona
 
 * Offering audio uploading functionality directly from the site would be a good idea to improve the customer journey. This could be achieved by embedding a html form which POSTs data to a server.
 
+# Bugs and Fixes to implement
+
+* **Modal Style** - Using iPad (Safari Browser) the modal displays differently, buttons are disproportionate in size.
+* **Social Media Icons** - Icons sitewide currently link to their respective social service homepage. These would need to link to corresponding business page.
+* **Logo/Banner/Navbar** - Reduce size (height) to take up less space, adjust logo in photo editing software to remove white background. This will allow for styling the banner with a dark theme, in line with the rest of the site.
+* **Audio Examples** - Link different audio files from Soundcloud.com accross the various service pages, to showcase the business accordingly.
+* **Contact Email** - The contact email address is fictional on the contact page, this address would need to be set up to make the mailto: feature on the contact page functional.
 
 # Technologies Used
 
@@ -389,6 +394,10 @@ Roboto was chosen as the font to be used site wide, due to its clean professiona
 * [JQuery](https://jquery.com/) (3.5.1) - used throughout the site to target and manipulate HTML elements and also in conjunction with the Bootstrap library.
 * [Chosen](https://harvesthq.github.io/chosen/) (1.8.7) - used to replace the standard select menus sitewide
 
+## API
+
+* [Emailjs](https://www.emailjs.com/) - used to send confirmation emails in both the join mailing list and contact form elements.
+
 ## Tools
 
 * [Gitpod](https://www.gitpod.io) - used as IDE for this project.
@@ -403,6 +412,8 @@ Roboto was chosen as the font to be used site wide, due to its clean professiona
 * [jshint](https://jshint.com/) - used to test and validate all js code.
 
 # Testing
+
+All testing has been documented [here]()
 
 ## User Stories
 
