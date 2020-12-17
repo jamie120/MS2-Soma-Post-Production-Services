@@ -56,12 +56,20 @@
     background-color: #607d8b;
 }
 
+@media (max-width: 769px) {
+.center-text-small {
+    text-align: center;
+}
+}
+
 .service-page-image {
     border-radius: 20px;
     margin: 60px;
     border: 1px solid rgba(119, 119, 119, 0.6);
     padding: 5px;
+    max-height: 300px;
     height: auto;
+    width: auto;
 }
 
 /*--
@@ -757,7 +765,11 @@ div#mixing_prices_chosen {
     color: white;
 }
 
-.mixing-text > h2 {
+.service-text {
+    margin-bottom: 30px;
+}
+
+.service-text > h2 {
     margin-top: 60px;
 }
 
