@@ -474,10 +474,6 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
     background-color: rgba(119, 119, 119, 0.6);
 }
 
-.service-info h3:hover {
-    background-color: rgb(96,125,139);
-}
-
 .service-images{
     margin-top: 40px;
     margin-bottom: 40px;
