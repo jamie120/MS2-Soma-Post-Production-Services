@@ -463,20 +463,18 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
     border-radius: 20px;
 }
 
-.image-caption {
-    border: 1px solid black;
+.service-info h3 {
+    border: 1px solid rgba(119, 119, 119, 0.6);
+    border-radius: 15px;
+    height: auto;
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
     background-color: rgba(119, 119, 119, 0.6);
-    border-radius: 20px;
-    z-index: 3;
-    position: relative;
-    margin-left: auto;
-    text-align: center;
-    bottom: 50%;
-    left: 0;
-    right: 0;
 }
 
-.image-caption:hover {
+.service-info h3:hover {
     background-color: rgb(96,125,139);
 }
 
@@ -490,10 +488,6 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
     border: 1px solid rgba(119, 119, 119, 0.6);
 }
 
-.image-caption > p {
-    color: white;
-    font-weight: 400;
-}
 
 .service-finder-link {
     border: 1px solid black;
@@ -512,6 +506,12 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
     background-color: #607d8b;
 }
 
+@media (max-width: 1200px) {
+    .service-info {
+        margin-top: 0;
+    }
+}
+
 @media (max-width: 768px) {
     .service-images{
         margin-top: 40px;
@@ -520,53 +520,6 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
         max-width: 100%;
         height: auto;
         border-radius: 10%;
-    }
-    .image-caption > p {
-        color: white;
-        font-weight: 400;
-        font-size: 2rem;
-        margin-top: 12px;
-    }
-
-    .image-caption {
-        border: 1px solid black;
-        background-color: rgba(119, 119, 119, 0.8);
-        height: 80px;
-        width: 300px;
-        border-radius: 20px;
-        z-index: 3;
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
-        bottom: 50%;
-        text-align: center;
-    }
-
-    .service-info {
-        margin-top: -75px;
-    }
-}
-
-@media (max-width: 575px) {
-    .image-caption {
-        border: 1px solid black;
-        background-color: rgba(119, 119, 119, 0.8);
-        height: 72px;
-        width: 50%;
-        border-radius: 20px;
-        z-index: 3;
-        position: relative;
-        margin-left: auto;
-        bottom: 50%;
-        text-align: center;
-    }
-
-    .image-caption > p {
-        color: white;
-        font-weight: 400;
-        font-size: 1.4rem;
-        margin: 0 auto;
-        margin-top: 15px;
     }
 }
 
@@ -579,29 +532,6 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
         width: 240px;
         border-radius: 10%;
     }
-    .image-caption {
-        border: 1px solid black;
-        background-color: rgba(119, 119, 119, 0.8);
-        height: 45px;
-        width: 200px;
-        border-radius: 20px;
-        z-index: 3;
-        position: relative;
-        margin: 0 auto;
-        left: 0;
-        right: 0;
-        bottom: 50%;
-        left: 0;
-        text-align: center;
-    }
-
-    .image-caption > p {
-        color: white;
-        font-weight: 400;
-        font-size: 1.2rem;
-        margin-top: 8px;
-    }
-
 }
 
 @media (min-width: 992px) {
@@ -614,26 +544,6 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
         border-radius: 10%;
         bottom: 60%;
         left: 7px;
-    }
-
-    .image-caption {
-    border: 1px solid black;
-    background-color: rgba(119, 119, 119, 0.6);
-    height: 60px;
-    width: 250px;
-    border-radius: 20px;
-    z-index: 3;
-    position: relative;
-    margin-left: auto;
-    left: 0;
-    right: 0;
-    bottom: 5%;
-    text-align: center;
-    }
-
-    .image-caption > p {
-    font-size: 1.5rem;
-    margin-top: 12px;
     }
 
     .service-info {
@@ -649,11 +559,6 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
         height: 263px;
         width: 360px;
         border-radius: 10%;
-    }
-
-    .image-caption > p {
-        font-size: 1.5rem;
-        margin-top: 12px;
     }
 }
 
