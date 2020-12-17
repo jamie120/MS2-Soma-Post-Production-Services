@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+    //SUPPORT TAKEN FROM THIS THREAD, TO LEARN THE BEST APPROACH WHEN APPENDING HTML TO THE PAGE USING JQUERY//
+    //https://stackoverflow.com/questions/10759426/appending-large-block-of-html-with-append
+
     var timedMaster = 
     `<h1 class='text-box-style hide-on-append' id='how-long-timed-master'>Maybe you could benefit from our timed mastering service. How long is your mix/podcast?</h1>
     <input class='text-box-style hide-on-append' id='minutes-input' type='text' placeholder='length in minutes'>
