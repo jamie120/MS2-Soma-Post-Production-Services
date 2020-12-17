@@ -1,7 +1,7 @@
 # SOMA Post Production Audio Services
 ## Code Institute: Milestone Project 2 - Jamie Rolls
 ---
-![Desktop](add link here to res website shot "responsive-project-screenshot")
+![Desktop](documentation/responsive-screenshots.png)
 
 SOMA Audio Services are a fictional business, who conduct post production audio services within the West Midlands, UK. The business is based on a real world service and is closely linked to my interests and professional qualifications. I have developed a website to showcase the business services to potential clients, using a range of interactive elements and a sharp focus on UX design throughout.
 
@@ -412,98 +412,15 @@ Roboto was chosen as the font to be used site wide, due to its clean professiona
 * [jshint](https://jshint.com/) - used to test and validate all js code.
 * [ezgif](https://ezgif.com/) - used in testing.md to capture interactive elements into gifs.
 * [Diagrams.net](https://app.diagrams.net/) - used to create flowchart diagram for the service finder.
+* [hex to rgb converter](https://www.webfx.com/web-design/hex-to-rgb/) - used to get consitency within my code.
 
 # Testing
 
-All testing has been documented [here]()
-
-## User Stories
-
-#### User Story 1
-##### As a visitor to the site, I want to easily identify the business offer/purpose and be able to easily navigate the site to learn more if desired.
-* Upon visiting the site, it is clear that the business offers audio services. 
-* There is a navbar at the top of the page which clearly directs me to key pages.
-* There are also several links at the top of each page, which allows me to reach a contact page, faq page and join a mailing list.
-
-#### User Story 2
-##### As a visitor to the site, I want to learn more about the services offered and listen to some of the work previously completed by the business.
-* The home page indicates to me as a user, there are three main services offered - indicated by three elements at the bottom part of this page - and the main navbar.
-* By clicking on one of these elements, I am taken to a main page relating to that selected service. On this page there are several audio examples, which play within the browser. 
-
-#### User Story 3
-##### As a potential client, I know what service I require and would like to see the business rates.
-* Upon vising the site, I can see one of the main three links in the navbar is 'RATES'.
-* On the rates page, i'm not overwhelmed with unneccessary information - the rates page allows me to select only the service I wish to see prices for.
-
-#### User Story 4
-##### As a potential client, I want to speak to somebody at the company to discuss a more bespoke service.
-* I am able to vising the contact us page to leave a message to request a callback. 
-* I can call the business directly, there is a phone number available on the contact us page.
-* Upon visiting the FAQ, this question has a response and encourages me to call.
-
-#### User Story 5
-##### As a potential client, I'm not sure which service would benefit my project the most. I need some support finding the right one.
-* Whilst browsing the site, I had come accross a feature called 'service-finder' I can get to this from the home page(index.html) and each of the services pages.
-* A pop-up appeared after a few seconds on the home page(index.html). This appears to take me to an interactive app, the service finder. It was able to identify exactly what service I need.
-
-<!--
-## Testing Features
-
-- All the features detailed in the [Features](#features) section have been thoroughly tested for functionality.
-    * The navbar was tested to collapse at the correct breakpoint.
-    * The forms were both tested for validation of inputted data and that the user is forwarded to the response page once submitted.
-    * Both modals were tested for functionality on various screen sizes.
-    * Checks completed to ensure mailto links open in a new browser tab.
-    * All buttons and nav links were checked for correct forwarding address.
-    * Testimonials were checked to ensure carousel effect is animating correctly on all devices and browsers.
-
-Further testing was completed by a friend,. With no information prior to the visiting the site of the purpose / business. They provided feedback on functionality and look and feel.
-Feedback received was positive and various user stories were able to be conducted with no issues.
-
-## Testing responsiveness
-
-- I used Google Developer Tools within Chrome to view the project on responsively on all screen sizes, down to < 300px width.
-
-## Testing different browsers
-
-I manually tested the website on the following web browsers:
-- Google Chrome 
-- Safari
-- Mozilla Firefox 
-
-## Validating the HTML and CSS code
-
-All of my code passed the following validation tests:
-- HTML: [W3C Markup Validation Service](https://validator.w3.org/)
-- CSS: [W3C Markup Validation Service](https://jigsaw.w3.org/css-validator/)
-
-Screenshots of validations for each page of code can be found [here](https://github.com/jamie120/ms1_d_r_plastering/blob/master/assets/images/testing)
-
-
-## Issues found
-
-* There were various HTML validation issues to resolve. These mainly referred to formatting my code and were easily fixable across the site.
-
-* I found various issues with responsiveness whilst testing across various screen sizes. This led me to change my media-queries to be more reactive at smaller screen sizes. Initially I utilized three main breakpoints where most changes would occur to layout and adjustments in font sizes. In the final deployment, I have made more incremental changes to enable a better user experience.
-
-* Due to the site not translating on iPad, I made changes to accommodate a better user experience on devices at this size.
-
-* I had overflow issues when my site was first posted on the peer-code-review forum on the Code Institute Slack community. Fellow students highlighted this to me whilst testing reviewing my code. I was able to resolve this issue by making changes to my grid and adjusting various parameters.
-
-* Nav Bar links were found not to be active on the relevant pages - this was an easy fix to implement upon receiving the feedback.
-
-* An ongoing visual bug to resolve occurs on Safari browsers using an Apple iMAC. Where the footer and quote button overlay some site content if the browser is resized in a particular way (screenshot provided below). This issue does not occur in other browsers and will rarely affect the user expereience. Although it does requires further research debugging to resolve, something I would look to resolve in future deployments of the site.
-#### Screenshot 1 - 
-
-![Bug - Screenshot](https://github.com/jamie120/ms1_d_r_plastering/blob/master/assets/images/readme/bug-screenshot-safari-1.png "bug-screenshot")
-
-#### Screenshot 2 -
-
-![Bug - Screenshot-2](https://github.com/jamie120/ms1_d_r_plastering/blob/master/assets/images/readme/bug-screenshot-safari-2.png "bug-screenshot-2")
+All testing has been documented [testing.md](https://github.com/jamie120/MS2-Soma-Post-Production-Services/blob/master/testing.md)
 
 # Deployment
 
-* The site was developed in GitPod and pushed to the following remote GitHub repository - [REPO](https://github.com/jamie120/ms1_d_r_plastering)
+* The site was developed in GitPod and pushed to the following remote GitHub repository - [REPO](https://github.com/jamie120/MS2-Soma-Post-Production-Services)
     * The following GIT commands were used throughout deployment:
         * **git status** ------ used to check the status of files and any changes made / untracked.
         * **git add**   ------ to stage files ready to commit.
@@ -515,10 +432,10 @@ Screenshots of validations for each page of code can be found [here](https://git
 
 ### Hosting on GitHub Pages
 
-* This site is hosted using GitHub pages, deployed directly from the master branch. - [LIVE SITE](https://jamie120.github.io/ms1_d_r_plastering/index.html)
+* This site is hosted using GitHub pages, deployed directly from the master branch. - [LIVE SITE](https://jamie120.github.io/MS2-Soma-Post-Production-Services/index.html)
     * The following steps were taken to complete the hosting process.
         1. Log into GitHub.
-        2. Choose the relevant repository. [D R Plastering](https://github.com/jamie120/ms1_d_r_plastering).
+        2. Choose the relevant repository. [SOMA Post Production Audio Services](https://github.com/jamie120/MS2-Soma-Post-Production-Services).
         3. Go to settings.
         4. Scroll down to GitHub Pages section.
         5. Select as a source **master branch**.
@@ -537,7 +454,7 @@ To run this code locally, you can clone this repository directly into the editor
 1. Open Terminal.
 2. Change the current working directory to the location when you want the cloned directory.
 3. Type the following into your Terminal:  
-    git clone https://github.com/jamie120/ms1_d_r_plastering.git
+    git clone https://github.com/jamie120/MS2-Soma-Post-Production-Services.git
 4. Press Enter to create a local clone.
 
 * To cut ties with this GitHub repository, type git remote rm origin into the terminal.
@@ -548,18 +465,19 @@ To run this code locally, you can clone this repository directly into the editor
 
 ## Content
 
-All the content of the website was written by me. Certain content was consulted with the company ' D R Plastering ' to ensure accuracy.
+All the content of the website was written by me. 
 
 ## Media
 
+All Soundcloud embedded tracks are owned and copyrighted by myself (Jamie Rolls).
+
 ### Images
 
-* All Gallery images were provided by 'D R Plastering' - some of these images are also used throughout the site elsewhere.
-* The following images were purchased with license to use - from Abode Stock:
-    * home-image.jpeg
-    * experience-left.jpeg
-    * experience-right.jpeg
-    * service-plastering.jpeg
+* All images were obtained from unsplash, found via the search term: recording studio.
+
+https://unsplash.com/s/photos/recording-studio
+
+Each images is licenced to use royalty free.
 
 ## Acknowledgements
    
@@ -569,8 +487,13 @@ All the content of the website was written by me. Certain content was consulted 
 * [Stack overflow](https://stackoverflow.com/)
 * [W3schools](https://www.w3schools.com/)
 * [CSS-Tricks](https://css-tricks.com/)
+* [JQuery Documentation](https://api.jquery.com/)
+* [mdbootstrap JQuery documentation](https://mdbootstrap.com/docs/b4/jquery/)
+* [Bootstrap Documentation](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+* [EmailJS Documentation](https://www.emailjs.com/docs/)
 
 
 #### I received advice and support from
    * Seun Owonikoko (my mentor)
+   * new mentor
    * Code Institute - Slack Community (various students, tutors and mentors)
