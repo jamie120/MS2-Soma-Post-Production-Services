@@ -11,7 +11,7 @@ Build an interactive front-end website that responds to user actions and alters 
 Required Technologies : HTML - CSS3 - JavaScript
 Optional: Include use of JQuery, and other Javascript libraries.
 
-A live version of the site is available [here.](insert link here to live site)
+A live version of the site is available [here.](https://jamie120.github.io/MS2-Soma-Post-Production-Services/)
 
 # Table of Contents
 
@@ -37,38 +37,38 @@ A live version of the site is available [here.](insert link here to live site)
     * [Changes In Functionality / Design](#changes-in-functionality-and-design)
 4.  [Surface](#surface)
     * [Colors](#colours)
-    * [Fonts](#fonts)
+    * [Fonts](#font-choice)
 5.  [Features](#features)
     * [Sitewide](#sitewide)
-        * [Modal](#get-a-quote-form)
+        * [Top Nav Links](#top-nav-links)
         * [Navbar](#nav-bar)
-        * [Contact Information](#contact-information)
-    * [Homepage](#home-page)
-        * [Testimonials](#testimonials)
-        * [Hero Image Buttons](#hero-image-buttons)
-    * [About Page](#about-page)
-        * [Google Map Feature](#google-map-feature)
-    * [Contact Page](#contact-page)
-        * [Contact Us Form](#contact-us-form)
+        * [Footer](#footer)
+    * [Homepage](#index-(home))
+        * [Image Carousel](#image-carousel)
+        * [Service Finder Modal](#service-finder-modal)
+        * [Services](#Services)
+    * [Contact Page](#contact)
+        * [Contact Us Form](#contact-form)
+    * [FAQ Page](#faq-page)
+    * [Service Finder](#service-finder)
+    
+    
 6.  [Future Features](#future-features)
-7.  [Technologies Used](#technologies-used)
+7. [Known Bugs & Fixes to implement](#bugs-and-fixes-to-implement)
+8.  [Technologies Used](#technologies-used)
     * [Languages](#languages)
     * [Libraries](#libraries)
+    * [API](#api)
     * [Tools](#tools)
-8.  [Testing](#testing)
-    * [Testing User Stories](#testing-user-stories)
-    * [Testing Features](#testing-features)
-    * [Testing Responsiveness](#testing-responsiveness)
-    * [Testing Different Browsers](#testing-different-browsers)
-    * [Validating Code](#validating-the-html-and-css-code)
-    * [Issues Found](#issues-found)
-9. [Deployment](#deployment)
+9.  [Testing](#testing)
+10. [Deployment](#deployment)
     * [Hosting on GitHub Pages](#hosting-on-github-pages)
     * [Cloning](#cloning)
-10. [Credits](#credits)
+11. [Credits](#credits)
     * [Content](#content)
     * [Media](#media)
         * [Images](#images)
+        * [Audio](#audio)
     * [Acknowledgements](#acknowledgements)
         * [Sites used](#sites-used-for-information-and-support)
         * [Advice & Support](#i-received-advice-and-support-from)
@@ -283,12 +283,11 @@ Colour Palette - Three main colours that compliment the design are:
 
 * Other various shades of grey are used to highlight, surround and drop shadows on elements.
 
-<!--
-## Fonts
+## Font Choice
 
-Roboto was chosen as the font to be used site wide, due to its clean professional look. It was imported from 'Google Fonts', I applied the font-family directly to the body, with a fall-back font of sans-serif.
+Roboto was used site wide as the main font, due to its clean professional look. 
 
--->
+It was imported from 'Google Fonts' in the head of each page. I applied the font-family directly to the body, with a fall-back font of sans-serif.
 
 # Features
 
@@ -320,7 +319,7 @@ Roboto was chosen as the font to be used site wide, due to its clean professiona
 * There are also nav buttons, should the site user wish to view the next or previous image as desired.
 * The images have overlaid caption text - which has been styled bespokly to the image behind, matching colours and creating a drop shadow.
 
-### Service Finder link & Modal
+### Service Finder Modal
 
 * Upon visiting the home page, after a duration of 5 seconds a modal appears informing the user of the service finder feature. The user can engage with the modal to goto the service finder page, or close the modal and continue browsing the homepage.
 * A link the service finder is available on the home page, situated just above the services information. As a user hovers over this, the link/button highlights to a blue colour to gain attention.
@@ -469,8 +468,6 @@ All the content of the website was written by me.
 
 ## Media
 
-All Soundcloud embedded tracks are owned and copyrighted by myself (Jamie Rolls).
-
 ### Images
 
 * All images were obtained from unsplash, found via the search term: recording studio.
@@ -478,6 +475,10 @@ All Soundcloud embedded tracks are owned and copyrighted by myself (Jamie Rolls)
 https://unsplash.com/s/photos/recording-studio
 
 Each images is licenced to use royalty free.
+
+### Audio
+
+All Soundcloud embedded tracks are owned and copyrighted by myself (Jamie Rolls).
 
 ## Acknowledgements
    
