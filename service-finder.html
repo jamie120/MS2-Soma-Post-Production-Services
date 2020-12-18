@@ -15,8 +15,8 @@
     <link href="assets/css/hover.css" rel="stylesheet" media="all">
     <!--Manual CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
         (function(){
             emailjs.init("user_ay2av5pwPBy3wqNOgCBCc");
         })();
@@ -39,7 +39,7 @@
                 <p>JOIN MAILING LIST</p>
             </a>
             <!--Modal: modalJoinMail-->
-            <div class="modal fade" id="modalJoinMail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="modalJoinMail" tabindex="-1" role="dialog" aria-labelledby="modalJoinMail" aria-hidden="true">
                 <div class="modal-dialog modal-sm modal-notify" role="document">
                     <form onsubmit="return sendMail(this);">
                         <div class="modal-content">
@@ -66,7 +66,7 @@
             </div>
             <!--Modal: modalJoinMail-->
             <!--Success message modal-->
-            <div class="modal fade" id="modalJoinSuccess" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="modalJoinSuccess" tabindex="-1" role="dialog" aria-labelledby="modalJoinSuccess" aria-hidden="true">
                 <div class="modal-dialog modal-sm modal-notify" role="document">
                     <div class="modal-content">
                         <div class="modal-header dark-background">
@@ -166,7 +166,7 @@
                 </div>
             </div>
             <!--Modal: modalReset-->
-            <div class="modal fade" id="modalReset" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="modalReset" tabindex="-1" role="dialog" aria-labelledby="modalReset" aria-hidden="true">
                 <div class="modal-dialog modal-sm modal-notify" role="document">
                     <!--Content-->
                     <div class="modal-content text-center">
@@ -181,7 +181,7 @@
                         <!--Footer-->
                         <div id="modal-footer" class="modal-footer flex-center">
                             <a href="" id="yes-btn" class="btn dark-background modal-footer-text">Yes</a>
-                            <a type="button" class="btn dark-background waves-effect modal-footer-text" data-dismiss="modal">No</a>
+                            <a href="" class="btn dark-background waves-effect modal-footer-text" data-dismiss="modal">No</a>
                         </div>
                     </div>
                     <!--/.Content-->
