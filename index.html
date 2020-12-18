@@ -39,7 +39,7 @@
                 <p>JOIN MAILING LIST</p>
             </a>
             <!--Modal: modalJoinMail-->
-            <div class="modal fade" id="modalJoinMail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="modalJoinMail" tabindex="-1" role="dialog" aria-labelledby="modalJoinMail" aria-hidden="true">
                 <div class="modal-dialog modal-sm modal-notify" role="document">
                     <form onsubmit="return sendMail(this);">
                         <div class="modal-content">
@@ -66,7 +66,7 @@
             </div>
             <!--Modal: modalJoinMail-->
             <!--Success message modal-->
-            <div class="modal fade" id="modalJoinSuccess" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="modalJoinSuccess" tabindex="-1" role="dialog" aria-labelledby="modalJoinSuccess" aria-hidden="true">
                 <div class="modal-dialog modal-sm modal-notify" role="document">
                     <div class="modal-content">
                         <div class="modal-header dark-background">
@@ -231,7 +231,7 @@
     <!--BUSINESS SERVICES-->
     
     <!-- Central Modal Medium Info -->
-    <div class="modal fade" id="serviceFinderPrompt" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="serviceFinderPrompt" tabindex="-1" role="dialog" aria-labelledby="serviceFinderPrompt" aria-hidden="true">
     <div class="modal-dialog modal-info modal-lg modal-side modal-bottom-right" role="document">
         <!--Content-->
         <div class="modal-content">
@@ -253,8 +253,8 @@
 
        <!--Footer-->
        <div class="modal-footer dark-background justify-content-center">
-         <a type="button" href="service-finder.html" class="btn btn-blue-grey">Take me there <i class="far fa-arrow-alt-circle-right white-text"></i></a>
-         <a type="button" class="btn btn-dark waves-effect" data-dismiss="modal">No, thanks</a>
+            <a href="service-finder.html" class="btn btn-blue-grey">Take me there <i class="far fa-arrow-alt-circle-right white-text"></i></a>
+            <a href="#" class="btn btn-dark waves-effect" data-dismiss="modal">No, thanks</a>
        </div>
      </div>
      <!--/.Content-->
