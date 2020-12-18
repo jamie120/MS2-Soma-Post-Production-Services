@@ -51,8 +51,6 @@ A live version of the site is available [here.](https://jamie120.github.io/MS2-S
         * [Contact Us Form](#contact-form)
     * [FAQ Page](#faq-page)
     * [Service Finder](#service-finder)
-    
-    
 6.  [Future Features](#future-features)
 7. [Known Bugs & Fixes to implement](#bugs-and-fixes-to-implement)
 8.  [Technologies Used](#technologies-used)
@@ -409,6 +407,7 @@ It was imported from 'Google Fonts' in the head of each page. I applied the font
 * [w3 html validator](https://validator.w3.org/) - used to test and validate my html code.
 * [w3 css validator](https://jigsaw.w3.org/) - used to test and validate my css code.
 * [jshint](https://jshint.com/) - used to test and validate all js code.
+* [Babel](https://babeljs.io/) - used to parse service-helper.js - to reformat template literals for IE 11 compatability.
 * [ezgif](https://ezgif.com/) - used in testing.md to capture interactive elements into gifs.
 * [Diagrams.net](https://app.diagrams.net/) - used to create flowchart diagram for the service finder.
 * [hex to rgb converter](https://www.webfx.com/web-design/hex-to-rgb/) - used to get consitency within my code.
@@ -492,7 +491,7 @@ All Soundcloud embedded tracks are owned and copyrighted by myself (Jamie Rolls)
 * [mdbootstrap JQuery documentation](https://mdbootstrap.com/docs/b4/jquery/)
 * [Bootstrap Documentation](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
 * [EmailJS Documentation](https://www.emailjs.com/docs/)
-
+* [The following site was used for reference on template literals](https://flaviocopes.com/javascript-template-literals/)
 
 #### I received advice and support from
    * Seun Owonikoko (my mentor)
