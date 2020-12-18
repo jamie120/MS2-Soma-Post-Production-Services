@@ -23,7 +23,7 @@ $(document).ready(function () {
     var delayInMilliseconds = 1000;
 
     setTimeout(function () {
-      $("#question").html("<h1>You have selected DJ MIX</h1>");
+      $("#question").html("<h1>You have selected DJ Mix</h1>");
       $(".button-option").css("display", "none");
       $("#service-text-container").append(timedMaster);
       fadeInAllAfterFirst();
@@ -34,7 +34,7 @@ $(document).ready(function () {
     var delayInMilliseconds = 1000;
 
     setTimeout(function () {
-      $("#question").html("<h1>You have selected PODCAST</h1>");
+      $("#question").html("<h1>You have selected Podcast</h1>");
       $(".button-option").css("display", "none");
       $("#service-text-container").append(timedMaster);
       fadeInAllAfterFirst();
@@ -45,7 +45,7 @@ $(document).ready(function () {
     var delayInMilliseconds = 1000;
 
     setTimeout(function () {
-      $("#question").html("<h1>You have selected LIVE RECORDING</h1>");
+      $("#question").html("<h1>You have selected Live Recording</h1>");
       $(".button-option").css("display", "none");
       $("#service-finder-content").append(requireMixing);
       fadeInAllAfterFirst();
@@ -56,7 +56,7 @@ $(document).ready(function () {
     var delayInMilliseconds = 1000;
 
     setTimeout(function () {
-      $("#question").html("<h1>You have selected ELECTRONIC MUSIC</h1>");
+      $("#question").html("<h1>You have selected Electronic Music</h1>");
       $(".button-option").css("display", "none");
       $(".row__A").css("display", "none");
       $(".row__B").css("display", "none");
