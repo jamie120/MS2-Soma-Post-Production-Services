@@ -78,10 +78,10 @@ A live version of the site is available [here.](https://jamie120.github.io/MS2-S
 #### Business Objectives
 
 - The site will contain all information about the services offered by the business, including rates and audio examples of previous work.
-- The site should be easy to navigate, have a design which compliments a modern business that aims to make the customer journey a top priority.
+- The site should be easy to navigate, have a design that compliments a modern business that aims to make the customer journey a top priority.
 - The site will have an interactive 'service-finder'. Which supports the potential client to understand which service could benefit them most. This component of the site will provide a price estimate to its user by asking a series of questions to gather key information and tailor a response accordingly.
 - The user should be able to easily contact the business, using a contact form. An automated email response should be sent to confirm receipt of the message.
-- The user will be able to join the business mailing list easily from every page. An automated email confirming subscribtion to this will be sent on completion.
+- The user will be able to join the business mailing list easily from every page. An automated email confirming subscription to this will be sent on completion.
 
 #### User Objectives
 
@@ -93,7 +93,7 @@ A live version of the site is available [here.](https://jamie120.github.io/MS2-S
 
 - Create a clear, well designed website for the user to navigate with ease.
 - Use a consistent, clear theme throughout the site.
-- Consider appropriate pages/layout and content to fulfill business/user objectives.
+- Consider appropriate pages/layout and content to fulfil business/user objectives.
 - Embed interactive elements to the site, which will add real value to both the business and the user experience. Providing user with useful and valid information based on choices.
 
 #### User Stories
@@ -114,12 +114,12 @@ A live version of the site is available [here.](https://jamie120.github.io/MS2-S
 
 * All pages will adopt a similar page structure with main page content following a page header(if applicable) - the header will detail to the user which page they are currently viewing. This design choice supports the user experience, makes it easier to navigate the site and provides visual feedback to the user.
 
-* Research was conducted to understand how similar businesses present themselves on the internet, this information was used to aid my decisions when deciding the site layout, fonts, colours and general look and feel of the site.
+* Research was conducted to understand how similar businesses present themselves on the Internet, this information was used to aid my decisions when deciding the site layout, fonts, colours and general look and feel of the site.
 
 * I began to outline the content requirements for the site and thought about the best way for a user to navigate through this content.
 
 * The following pages were chosen to be created: 
-    - Home(index)
+    - Home (index)
     - Contact
     - FAQ 
     - Mastering landing page
@@ -129,9 +129,9 @@ A live version of the site is available [here.](https://jamie120.github.io/MS2-S
     - Rates
     - Service-Finder
 
-* A top nav bar containing links to a contact page, faq page and 'join mailing list' modal will be present at the top of each page.
+* A top nav bar containing links to a contact page, FAQ page and 'join mailing list' modal will be present at the top of each page.
 
-* A responsive navbar will embedded within a page header at the top of each page, just below the top navigation links - it will contain links services and rates pages. This navbar will collapse on the smallest screens - and justify centrally on the page between smallest and largest breakpoints.
+* A responsive navbar will embed within a page header at the top of each page, just below the top navigation links - it will contain links services and rates pages. This navbar will collapse on the smallest screens - and justify centrally on the page between smallest and largest breakpoints.
 
 #### Home
 
@@ -146,11 +146,11 @@ A live version of the site is available [here.](https://jamie120.github.io/MS2-S
 
 #### Contact
 
-* The Contact page will contain a single form, with contact detailed within. The form will capture name, email, subject and a message from the user. Once submitted, the user will recieve an email to the provided email address, this will contain a copy of their message and confirmation their message has been recieved. There will also be a mailto: link, should the user wish to send an email directly to the support team.
+* The Contact page will contain a single form, with contact detailed within. The form will capture name, email, subject and a message from the user. Once submitted, the user will receive an email to the provided email address, this will contain a copy of their message and confirmation their message has been received. There will also be a mailto: link, should the user wish to send an email directly to the support team.
 
 #### FAQ
 
-* The FAQ page will display common questions and corresponding answers relating to the business services. The page will have one main section, questions will be displayed in full. To view an answer the user must click/tap the question or '+' icon on the related question. The text element will expand and the icon will change to a '-'. The user may wish to collapse this back to a question only at any point. This results in a much cleaner page design, displaying only the content the user wishes to view.
+* The FAQ page will display common questions and corresponding answers relating to the business services. The page will have one main section; questions will be displayed in full. To view an answer the user must click/tap the question or '+' icon on the related question. The text element will expand and the icon will change to a '-'. The user may wish to collapse this back to a question only at any point, which results in a much cleaner page design, displaying only the content the user wishes to view.
 
 #### Mastering Landing Page
 
@@ -164,7 +164,7 @@ A live version of the site is available [here.](https://jamie120.github.io/MS2-S
 
     2. Section two will hold a select menu, of service variations. Engaging with this will provide a price estimate to its user, which will update on the page automatically.
 
-    3. Section three will showcase some audio examples of previous work, these will be embedded into the page using the Soundcloud widget. 
+    3. Section three will showcase some audio examples of previous work; these will be embedded into the page using the Soundcloud widget. 
 
 #### Rates
 
@@ -177,15 +177,15 @@ A live version of the site is available [here.](https://jamie120.github.io/MS2-S
     3. Timed-Mastering.
     4. Mixing.
 
-* On initial visit to the page, no rates table will be displayed. A select menu at the top of the page, will trigger a corresponding table to be displayed below it. Page content will update according to how the user engages with the select menu. 
+* On initial visit to the page, no rates table will be displayed. A select menu at the top of the page will trigger a corresponding table to be displayed below it. Page content will update according to how the user engages with the select menu. 
 
 #### Service Finder
 
-* The service finder page will host an interactive expereience for the site user. Its aim is to provide a bespoke response to each user based on information gathered throughout a series of choices and inputs. 
+* The service finder page will host an interactive experience for the site user. Its aim is to provide a bespoke response to each user based on information gathered throughout a series of choices and inputs. 
 
 * The purpose of this is to support potential clients in finding an appropriate service based on their project requirements. It provides automated feedback to potential clients, reducing the need for the direct interaction with the business. 
 
-* This service is always active, therefore it has potential to present financial benefits the business, through suggesting services and engaging customers. As well as providing a support role to users outside of business hours.
+* This service is always active; therefore it has potential to present financial benefits the business, through suggesting services and engaging customers. As well as providing a support role to users outside of business hours.
 
 * The page content will update, display and hide content based on user input. A flow chart has been developed to explain how the user journey will present itself:
 
@@ -197,7 +197,7 @@ A live version of the site is available [here.](https://jamie120.github.io/MS2-S
 
 ## Wireframe designs
 
-Wireframes were designed using using Balsamiq, for three primary breakpoints. Desktop, Tablet and Mobile. 
+Wireframes were designed using Balsamiq, for three primary breakpoints - Desktop, Tablet and Mobile. 
 
 
 - Desktop Wireframes.
@@ -212,7 +212,7 @@ Wireframes were designed using using Balsamiq, for three primary breakpoints. De
 
 ![Mobile - ](https://github.com/jamie120/MS2-Soma-Post-Production-Services/blob/master/assets/images/balsamiq-wireframes/soma-tablet-wireframe.png "Mobile - Wireframe screenshot")
 
-Furthermore theme design was mocked up using Figma. This was completed for the desktop design and the styles/colors will be adopted throughout responsively.
+Furthermore theme design was mocked up using Figma. This was completed for the desktop design and the styles/colours will be adopted throughout responsively.
 
 - Home Page / Services.
 
@@ -235,37 +235,36 @@ Full workspace & diagrams hosted on figma.com can be found here: [Figma.com - Ja
 To ensure the site looked good and operated well on smaller screens, content/layout was reviewed for each breakpoint to ensure user experience remained positive throughout. 
 
 * Top Nav links
-    * The contact/faq/join mailing list links will remain visible at all breakpoints. They will centralise below the large breakpoint.
+    * The contact/FAQ/join mailing list links will remain visible at all breakpoints. They will centralise below the large breakpoint.
 * Nav Bar / banner
     * The navbar / logo banner has three states.
         * The first at large breakpoints and above, all content is visible and aligned left / right of the screen.
         * The second state centralises all content and resizes social icons - this state will be most common for viewing the site on tablet size devices.
         * The third state collapses all links down to a 'burger' icon, removes social icons and justifies the logo left and navbar right - this state will be most common for viewing on mobile size devices.
 * Home Page 
-    * Image carousel hidden on tablet and mobile due to obtrusive nature and the space taken vs its value on smaller devices.
-    * The three services elements use Bootstrap grid. Three column structure each filling 4 parts of the grid at the large breakpoints and above. Otherwise each service occupies full width (12) on tablet and mobile. This makes best use of space on all devices.
+    * The image carousel is hidden on tablet and mobile due to its obtrusive nature and the large amount of space taken by the element.
+    * The three services elements use the Bootstrap grid. A three-column structure will be in place, each columns filling 4 parts of the grid at the large breakpoints and above. Otherwise each service occupies full width (12) on tablet and mobile. This makes best use of space on all devices.
 * Contact
     * Elements justify centrally on smaller screens to distribute white space more evenly, which looks more pleasing to the eye.
 * FAQ
     * Q&A use Bootstrap grid. Two columns each filling 6 parts of the grid at the large breakpoint and above. Otherwise default to 12 each. Serving tablet and mobile displays best.
 * Services
-    * All elements using the Bootstrap grid take full width below the large breakpoint. Above this elements are split accross the grid evenly to make use of extra space.
+    * All elements using the Bootstrap grid take full width below the large breakpoint. Above this elements are split across the grid evenly to make use of extra space.
 * Rates
-    * All content remains present throughout each breakpoints. Use of Bootstrap containers maintains good spacing around and between elements. With additional padding and margin added as required to ensure positive viewing experience on all devices.
+    * All content remains present throughout each breakpoint. Use of Bootstrap containers maintains good spacing around and between elements. With additional padding and margin added as required to ensure positive viewing experience on all devices.
 * Service Finder
-    * On larger devices (Bootstrap LG breakpoint and above) The service finder is initially presented with the question surrounded by choices. On small screens this becomes more linear (top to bottom) to maintain a positive user experience. This was achieved using element order attributes alongside media queries and toggling css classes.
+    * On larger devices (Bootstrap LG breakpoint and above) the service finder is initially presented with the question surrounded by choices. On small screens this becomes more linear (top to bottom) to maintain a positive user experience. This was achieved using element order attributes alongside media queries and toggling CSS classes.
     * Image logos for the services had to be manually resized at various breakpoints throughout - down to <300px width
 
 ## Changes In Functionality and Design
-
 
 # Surface
 
 ## Colours
 
-A dark theme was chosen for use throughout the site. The colors are dark grey in tone, with the use of white text throughout the site for contrast.
+A dark theme was chosen for use throughout the site. The colours are dark grey in tone, with the use of white text throughout the site for contrast.
 
-* Color is introduced accross the site with photographs and using hover effects on links.
+* Colour is introduced across the site with photographs and using hover effects on links.
 
 Colour Palette - Three main colours that compliment the design are:
 
@@ -275,7 +274,7 @@ Colour Palette - Three main colours that compliment the design are:
  - ![rgb(96,125,139)](https://via.placeholder.com/15/607d8b/000000?text=+) - `rgb(96, 125, 139)` - Button Hover
  - ![rgb(71,44,44)](https://via.placeholder.com/15/4c2c2c/000000?text=+) - `rgb(76, 44, 44)` Dark Brown Background 
 
-* Various strengths of opacity are used in combination with the colors above, using the 'rgba' attribute. 
+* Various strengths of opacity are used in combination with the colours above, using the 'rgba' attribute. 
 
 * Coloured shadow is dropped behind the carousel caption text, on the index.html page. Three separate colours are used to blend with the corresponding image. Resulting in a visually please result.
 
@@ -293,10 +292,10 @@ It was imported from 'Google Fonts' in the head of each page. I applied the font
 
 ### Top Nav Links
 
-* The top nav links remain on all pages thoughout the site. 
+* The top nav links remain on all pages throughout the site. 
     * The contact us, links the user to the contact.html page.
     * FAQ links the user to the faq.html page.
-    * Join mailing list - launches a modal where the use can input their email address and click subscribe. Upon completing this action, an automated email will be send to the provided email address, confirming sign up and welcoming the user to the mailing list (acheived using emailjs service). The user can also close the modal if desired, by clicking the 'close' button present in the element.
+    * Join mailing list - launches a modal where the use can input their email address and click subscribe. Upon completing this action, an automated email will be send to the provided email address, confirming sign up and welcoming the user to the mailing list (achieved using Emailjs service). The user can also close the modal if desired, by clicking the 'close' button present in the element.
 
 ### Nav Bar
 
@@ -315,11 +314,11 @@ It was imported from 'Google Fonts' in the head of each page. I applied the font
 
 * An automated scrolling image carousel is displayed on the home page on the largest screen sizes. This is achieved using supporting code from the Bootstrap carousel component. https://getbootstrap.com/docs/4.0/components/carousel/
 * There are also nav buttons, should the site user wish to view the next or previous image as desired.
-* The images have overlaid caption text - which has been styled bespokly to the image behind, matching colours and creating a drop shadow.
+* The images have overlaid caption text - which has been styled in a bespoke manner based to the image in place behind, colour tones were matched and a drop shadow created to softly blend the text to the image.
 
 ### Service Finder Modal
 
-* Upon visiting the home page, after a duration of 5 seconds a modal appears informing the user of the service finder feature. The user can engage with the modal to goto the service finder page, or close the modal and continue browsing the homepage.
+* Upon visiting the home page, after duration of 5 seconds a modal appears informing the user of the service finder feature. The user can engage with the modal to go to the service finder page, or close the modal and continue browsing the homepage.
 * A link the service finder is available on the home page, situated just above the services information. As a user hovers over this, the link/button highlights to a blue colour to gain attention.
 
 ### Services
@@ -336,24 +335,24 @@ It was imported from 'Google Fonts' in the head of each page. I applied the font
 
 * A user may wish to contact the business. Therefore a general contact form is available on the contact page. 
 * All inputs of the contact form have validation rules, so that a user can't submit the form until all fields are filled out correctly. 
-* Once a message is submitted, a modal appears to inform the user the message has successfully submitted. The user also receives an email confirming reciept of the message with a copy of the message submitted for reference, this is acheived using the emailjs service.
-* The email icon in the contact form, can be clicked. This will open the users default mail client, to compose an email to contact@somapostproduction.com
-* All three contact icons have a hover effect, englarging the icons by 10% to gain user attention.
+* Once a message is submitted, a modal appears to inform the user the message has successfully submitted. The user also receives an email confirming receipt of the message with a copy of the message submitted for reference; this is achieved using the Emailjs service.
+* The email icon in the contact form can be clicked. This will open the users default mail client, to compose an email to contact@somapostproduction.com
+* All three contact icons have a hover effect, enlarging the icons by 10% to gain user attention.
 
 ## FAQ Page
 
 * Users can interact with the questions displayed on the screen, to reveal the answers by clicking on the question or the '+' icon.
 * To achieve the expand/collapse effect for all questions with a single function, the HTML elements were given corresponding ID's - Jquery was used to capture a question ID attribute and target the related answer using this information. (assets/js/main.js line 83)
-* The icon changes to a '-' once the answer is expanded, indicating it will collapse the answer if clicked again. This was acheived with JQuery - toggleClass() feature. The screenreader text also changes from expand to collapse.
+* The icon changes to a '-' once the answer is expanded, indicating it will collapse the answer if clicked again. This was achieved with JQuery - toggleClass() feature. The screen reader text also changes from expand to collapse.
 
 ## Service Finder
 
 * This page offers its users a fully automated service identifier.
 * Content fades in to create a more premium look and feel whilst navigating the questions.
 * Information is displayed according to user responses and actions - the logic is coded with JQuery and JavaScript to hide, display and add HTML elements to/from the page. It is also used to toggle CSS classes.
-* A reset button is always available to click. This will refresh the page - initialsing the service finder.
+* A reset button is always available to click. This will refresh the page - initialising the service finder.
 * Prices estimates update automatically and can be recalculated without restarting the service finder process.
-* Once a user reaches the end of the questions - they are presented with a price estimate and a call to action button which will take the user to the relevant services page.
+* Once a user reaches the end of the questions - they are presented with a price estimate and a call to action button that will take the user to the relevant services page.
 * A separate js script was created for the service finder - (assets/js/service-helper.js) - this contains all relevant logic relating the service finder utility.
     * HTML is stored in variables at the beginning of the script. This made the code much easier to read and edit if required.
 
@@ -368,9 +367,9 @@ It was imported from 'Google Fonts' in the head of each page. I applied the font
 # Bugs and Fixes to implement
 
 * **Modal Style** - Using iPad (Safari Browser) the modal displays differently, buttons are disproportionate in size.
-* **Social Media Icons** - Icons sitewide currently link to their respective social service homepage. These would need to link to corresponding business page.
+* **Social Media Icons** - Icons site wide currently link to their respective social service homepage. These would need to link to corresponding business page.
 * **Logo/Banner/Navbar** - Reduce size (height) to take up less space, adjust logo in photo editing software to remove white background. This will allow for styling the banner with a dark theme, in line with the rest of the site.
-* **Audio Examples** - Link different audio files from Soundcloud.com accross the various service pages, to showcase the business accordingly.
+* **Audio Examples** - Link different audio files from Soundcloud.com across the various service pages, to showcase the business accordingly.
 * **Contact Email** - The contact email address is fictional on the contact page, this address would need to be set up to make the mailto: feature on the contact page functional.
 
 # Technologies Used
@@ -389,7 +388,7 @@ It was imported from 'Google Fonts' in the head of each page. I applied the font
 * [Google Fonts](https://fonts.google.com/) - used for the Roboto fonts.
 * [Hover.css](https://ianlunn.github.io/Hover/) - used for animation effects on social icons and various buttons throughout the site.
 * [JQuery](https://jquery.com/) (3.5.1) - used throughout the site to target and manipulate HTML elements and also in conjunction with the Bootstrap library.
-* [Chosen](https://harvesthq.github.io/chosen/) (1.8.7) - used to replace the standard select menus sitewide
+* [Chosen](https://harvesthq.github.io/chosen/) (1.8.7) - used to replace the standard select menus site wide.
 
 ## API
 
@@ -405,16 +404,16 @@ It was imported from 'Google Fonts' in the head of each page. I applied the font
 * [Am I Responsive](http://ami.responsivedesign.is/) - used for testing purposes and for the screenshot at the top of my README filed to display the web pages on different devices.
 * [Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) - used for testing and debugging the site.
 * [w3 html validator](https://validator.w3.org/) - used to test and validate my html code.
-* [w3 css validator](https://jigsaw.w3.org/) - used to test and validate my css code.
-* [jshint](https://jshint.com/) - used to test and validate all js code.
-* [Babel](https://babeljs.io/) - used to parse service-helper.js - to reformat template literals for IE 11 compatability.
+* [w3 css validator](https://jigsaw.w3.org/) - used to test and validate my CSS code.
+* [jshint](https://jshint.com/) - used to test and validate all JS code.
+* [Babel](https://babeljs.io/) - used to parse service-helper.js - to reformat template literals for IE 11 compatibility.
 * [ezgif](https://ezgif.com/) - used in testing.md to capture interactive elements into gifs.
 * [Diagrams.net](https://app.diagrams.net/) - used to create flowchart diagram for the service finder.
-* [hex to rgb converter](https://www.webfx.com/web-design/hex-to-rgb/) - used to get consitency within my code.
+* [hex to rgb converter](https://www.webfx.com/web-design/hex-to-rgb/) - used to get consistency within my code.
 
 # Testing
 
-All testing has been documented [testing.md](https://github.com/jamie120/MS2-Soma-Post-Production-Services/blob/master/testing.md)
+All-testing has been documented [testing.md](https://github.com/jamie120/MS2-Soma-Post-Production-Services/blob/master/testing.md)
 
 # Deployment
 
@@ -469,7 +468,7 @@ All the content of the website was written by me.
 
 ### Images
 
-* All images were obtained from unsplash, found via the search term: recording studio.
+* All images were obtained from unsplash.com, found via the search term: recording studio.
 
 https://unsplash.com/s/photos/recording-studio
 

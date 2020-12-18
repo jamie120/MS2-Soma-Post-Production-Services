@@ -65,13 +65,13 @@
 * Verify the page loads responsively on all device sizes. With desired elements displayed or hidden as required - :white_check_mark:
 * Verify any images display as desired - :x:
     
-    Issue identifed on iPad and iPhone, where the service image appears stretched - note to fix added to revisions.
+    Issue identified on iPad and iPhone, where the service image appears stretched - note to fix added to revisions.
 
     ![iPad service image stretched](documentation/testing/images/ipad-service-image-stretched.jpg)
 
 * Verify all text is clear and formatted correctly - :x:
 
-    Issue identifed on iPhone only - Select menu placeholder is not visible - note to fix added to revisions.
+    Issue identified on iPhone only - Select menu placeholder is not visible - note to fix added to revisions.
 
 * Verify all JavaScript is working by ensuring prices update for all iterations of the select menu - :white_check_mark:
 * Verify all links take users to the correct pages - :white_check_mark:
@@ -104,7 +104,7 @@
 * Verify email is received upon signing up to the mailing list using the subscribe button on the footer - :white_check_mark:
 * Verify email is received upon signing up to the mailing list using the top nav modal link - :white_check_mark:
 * Verify social icon links on the footer and navigation banner direct the user to the relevant social service - :white_check_mark:
-* Check elements appear on all pages correctly accross all browsers - :x:
+* Check elements appear on all pages correctly across all browsers - :x:
 
     In both Safari and Chrome, the service title overlays the text iPhone and in portrait on iPad - note to fix added to revisions.
 
@@ -120,8 +120,8 @@
 ### Fixes required 
 
 Service pages - 
-* Issue identifed on iPad and iPhone, where the service image appears stretched.
-* Issue identifed on iPhone only - Select menu placeholder is not visible 
+* Issue identified on iPad and iPhone, where the service image appears stretched.
+* Issue identified on iPhone only - Select menu placeholder is not visible 
 
 index.html - 
 * In both Safari and Chrome, the service title overlays the text. This occurs on both iPad and iPhone.
@@ -154,8 +154,8 @@ All of my code passed the following validation tests/services:
 Screenshots of validations for each page of code can be found [here](https://github.com/jamie120/MS2-Soma-Post-Production-Services/blob/master/documentation/testing/validation)
 
 * There were various HTML and CSS validation issues to resolve. These mainly referred to formatting my code and were easily fixable across the site.
-* JS Validation highlighted the need the service-helper code to be parsed through Babel with the template literal plugin. This enables the code to be compatable with IE 11. 
-* Various missing semicolons, unneccessary semicolons and various formatting errors were also highlighted. All have been resolved as required.
+* JS Validation highlighted the need the service-helper code to be parsed through Babel with the template literal plugin. This enables the code to be compatible with IE 11. 
+* Various missing semicolons, unnecessary semicolons and various formatting errors were also highlighted. All have been resolved as required.
 
 # User Stories
 
@@ -163,7 +163,7 @@ Screenshots of validations for each page of code can be found [here](https://git
 ##### As a visitor to the site, I want to easily identify the business offer/purpose and be able to easily navigate the site to learn more if desired.
 * Upon visiting the site, it is clear that the business offers audio services. 
 * There is a navbar at the top of the page which clearly directs me to key pages.
-* There are also several links at the top of each page, which allows me to reach a contact page, faq page and join a mailing list.
+* There are also several links at the top of each page, which allows me to reach a contact page, FAQ page and join a mailing list.
 
 #### User Story 2
 ##### As a visitor to the site, I want to learn more about the services offered and listen to some of the work previously completed by the business.
@@ -173,18 +173,18 @@ Screenshots of validations for each page of code can be found [here](https://git
 #### User Story 3
 ##### As a potential client, I know what service I require and would like to see the business rates.
 * Upon vising the site, I can see one of the main three links in the navbar is 'RATES'.
-* On the rates page, i'm not overwhelmed with unneccessary information - the rates page allows me to select only the service I wish to see prices for.
+* On the rates page, I'm not overwhelmed with unnecessary information - the rates page allows me to select only the service I wish to see prices for.
 
 #### User Story 4
 ##### As a potential client, I want to speak to somebody at the company to discuss a more bespoke service.
-* I am able to vising the contact us page to leave a message to request a callback. 
+* I am able to vising the contact us page to leave a message to request a call-back. 
 * I can call the business directly, there is a phone number available on the contact us page.
 * Upon visiting the FAQ, this question has a response and encourages me to call.
 
 #### User Story 5
 ##### As a potential client, I'm not sure which service would benefit my project the most. I need some support finding the right one.
-* Whilst browsing the site, I had come accross a feature called 'service-finder' I can get to this from the home page(index.html) and each of the services pages.
-* A pop-up appeared after a few seconds on the home page(index.html). This appears to take me to an interactive app, the service finder. It was able to identify exactly what service I need.
+* Whilst browsing the site, I had come across a feature called 'service-finder' I can get to this from the home page(index.html) and each of the services pages.
+* A pop-up appeared after a few seconds on the home page (index.html). This appears to take me to an interactive app, the service finder. It was able to identify exactly what service I need.
 
 # User Testing
 
