@@ -188,6 +188,10 @@ https://css-tricks.com/make-a-smooth-shadow-friend/
 
 /*---------- Navbar Styling ----------*/
 
+p.nav-item-break {
+    margin-top: 5px;
+}
+
 .navbar {
     font-size: 1.5rem;
     font-weight: 400;
