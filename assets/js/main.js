@@ -55,6 +55,7 @@ $("#mixing-prices").chosen({disable_search_threshold: 10});
 //RATES TABLE LOGIC
 
 $("#rates-table").change(function(){
+    $("#rates-initial-text").css("display", "none");
     var status = this.value;
    if(status=="mastering") {
         $("#mastering-table, #stem-mastering-table, #mixing-table, #timed-mastering-table, #rates-hr").css("display", "none");

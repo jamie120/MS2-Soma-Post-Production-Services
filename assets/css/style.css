@@ -811,7 +811,7 @@ div#mixing_prices_chosen {
     width: 80%;
 }
 
-#mastering-table, #stem-mastering-table, #mixing-table, #timed-mastering-table {
+#stem-mastering-table, #mixing-table, #timed-mastering-table {
     display: none;
 }
 
