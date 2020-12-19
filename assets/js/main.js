@@ -1,7 +1,8 @@
-//LOGIC FOR PRICING OPTIONS ON SERVICES PAGES
+/** Logic for updating the price estimates on each of the service pages.
+ * - Code changes text content of html element, based on the users choice from a select menu.
+ */
 
-
-//MASTERING
+/** MASTERING */
 
 $("#mastering-prices").change(function(){
      var status = this.value;
@@ -16,7 +17,7 @@ $("#mastering-prices").change(function(){
 
 $("#mastering-prices").chosen({disable_search_threshold: 10});
 
-//STEM MASTERING
+/** STEM MASTERING */
 
 $("#stem-mastering-prices").change(function(){
      var status = this.value;
@@ -31,7 +32,7 @@ $("#stem-mastering-prices").change(function(){
 
 $("#stem-mastering-prices").chosen({disable_search_threshold: 10});
 
-//MIXING
+/** MIXING */
 
 $("#mixing-prices").change(function(){
      var status = this.value;
@@ -52,7 +53,10 @@ $("#mixing-prices").change(function(){
 
 $("#mixing-prices").chosen({disable_search_threshold: 10});
 
-//RATES TABLE LOGIC
+/** Logic for displaying the desired rates table on the rates.html page. 
+ * All table elements exist in rates.html, with display: none.
+ * Based on user input from a select menu, the desired menu is displayed. Using JQuery fadeIn() effect.
+*/
 
 $("#rates-table").change(function(){
     $("#rates-initial-text").css("display", "none");
@@ -75,13 +79,20 @@ $("#rates-table").change(function(){
    }
 });
 
-//SERVICE FINDER PROMPT - MODAL
+/** SERVICE FINDER PROMPT - MODAL.
+ * Code displays the modal after 5seconds of page loading.
+ */
 
 setTimeout(function() {
     $('#serviceFinderPrompt').modal('show');}, 
         5000);
 
-//FAQ EXPAND ANSWERS
+/** FAQ EXPAND ANSWERS.
+ * On click 'question' element, ID attribute is captured to variable.
+ * Variable string is amended to target the corresponding answer ID.
+ * Variable is then used to show the HTML element on the screen.
+ * The corresponding ICON is also changed to provide user feedback.
+ * */
 
 $('.question').click(function() { 
     var id = $(this).attr('id');
@@ -98,7 +109,9 @@ $('.question').click(function() {
 
 });
 
-//NAVBAR DROPDOWN TOGGLE ON HOVER
+/** NAVBAR DROPDOWN TOGGLE ON HOVER.
+ * This code targets the dropdown select meny and toggles content on mouse hover.
+ */
 
 const $dropdown = $(".dropdown");
 const $dropdownToggle = $(".dropdown-toggle");
