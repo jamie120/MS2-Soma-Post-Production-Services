@@ -27,69 +27,63 @@
     <!--TOP NAVIGATION -->
     <div class="container-fluid" id="top-nav">
         <div class="container d-flex justify-content-center justify-content-md-end">
-            <a class="top-nav-links" href="contact.html">
-                <p>CONTACT US</p>
-            </a>
-            <span>|</span>
-            <a class="top-nav-links" href="faq.html">
-                <p>FAQ</p>
-            </a>
-            <span>|</span>
-            <a data-toggle="modal" data-target="#modalJoinMail" class="top-nav-links">
+            <a data-toggle="modal" data-target="#modalJoinMail" class="top-nav-links d-block d-md-none">
                 <p>JOIN MAILING LIST</p>
-            </a>
-            <!--Modal: modalJoinMail-->
-            <div class="modal fade" id="modalJoinMail" tabindex="-1" role="dialog" aria-labelledby="modalJoinMail" aria-hidden="true">
-                <div class="modal-dialog modal-sm modal-notify" role="document">
-                    <form onsubmit="return sendMail(this);">
-                        <div class="modal-content">
-                            <div class="modal-header dark-background">
-                                <h4 class="modal-title w-100 myModalLabel">Join Mailing List</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body dark-brown">
-                                <div id="mail-modal-text" class="md-form">
-                                    <i class="fas fa-envelope prefix white-text"></i>
-                                    <input type="email" name="email" id="form29" class="form-control validate" required>
-                                    <label data-error="wrong" data-success="right" for="form29">Your email</label>                     
-                                </div>
-                            </div>
-                            <div class="modal-footer dark-background">
-                                <button type="button" class="btn btn-dark btn-sm" data-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-blue-grey btn-sm">Subscribe</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <!--Modal: modalJoinMail-->
-            <!--Success message modal-->
-            <div class="modal fade" id="modalJoinSuccess" tabindex="-1" role="dialog" aria-labelledby="modalJoinSuccess" aria-hidden="true">
-                <div class="modal-dialog modal-sm modal-notify" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header dark-background">
-                            <h4 class="modal-title w-100 myModalLabel">Thanks for signing up, check your inbox for an exculsive discount!</h4> 
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Success message modal-->
+            </a> 
         </div> 
     </div>
+     <!--TOP NAVIGATION -->
+
+    <!--Modal: modalJoinMail-->
+    <div class="modal fade" id="modalJoinMail" tabindex="-1" role="dialog" aria-labelledby="modalJoinMail" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-notify" role="document">
+            <form onsubmit="return sendMail(this);">
+                <div class="modal-content">
+                    <div class="modal-header dark-background">
+                        <h4 class="modal-title w-100 myModalLabel">Join Mailing List</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body dark-brown">
+                        <div id="mail-modal-text" class="md-form">
+                            <i class="fas fa-envelope prefix white-text"></i>
+                            <input type="email" name="email" id="form29" class="form-control validate" required>
+                            <label data-error="wrong" data-success="right" for="form29">Your email</label>                     
+                        </div>
+                    </div>
+                    <div class="modal-footer dark-background">
+                        <button type="button" class="btn btn-dark btn-sm" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-blue-grey btn-sm">Subscribe</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--Modal: modalJoinMail-->
+    <!--Success message modal-->
+    <div class="modal fade" id="modalJoinSuccess" tabindex="-1" role="dialog" aria-labelledby="modalJoinSuccess" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-notify" role="document">
+            <div class="modal-content">
+                <div class="modal-header dark-background">
+                    <h4 class="modal-title w-100 myModalLabel">Thanks for signing up, check your inbox for an exculsive discount!</h4> 
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Success message modal-->
 
     <!--BANNER & MAIN NAVBAR -->
-    <div class="container" id="banner">
+    <div class="container-fluid" id="banner">
         <div class="row">
-            <div class="col-md-6 logoContainer d-flex justify-content-center justify-content-md-start">
+            <div class="col-md-3 logoContainer d-flex justify-content-center justify-content-md-start">
                 <a class="d-none d-md-block" href="index.html"><img class="logo" src="assets/images/logo.png" alt=""></a>
             </div>
-            <div class="col-md-6 align-self-center">
-                <ul id="social-icons-banner">
+            <div class="col-md-9 nav-container align-self-center">
+                <ul class="container" id="social-icons-banner">
                     <li><a class="nav-link" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square hvr-grow"></i></a></li>
                     <li><a class="nav-link" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram-square hvr-grow"></i></a></li>
                     <li><a class="nav-link" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square hvr-grow"></i></a></li>
@@ -102,11 +96,24 @@
                     <div class="container" id="navbarItems">
                         <div class="row d-block navbar-links">
                             <ul class="navbar-nav">
-                                <li><a class="nav-link" href="mastering-landing.html">MASTERING</a></li>
+                                <li><a class="nav-link" href="index.html">HOME</a></li>
                                 <li><p class="nav-item-break">|</p></li>
-                                <li><a class="nav-link" href="mixing.html">MIXING</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SERVICES</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="mastering.html">MASTERING</a>
+                                    <a class="dropdown-item" href="stem-mastering.html">STEM-MASTERING</a>
+                                    <a class="dropdown-item" href="mixing.html">MIXING</a>
+                                    </div>
+                                </li>
+                                <li><p class="nav-item-break">|</p></li>
+                                <li><a class="nav-link" href="service-finder.html">SERVICE FINDER</a></li>
                                 <li><p class="nav-item-break">|</p></li>
                                 <li><a class="nav-link" href="rates.html">RATES</a></li>
+                                <li><p class="nav-item-break">|</p></li>
+                                <li><a class="nav-link" href="contact.html">CONTACT</a></li>
+                                <li><p class="nav-item-break">|</p></li>
+                                <li><a class="nav-link" href="faq.html">FAQ</a></li>
                             </ul>
                         </div>
                     </div>
@@ -115,13 +122,15 @@
             </div>
         </div>
     </div>
+    <!--BANNER & MAIN NAVBAR -->
 
     <div class="container-fluid dark-background" id="hero-landing">
+        
         <!--CAROUSEL-PHOTOS-->
         <div id="photo-carousel" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="container inner-item">
+                    <div class="inner-item">
                         <div class="carousel-caption trickcenter">
                             <div id="stroke-text-1">
                                 <p>FIND THE RIGHT SERVICE</p>
@@ -133,7 +142,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class=" container inner-item">
+                    <div class="inner-item">
                         <div class="carousel-caption trickcenter">
                             <div id="stroke-text-2">
                                 <p>WE OFFER A RANGE OF SERVICES</p>
@@ -145,7 +154,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class=" container inner-item">
+                    <div class="inner-item">
                         <div class="carousel-caption trickcenter">
                             <div id="stroke-text-3">
                                 <p>OUR TOP INDUSTRY PROFESSIONALS</p>
@@ -181,8 +190,9 @@
             <div class="col" id="business-info">
                 <p class="center-text white-text">Wecome to SOMA Post Production Audio Services. Welcome to our site, we hope you can find all the information you need on here, but if not please don't hesitate to get in touch with us <a href="contact.html">here</a>.We are a small, experienced and focused team based in the West Midlands. Our aim at SOMA is to provide quality post production audio services to its clients, with outstanding service. We take time to understand our clients and put our heart into every piece of work, to get the best result for them.</p>
                 <hr class="break-line white">
+                <p class="text-center white-text">Our service finder can help you find the right service for your project, as well as provide you with a price estimate. This is achieved by asking you a series of questions about your audio.</p>
+                <p class="text-center white-text">Check out the service finder feature by clicking the button below.</p>
                 <a href="service-finder.html"><h3 class="text-center white-text">SERVICE FINDER</h3></a>
-                <p class="text-center white-text">OUR SERVICE FINDER CAN HELP YOU FIND THE RIGHT SERVICE FOR YOUR PROJECT, CLICK THE LINK ABOVE TO CHECK IT OUT! </p>
                 <hr class="break-line white">
             </div>
         </div>   

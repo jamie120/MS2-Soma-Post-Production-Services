@@ -4,6 +4,7 @@
 
 body {
     font-family: "Roboto", sans-serif;
+    padding-top: 200px;
 }
 
 .small-page-break {
@@ -63,9 +64,18 @@ body {
 }
 
 @media (max-width: 769px) {
-.center-text-small {
-    text-align: center;
+    .center-text-small {
+        text-align: center;
+    }
+    body {
+        padding-top: 150px;
+    }
 }
+
+@media (max-width: 576px) {
+    body {
+        padding-top: 70px;
+    }
 }
 
 .service-page-image {
@@ -121,14 +131,22 @@ https://css-tricks.com/make-a-smooth-shadow-friend/
     text-align: right;
     margin-top: 30px;
     margin-bottom: 0;
+    padding: 0;
 }
 
 .logo {
     height: 150px;
     width: 170px;
-    margin: 10px;
+    margin: 0;
 }
 
+#banner {
+    position: fixed;
+    left: 0;
+    top: 30px;
+    z-index: 5;
+    background-color: white;
+}
 
 @media (max-width: 769px) {
     #social-icons-banner{
@@ -152,8 +170,12 @@ https://css-tricks.com/make-a-smooth-shadow-friend/
 /*---------- Top Navbar Styling ----------*/
 
 #top-nav {
-    height: 40px;
+    height: 30px;
     background-color: rgb(34, 34, 34);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5;
 }
 
 #top-nav > .container > span {
@@ -166,7 +188,7 @@ https://css-tricks.com/make-a-smooth-shadow-friend/
 .top-nav-links > p {
     color: white;
     padding: 5px;
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 0.7rem;
 }
 
@@ -185,6 +207,15 @@ https://css-tricks.com/make-a-smooth-shadow-friend/
     opacity: 1;
 }
 
+#modalJoinMail {
+    z-index: 999;
+}
+
+.modal-backdrop {
+    /* bug fix - no overlay */    
+    display: none;    
+}
+
 /*---------- Navbar Styling ----------*/
 
 p.nav-item-break {
@@ -192,8 +223,9 @@ p.nav-item-break {
 }
 
 .navbar {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 400;
+    padding: 0;
 }
 
 .nav-link span {
@@ -214,6 +246,14 @@ div#navbarItems {
     font-size: 1.8rem;
 }
 
+.logoContainer {
+    padding-left: 60px;
+}
+
+.nav-container {
+    padding-right: 60px;
+}
+
 .navbar span {
     padding: 8px;
     margin-bottom: 20px;
@@ -223,10 +263,24 @@ div#navbarItems {
     padding-right: 24px;
 }
 
+.dropdown-toggle::after {
+  border: none!important;
+  font: normal normal normal 14px/1 FontAwesome;
+  vertical-align: 0; /* to center vertically */
+}
+
 @media (max-width: 769px) {
     div#navbarItems {
         padding: 0;
         justify-content: center;
+    }
+    .nav-container {
+    padding-right: 0px;
+    }
+}
+@media (max-width: 991px){
+    .navbar {
+    font-size: 1.1rem;
     }
 }
 
@@ -270,7 +324,7 @@ div#navbarItems {
 /*---------- Carousel Styling ----------*/
 
 #hero-landing {
-    padding-top: 60px;
+    padding-top: 20px;
 }
 
 
@@ -290,8 +344,13 @@ div#navbarItems {
 
 .inner-item {
     text-align: center;
-    border: 1px solid rgba(119, 119, 119, 0.6);
     padding: 0;
+    width: 100%;
+    max-height: 800px;
+}
+
+.carousel-inner {
+    border: 1px solid rgba(119, 119, 119, 0.6);
 }
 
 .carousel-control-next, .carousel-control-prev {
