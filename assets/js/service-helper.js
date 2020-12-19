@@ -2,6 +2,12 @@
 
 $(document).ready(function () {
 
+  /** Const numbers  */
+  const DELAY_400 = 400;
+  const DELAY_600 = 600;
+  const DELAY_800 = 800;
+  const DELAY_1000 = 1000;
+
   /** SUPPORT TAKEN FROM THIS THREAD, TO LEARN THE BEST APPROACH WHEN APPENDING HTML TO THE PAGE USING JQUERY
    * https://stackoverflow.com/questions/10759426/appending-large-block-of-html-with-append
    
@@ -27,7 +33,6 @@ $(document).ready(function () {
 
   $("#dj-btn").click(function () {
     fadeIcons();
-    var delayInMilliseconds = 1000;
 
     setTimeout(function () {
       $("#question").text("You have selected DJ Mix");
@@ -35,12 +40,11 @@ $(document).ready(function () {
       $("#refresh-btn").fadeToggle(800, "linear");
       $("#service-finder-content").append(timedMaster);
       fadeInAllAfterFirst();
-    }, delayInMilliseconds);
+    }, DELAY_1000);
   });
 
   $("#podcast-btn").click(function () {
     fadeIcons();
-    var delayInMilliseconds = 1000;
 
     setTimeout(function () {
       $("#question").text("You have selected Podcast");
@@ -48,25 +52,23 @@ $(document).ready(function () {
       $("#refresh-btn").fadeToggle(800, "linear");
       $("#service-finder-content").append(timedMaster);
       fadeInAllAfterFirst();
-    }, delayInMilliseconds);
+    }, DELAY_1000);
   });
 
   $("#live-btn").click(function () {
     fadeIcons();
-    var delayInMilliseconds = 1000;
 
     setTimeout(function () {
       $("#question").text("You have selected Live Recording");
       $(".button-option").css("display", "none");
       $("#service-finder-content").append(requireMixing);
       fadeInAllAfterFirst();
-    }, delayInMilliseconds);
+    }, DELAY_1000);
   });
 
   $("#electronic-btn").click(function () {
     fadeIcons();
-    var delayInMilliseconds = 1000;
-
+  
     setTimeout(function () {
       $("#question").text("You have selected Electronic Music");
       $(".button-option").css("display", "none");
@@ -74,7 +76,7 @@ $(document).ready(function () {
       $(".row__B").css("display", "none");
       $("#service-finder-content").append(requireMixing);
       fadeInAllAfterFirst();
-    }, delayInMilliseconds);
+    }, DELAY_1000);
   }); 
   
   /** USER CHOICES - STEM & MIXING 
@@ -87,13 +89,12 @@ $(document).ready(function () {
   $(document).on('click', '#yes-mix-btn', function () {
     $(".button-option").fadeToggle(800, "linear");
     $("#happy-with-mix").fadeToggle(800, "linear");
-    var delayInMilliseconds = 400;
     setTimeout(function () {
       $("#service-text-container").append("<h2 class='text-box-style hide-on-append layer-2-q' id=\"stem-mastering-suggestion\">Are you interested in stem mastering? This can provide more precise mastering and tonal balance control?</h2>");
       $("#service-text-container").append("<button class='button-option hide-on-append hover-blue layer-2-q text-box-style' id='yes-stem-btn'>YES</button>");
       $("#service-text-container").append("<button class='button-option hide-on-append hover-blue layer-2-q text-box-style' id='no-stem-btn'>NO</button>");
       fadeInAllAfterFirstSecond();
-    }, delayInMilliseconds);
+    }, DELAY_400);
   });
 
   $(document).on('click', '#no-mix-btn', function () {
@@ -101,11 +102,10 @@ $(document).ready(function () {
     $("#no-mix-btn").fadeToggle(600, "linear");
     $("#happy-with-mix").fadeToggle(600, "linear");
     $("#refresh-btn").fadeToggle(800, "linear");
-    var delayInMilliseconds = 300;
     setTimeout(function () {
       $("#service-finder-content").append(calcMix);
       fadeInAllAfterFirstSecond();
-    }, delayInMilliseconds);
+    }, DELAY_400);
   });
 
   $(document).on('click', '#yes-stem-btn', function () {
@@ -113,11 +113,10 @@ $(document).ready(function () {
     $("#no-stem-btn").fadeToggle(600, "linear");
     $("#stem-mastering-suggestion").fadeToggle(600, "linear");
     $("#refresh-btn").fadeToggle(800, "linear");
-    var delayInMilliseconds = 1000;
     setTimeout(function () {
       $("#service-finder-content").append(calcStems);
       fadeInAllAfterFirstThird();
-    }, delayInMilliseconds);
+    }, DELAY_1000);
   });
 
   $(document).on('click', '#no-stem-btn', function () {
@@ -143,10 +142,9 @@ $(document).ready(function () {
     var choice = $("#amount-stems").val();
     var price = 40;
     $("#calc-stem-master").text("RECALCULATE");
-    var delayInMilliseconds = 600;
     setTimeout(function () {
       calculateStemPrice(choice, price);
-    }, delayInMilliseconds);
+    }, DELAY_600);
   });
 
     /** Calculation function 'calculateMixPrice' is called to calculate pricing. ref line: 174 */
@@ -155,10 +153,9 @@ $(document).ready(function () {
     var choice = $("#amount-tracks").val();
     var price = 60;
     $("#calc-mix").text("RECALCULATE");
-    var delayInMilliseconds = 600;
     setTimeout(function () {
       calculateMixPrice(choice, price);
-    }, delayInMilliseconds);
+    }, DELAY_600);
   }); 
 
   $(document).on('click', '#calc-timed-master', function () {
