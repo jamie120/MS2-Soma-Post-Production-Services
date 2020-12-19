@@ -7,13 +7,12 @@ $(document).ready(function () {
 
   //  The following site was used for reference on template literals//
   //  https://flaviocopes.com/javascript-template-literals/
-
-  var timedMaster = "<h1 class='text-box-style hide-on-append' id='how-long-timed-master'>Maybe you could benefit from our timed mastering service. How long is your mix/podcast?</h1>\n    <input class='text-box-style hide-on-append' id='minutes-input' type='text' placeholder='length in minutes'>\n    <button class='text-box-style hide-on-append hover-blue' id='calc-timed-master'>CALCULATE</button>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col d-flex justify-content-center\">\n                <a href=\"rates.html\"><button class='text-box-style hover-blue'>GOTO OUR RATES PAGE TO SEE MORE ABOUT TIMED MASTERING</button></a>\n            </div>\n        </div>\n    </div>";
-  var requireMixing = "<div class=\"row row__A>\n        <div class=\"col\">\n            <h1 class='text-box-style hide-on-append' id='happy-with-mix'>Are you happy with the mix-down of the track?</h1>\n        </div>\n    </div>\n    <div class=\"row row__A>\n        <div class=\"col\">\n            <button class='button-option text-box-style hide-on-append hover-blue' id='yes-mix-btn'>YES</button>\n            <button class='button-option text-box-style hide-on-append hover-blue' id='no-mix-btn'>NO</button>\n        </div>\n    </div>";
-  var standardMastering = "<div class=\"row\">\n        <div class=\"col\">\n            <h2 class='text-box-style' id=\"standard-mastering-suggestion\">Our Standard Mastering service may be suited to your project. </h2></div></div>\n    <div class=\"row\">\n        <div class=\"col\">\n            <div id=\"standard-master-calc\"></div>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col\">\n            <h3 class='text-box-style' id=\"priority-master\">Priority Service (3 day turnaround) </h3>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col d-flex justify-content-center\">\n            <button class='button-option text-box-style hover-blue' id='yes-priority-btn'>YES</button>\n        </div>\n        <div class=\"col d-flex justify-content-center\">\n            <button class='button-option text-box-style hover-blue' id='no-priority-btn'>NO</button>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col\">\n            <h3 class='text-box-style' id=\"vinyl-master\">Vinyl Master </h3>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col d-flex justify-content-center\">\n            <button class='button-option text-box-style hover-blue' id='yes-vinyl-btn'>YES</button>\n        </div>\n        <div class=\"col d-flex justify-content-center\">\n            <button class='button-option text-box-style hover-blue' id='no-vinyl-btn'>NO</button>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col d-flex justify-content-center\">\n            <a href=\"mastering.html\"><button class='text-box-style hover-blue'>GOTO OUR MASTERING SERVICES PAGE</button></a>\n        </div>\n    </div>";
-  var calcStems = "<div class=\"row\">\n        <div class=\"col\">\n            <h2 class='text-box-style hide-on-append layer-3-q' id='how-many-stems'>How many stems will you provide for mastering?</h2>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col d-flex justify-content-center\">\n            <label class='text-box-style hide-on-append layer-3-q' id='amount-stems-label' for='amount-stems'>Choose amount of tracks:</label>  \n            <select class='text-box-style hide-on-append layer-3-q' id='amount-stems' name='tracks'>\n                <option value='1-4'>1-4</option>\n                <option value='5-8'>5-8</option>\n                <option value='9-12'>9-12</option>\n                <option value='1-4-V'>1-4 Vinyl Master</option>\n                <option value='5-8-V'>5-8 Vinyl Master</option>\n                <option value='9-12-V'>9-12 Vinyl Master</option>\n            </select>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col d-flex justify-content-center\">\n            <div id=\"stem-calc-text\"></div>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col d-flex justify-content-center\">\n            <button class='text-box-style hide-on-append layer-3-q hover-blue' id='calc-stem-master'>CALCULATE</button>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col d-flex justify-content-center\">\n            <a href=\"stem-mastering.html\"><button class='text-box-style hover-blue'>GOTO OUR STEM-MASTERING SERVICES PAGE</button></a>\n        </div>\n    </div>";
-  var calcMix = "<div class=\"row\">\n        <div class=\"col d-flex justify-content-center\">\n            <h2 class='text-box-style hide-on-append layer-2-q' id=\"mix-service-suggestion\">Maybe you could benefit from our mixing services. How many tracks does your track have?</h2>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col d-flex justify-content-around\">   \n            <label class='text-box-style hide-on-append layer-2-q' id='amount-tracks-label' for='amount-tracks'>Choose amount of tracks:</label>\n            <select class='text-box-style hide-on-append layer-2-q' id='amount-tracks' name='tracks'>\n                <option value='1-10'>1-10</option>\n                <option value='11-20'>11-20</option>\n                <option value='21-30'>21-30</option>\n                <option value='31-40'>31-40</option>\n                <option value='41-50'>41-50</option>\n                <option value='51-60'>51-60</option>\n            </select>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col d-flex justify-content-center\">\n            <div id=\"mix-calc-text\"></div>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col d-flex justify-content-center\">\n            <button class='text-box-style hide-on-append layer-2-q hover-blue' id='calc-mix'>CALCULATE</button>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col d-flex justify-content-center\">\n            <a href=\"mixing.html\"><button class='text-box-style hover-blue'>GOTO OUR MIXING SERVICES PAGE</button></a>\n        </div>\n    </div>"; 
-  
+ 
+  var timedMaster = "<div class=\"row\">\n        <div class=\"col\">\n   <h1 class='text-box-style hide-on-append' id='how-long-timed-master'>Maybe you could benefit from our timed mastering service. How long is your mix/podcast?</h1>\n      </div>\n     </div>\n         <div class=\"row\">\n            <div class=\"col d-flex justify-content-center\">\n  <input class='text-box-style hide-on-append' id='minutes-input' type='text' placeholder='length in minutes'>\n  </div>\n        </div>\n      <div class=\"row\">\n      <div class=\"col d-flex justify-content-center\">\n   <button class='service-btn hide-on-append hover-blue' id='calc-timed-master'>CALCULATE</button>\n  <button type=\"button\" class='service-btn hover-blue' data-toggle=\"modal\" data-target=\"#modalReset\">RESET CHOICES</button>\n  </div>\n        </div>\n       <div class=\"row\">\n            <div class=\"col d-flex justify-content-center\">\n           <a href=\"rates.html\"><p class='text-link'>GOTO OUR RATES PAGE TO SEE MORE ABOUT TIMED MASTERING</p></a>\n            </div>\n        </div>\n  ";
+  var requireMixing = "<div class=\"d-flex justify-content-center row row__A>\n        <div class=\"col\">\n            <h1 class='text-box-style hide-on-append' id='happy-with-mix'>Are you happy with the mix-down of the track?</h1>\n        </div>\n    </div>\n    <div class=\"d-flex justify-content-center row row__A>\n        <div class=\"col\">\n            <button class='button-option text-box-style hide-on-append hover-blue' id='yes-mix-btn'>YES</button>\n            <button class='button-option text-box-style hide-on-append hover-blue' id='no-mix-btn'>NO</button>\n        </div>\n    </div>";
+  var standardMastering = "<div class=\"row\">\n        <div class=\"col\">\n            <h2 class='text-box-style' id=\"standard-mastering-suggestion\">Our Standard Mastering service may be suited to your project. </h2></div></div>\n    <div class=\"row\">\n        <div class=\"col\">\n            <div id=\"standard-master-calc\"></div>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col\">\n            <h3 class='text-box-style' id=\"priority-master\">Priority Service (3 day turnaround) </h3>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col d-flex justify-content-center\">\n            <button class='button-option text-box-style hover-blue' id='yes-priority-btn'>YES</button>\n        </div>\n        <div class=\"col d-flex justify-content-center\">\n            <button class='button-option text-box-style hover-blue' id='no-priority-btn'>NO</button>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col\">\n            <h3 class='text-box-style' id=\"vinyl-master\">Vinyl Master </h3>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col d-flex justify-content-center\">\n            <button class='button-option text-box-style hover-blue' id='yes-vinyl-btn'>YES</button>\n        </div>\n        <div class=\"col d-flex justify-content-center\">\n            <button class='button-option text-box-style hover-blue' id='no-vinyl-btn'>NO</button>\n        </div>\n    </div>\n      <div class=\"row\">\n        <div class=\"col d-flex justify-content-center\">\n     <button type=\"button\" class='service-btn hover-blue' data-toggle=\"modal\" data-target=\"#modalReset\">RESET CHOICES</button>\n\n     </div>\n   </div>\n   <div class=\"row\">\n     <div class=\"col d-flex justify-content-center\">\n       <a href=\"mastering.html\"><p class='text-link'>GOTO OUR MASTERING SERVICES PAGE</p></a>\n        </div>\n    </div>";
+  var calcStems = "<div class=\"row\">\n        <div class=\"col\">\n            <h2 class='text-box-style hide-on-append layer-3-q' id='how-many-stems'>How many stems will you provide for mastering?</h2>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col d-flex justify-content-center\">\n            <label class='service-btn hide-on-append layer-3-q' id='amount-stems-label' for='amount-stems'>Choose amount of tracks:</label>  \n            <select class='service-btn hide-on-append layer-3-q' id='amount-stems' name='tracks'>\n                <option value='1-4'>1-4</option>\n                <option value='5-8'>5-8</option>\n                <option value='9-12'>9-12</option>\n                <option value='1-4-V'>1-4 Vinyl Master</option>\n                <option value='5-8-V'>5-8 Vinyl Master</option>\n                <option value='9-12-V'>9-12 Vinyl Master</option>\n            </select>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col d-flex justify-content-center\">\n            <div id=\"stem-calc-text\"></div>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col d-flex justify-content-center\">\n            <button class='service-btn hide-on-append layer-3-q hover-blue' id='calc-stem-master'>CALCULATE</button>\n   <button type=\"button\" class='service-btn hover-blue' data-toggle=\"modal\" data-target=\"#modalReset\">RESET CHOICES</button>\n\n     </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col d-flex justify-content-center\">\n            <a href=\"stem-mastering.html\"><p class='text-link'>GOTO OUR STEM-MASTERING SERVICES PAGE</p></a>\n        </div>\n    </div>";
+  var calcMix = "<div class=\"row\">\n        <div class=\"col d-flex justify-content-center\">\n            <h2 class='text-box-style hide-on-append layer-2-q' id=\"mix-service-suggestion\">Maybe you could benefit from our mixing services. How many tracks does your track have?</h2>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col d-flex justify-content-center\">   \n            <label class='service-btn hide-on-append layer-2-q' id='amount-tracks-label' for='amount-tracks'>Choose amount of tracks:</label>\n            <select class='service-btn hide-on-append layer-2-q' id='amount-tracks' name='tracks'>\n                <option value='1-10'>1-10</option>\n                <option value='11-20'>11-20</option>\n                <option value='21-30'>21-30</option>\n                <option value='31-40'>31-40</option>\n                <option value='41-50'>41-50</option>\n                <option value='51-60'>51-60</option>\n            </select>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col d-flex justify-content-center\">\n            <div id=\"mix-calc-text\"></div>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col d-flex justify-content-center\">\n            <button class='hide-on-append service-btn layer-2-q hover-blue' id='calc-mix'>CALCULATE</button>\n            <button type=\"button\" class='service-btn hover-blue' data-toggle=\"modal\" data-target=\"#modalReset\">RESET CHOICES</button>\n\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col d-flex justify-content-center\">\n            <a href=\"mixing.html\"><p class='text-link'>GOTO OUR MIXING SERVICES PAGE</p></a>\n        </div>\n    </div>";   
   // https://stackoverflow.com/questions/17883692/how-to-set-time-delay-in-javascript  -SUPPORT FOR SETTING DELAY TAKEN FROM HERE//
 
   //INITIAL SELECTION LOGIC //
@@ -23,9 +22,10 @@ $(document).ready(function () {
     var delayInMilliseconds = 1000;
 
     setTimeout(function () {
-      $("#question").html("<h1>You have selected DJ Mix</h1>");
+      $("#question").text("You have selected DJ Mix");
       $(".button-option").css("display", "none");
-      $("#service-text-container").append(timedMaster);
+      $("#refresh-btn").fadeToggle(800, "linear");
+      $("#service-finder-content").append(timedMaster);
       fadeInAllAfterFirst();
     }, delayInMilliseconds);
   });
@@ -34,9 +34,10 @@ $(document).ready(function () {
     var delayInMilliseconds = 1000;
 
     setTimeout(function () {
-      $("#question").html("<h1>You have selected Podcast</h1>");
+      $("#question").text("You have selected Podcast");
       $(".button-option").css("display", "none");
-      $("#service-text-container").append(timedMaster);
+      $("#refresh-btn").fadeToggle(800, "linear");
+      $("#service-finder-content").append(timedMaster);
       fadeInAllAfterFirst();
     }, delayInMilliseconds);
   });
@@ -45,7 +46,7 @@ $(document).ready(function () {
     var delayInMilliseconds = 1000;
 
     setTimeout(function () {
-      $("#question").html("<h1>You have selected Live Recording</h1>");
+      $("#question").text("You have selected Live Recording");
       $(".button-option").css("display", "none");
       $("#service-finder-content").append(requireMixing);
       fadeInAllAfterFirst();
@@ -56,7 +57,7 @@ $(document).ready(function () {
     var delayInMilliseconds = 1000;
 
     setTimeout(function () {
-      $("#question").html("<h1>You have selected Electronic Music</h1>");
+      $("#question").text("You have selected Electronic Music");
       $(".button-option").css("display", "none");
       $(".row__A").css("display", "none");
       $(".row__B").css("display", "none");
@@ -83,6 +84,7 @@ $(document).ready(function () {
     $("#yes-mix-btn").fadeToggle(600, "linear");
     $("#no-mix-btn").fadeToggle(600, "linear");
     $("#happy-with-mix").fadeToggle(600, "linear");
+    $("#refresh-btn").fadeToggle(800, "linear");
     var delayInMilliseconds = 300;
 
     setTimeout(function () {
@@ -94,6 +96,7 @@ $(document).ready(function () {
     $("#yes-stem-btn").fadeToggle(600, "linear");
     $("#no-stem-btn").fadeToggle(600, "linear");
     $("#stem-mastering-suggestion").fadeToggle(600, "linear");
+    $("#refresh-btn").fadeToggle(800, "linear");
     var delayInMilliseconds = 1000;
     setTimeout(function () {
       $("#service-finder-content").append(calcStems);
@@ -103,7 +106,7 @@ $(document).ready(function () {
   $(document).on('click', '#no-stem-btn', function () {
     $(".button-option").css("display", "none");
     $("#stem-mastering-suggestion").css("display", "none");
-    $("#question").css("display", "none");
+    $("#refresh-btn").fadeToggle(800, "linear");
     $("#service-finder-content").append(standardMastering);
     checkSelector(vinyl, priority);
   }); 
