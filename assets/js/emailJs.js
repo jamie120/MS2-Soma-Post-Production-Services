@@ -1,3 +1,7 @@
+(function(){
+            emailjs.init("user_ay2av5pwPBy3wqNOgCBCc");
+        })();
+
 function sendMail(contactForm) {
     emailjs.send("gmail", "joinMailList", {
         from_email: contactForm.email.value,
