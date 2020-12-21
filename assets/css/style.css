@@ -510,13 +510,9 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
     border-radius: 20px;
     position: relative;
     width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px auto 30px;
     padding: 10px;
 }
-
 
 .more-info-link {
     border: 1px solid rgba(119, 119, 119, 0.6);
@@ -551,7 +547,6 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
     border: 1px solid rgba(119, 119, 119, 0.6);
     border-radius: 15px;
     height: auto;
-    margin: 0;
     padding: 10px;
     margin-bottom: 20px;
     color: white;
@@ -559,8 +554,7 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
 }
 
 .service-images{
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 40px 0;
     padding: 5px;
     border-radius: 10%;
     max-width: 100%;
@@ -603,22 +597,9 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
     }
 }
 
-@media (max-width: 768px) {
-    .service-images{
-        margin-top: 40px;
-        margin-bottom: 40px;
-        padding: 5px;
-        max-width: 100%;
-        height: auto;
-        border-radius: 10%;
-    }
-}
-
 @media (min-width: 768px) {
     .service-images{
-        margin-top: 40px;
-        margin-bottom: 40px;
-        padding: 5px;
+        margin: 40px 0;
         height: 175px;
         width: 240px;
         border-radius: 10%;
@@ -627,9 +608,7 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
 
 @media (min-width: 992px) {
     .service-images{
-        margin-top: 40px;
-        margin-bottom: 40px;
-        padding: 5px;
+        margin: 40px 0;
         height: 220px;
         width: 300px;
         border-radius: 10%;
@@ -644,9 +623,7 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
 
 @media (min-width: 1201px) {
     .service-images{
-        margin-top: 40px;
-        margin-bottom: 40px;
-        padding: 5px;
+        margin: 40px 0;
         height: 263px;
         width: 360px;
         border-radius: 10%;
@@ -691,8 +668,7 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
 }
 
 #service-prices {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 15px;
 }
 
 #service-prices h2{
@@ -770,8 +746,7 @@ div#mixing_prices_chosen {
 }
 
 .audio-example > h3 {
-    margin-top: 60px;
-    margin-bottom: 20px;
+    margin: 60px 0 20px;
     color: white;
     text-align: center;
 }
@@ -927,7 +902,6 @@ table, caption {
     text-align: center;
     padding: 20px;
     font-size: 1.5rem;
-    margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 20px;
 }
@@ -939,7 +913,6 @@ table, caption {
     padding: 20px;
     font-size: 1.8rem;
     width: 60%;
-    margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 20px;
 }
@@ -949,8 +922,7 @@ table, caption {
     width: 100%;
     border-radius: 30%;
     object-fit: contain;
-    padding: 25px;
-    padding-bottom: 70px;
+    padding: 25px 25px 70px 25px;
 }
 
 .hover-blue:hover {
