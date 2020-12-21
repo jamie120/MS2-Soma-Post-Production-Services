@@ -456,9 +456,8 @@ All-testing has been documented [testing.md](https://github.com/jamie120/MS2-Som
         * Create const's where possible to reduce repeat code and tidy up code blocks.
 
     13. File Structure.
-        * Remove .gitignore, .gitpod.dockerfile, .gitpod.yml files from repo.
+        * Remove .gitpod.dockerfile, .gitpod.yml, -r .theia files from repo.
         * Move html pages into newly created pages dir, apart from index.html.
-
     
 # Deployment
 
