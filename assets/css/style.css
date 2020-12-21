@@ -223,7 +223,7 @@ p.nav-item-break {
 }
 
 .navbar {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 400;
     padding: 0;
 }
@@ -269,6 +269,10 @@ div#navbarItems {
   vertical-align: 0; /* to center vertically */
 }
 
+#nav-icon-plus {
+    display: none;
+}
+
 @media (max-width: 769px) {
     div#navbarItems {
         padding: 0;
@@ -276,11 +280,12 @@ div#navbarItems {
     }
     .nav-container {
     padding-right: 0px;
+    padding-left: 0px;
     }
 }
 @media (max-width: 991px){
     .navbar {
-    font-size: 1.1rem;
+    font-size: 1rem;
     }
 }
 
@@ -292,7 +297,18 @@ div#navbarItems {
     .navbar-toggler-icon i {
     font-size: 2rem;
     vertical-align: center;
-}
+    }
+    .row.d-block.navbar-links {
+    text-align: center;
+    }
+    a#service-finder-navlink {
+    padding-top: 20px;
+    }
+    #nav-icon-plus {
+    display: inline-block;
+    padding-left: 12px;
+    font-size: 0.8rem;
+    }
 }
 
 /*---------- Page Header Styling ----------*/
