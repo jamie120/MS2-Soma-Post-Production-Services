@@ -20,7 +20,6 @@
 4. [User Stories](#user-stories)
 5. [User Testing](#user-testing)
     * [My Mentor](#my-mentor)
-    * [Peer-code-review](#peer-code-review)
     * [User review](#user-review)
 
 ## Manual Testing
@@ -190,6 +189,12 @@ Screenshots of validations for each page of code can be found [here](https://git
 
 ## My-Mentor
 
-## Peer Code review
+A series of feedback and suggestions had been highlighted during the second call on Friday 18th December 2020. Action has been taken for all of these suggestions and changes to the site and code. 
+
+All changes are documented in Section 11 (Post Testing Fixes) in the main README file. Found [here](https://github.com/jamie120/MS2-Soma-Post-Production-Services/blob/master/README.md) 
 
 ## User Testing
+
+A fellow Code Institure student took the time to thoroughly review the site content and code. They provided me with several ideas to improve both the user experience and improve the code efficiency.
+
+All changes made have been documented in Section 11 (Post Testing Fixes) in the main README file. Found [here](https://github.com/jamie120/MS2-Soma-Post-Production-Services/blob/master/README.md) 
