@@ -387,7 +387,9 @@ It was imported from 'Google Fonts' in the head of each page. I applied the font
 * [FontAwseome](https://fontawesome.com/) (5.15.1) - used for all icons on the site.
 * [MD Bootstrap](https://mdbootstrap.com) (4.19.1) - with supporting JS Script - used for modals and contact form.
 * [Google Fonts](https://fonts.google.com/) - used for the Roboto fonts.
-* [Hover.css](https://ianlunn.github.io/Hover/) - used for animation effects on social icons and various buttons throughout the site.
+* [Hover.css](https://ianlunn.github.io/Hover/) - used for animation effects on social icons and various buttons throughout the site. 
+    * The hover.css style sheet was used in the project, as opposed to using the CDN. 
+    * This enabled me to easily make direct changes to the code within the stylesheet to tailor effects to my requirements.
 * [JQuery](https://jquery.com/) (3.5.1) - used throughout the site to target and manipulate HTML elements and also in conjunction with the Bootstrap library.
 * [Chosen](https://harvesthq.github.io/chosen/) (1.8.7) - used to replace the standard select menus site wide.
 
@@ -452,6 +454,10 @@ All-testing has been documented [testing.md](https://github.com/jamie120/MS2-Som
 
         * Add additional, more expressive notes / documentation to JS files.
         * Create const's where possible to reduce repeat code and tidy up code blocks.
+
+    13. File Structure.
+        * Remove .gitignore, .gitpod.dockerfile, .gitpod.yml files from repo.
+        * Move html pages into newly created pages dir, apart from index.html.
 
     
 # Deployment
