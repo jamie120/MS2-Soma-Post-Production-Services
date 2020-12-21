@@ -413,6 +413,7 @@ It was imported from 'Google Fonts' in the head of each page. I applied the font
 * [ezgif](https://ezgif.com/) - used in testing.md to capture interactive elements into gifs.
 * [Diagrams.net](https://app.diagrams.net/) - used to create flowchart diagram for the service finder.
 * [hex to rgb converter](https://www.webfx.com/web-design/hex-to-rgb/) - used to get consistency within my code.
+* [Favicon generator](https://favicon.io/favicon-converter/) - used to generate favicons
 
 # Testing
 
@@ -441,6 +442,8 @@ All-testing has been documented [testing.md](https://github.com/jamie120/MS2-Som
 
         * Price Estimate section - Move text 'price estimate' to become a section header.
         * Remove service finder link from service page - no longer required.
+
+    10. Rates Page - Display a table as default when the user visits the page. (Standard Mastering Table set as default)
 
     10. Add favicon to site - which will add a small icon next to the url within users browsers.  
 
@@ -520,7 +523,7 @@ Each images is licenced to use royalty free.
 
 ### Audio
 
-All Soundcloud embedded tracks are owned and copyrighted by myself (Jamie Rolls).
+All Soundcloud embedded audio is owned and copyrighted by myself (Jamie Rolls). www.soundcloud.com/somapsytrance
 
 ## Acknowledgements
    
@@ -535,8 +538,9 @@ All Soundcloud embedded tracks are owned and copyrighted by myself (Jamie Rolls)
 * [Bootstrap Documentation](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
 * [EmailJS Documentation](https://www.emailjs.com/docs/)
 * [The following site was used for reference on template literals](https://flaviocopes.com/javascript-template-literals/)
+* [JS Commenting](https://jsdoc.app/about-getting-started.html)
 
 #### I received advice and support from
-   * Seun Owonikoko (my mentor)
-   * new mentor
+   * Seun Owonikoko (mentor)
+   * Oluwafemi Medale (mentor)
    * Code Institute - Slack Community (various students, tutors and mentors)
