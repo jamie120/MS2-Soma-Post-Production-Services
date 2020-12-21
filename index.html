@@ -1,321 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Bootstrap Core-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-    <!-- Hover CSS -->
-    <link href="assets/css/hover.css" rel="stylesheet" media="all">
-    <!--Manual CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Favicon Links -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
-    <title>Soma - Post Production Services</title>
-</head>
-<body>
-    <!--TOP NAVIGATION -->
-    <div class="container-fluid" id="top-nav">
-        <div class="container d-flex justify-content-center justify-content-md-end">
-            <a data-toggle="modal" data-target="#modalJoinMail" class="top-nav-links d-block d-md-none">
-                <p>JOIN MAILING LIST</p>
-            </a> 
-        </div> 
-    </div>
-     <!--TOP NAVIGATION -->
-
-    <!--Modal: modalJoinMail-->
-    <div class="modal fade" id="modalJoinMail" tabindex="-1" role="dialog" aria-labelledby="modalJoinMail" aria-hidden="true">
-        <div class="modal-dialog modal-sm modal-notify" role="document">
-            <form onsubmit="return sendMail(this);">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Bootstrap Core-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+        <!-- Hover CSS -->
+        <link href="assets/css/hover.css" rel="stylesheet" media="all">
+        <!--Manual CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Favicon Links -->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+        <title>Soma - Post Production Services</title>
+    </head>
+    <body>
+        <!--TOP NAVIGATION -->
+        <div class="container-fluid" id="top-nav">
+            <div class="container d-flex justify-content-center justify-content-md-end">
+                <a data-toggle="modal" data-target="#modalJoinMail" class="top-nav-links d-block d-md-none">
+                    <p>JOIN MAILING LIST</p>
+                </a>
+            </div>
+        </div>
+        <!--TOP NAVIGATION -->
+        <!--Modal: modalJoinMail-->
+        <div class="modal fade" id="modalJoinMail" tabindex="-1" role="dialog" aria-labelledby="modalJoinMail" aria-hidden="true">
+            <div class="modal-dialog modal-sm modal-notify" role="document">
+                <form onsubmit="return sendMail(this);">
+                    <div class="modal-content">
+                        <div class="modal-header dark-background">
+                            <h4 class="modal-title w-100 myModalLabel">Join Mailing List</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body dark-brown">
+                            <div id="mail-modal-text" class="md-form">
+                                <i class="fas fa-envelope prefix white-text"></i>
+                                <input type="email" name="email" id="form29" class="form-control validate" required>
+                                <label data-error="wrong" data-success="right" for="form29">Your email</label>                     
+                            </div>
+                        </div>
+                        <div class="modal-footer dark-background">
+                            <button type="button" class="btn btn-dark btn-sm" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-blue-grey btn-sm">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--Modal: modalJoinMail-->
+        <!--Success message modal-->
+        <div class="modal fade" id="modalJoinSuccess" tabindex="-1" role="dialog" aria-labelledby="modalJoinSuccess" aria-hidden="true">
+            <div class="modal-dialog modal-sm modal-notify" role="document">
                 <div class="modal-content">
                     <div class="modal-header dark-background">
-                        <h4 class="modal-title w-100 myModalLabel">Join Mailing List</h4>
+                        <h4 class="modal-title w-100 myModalLabel">Thanks for signing up, check your inbox for an exculsive discount!</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+                        <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body dark-brown">
-                        <div id="mail-modal-text" class="md-form">
-                            <i class="fas fa-envelope prefix white-text"></i>
-                            <input type="email" name="email" id="form29" class="form-control validate" required>
-                            <label data-error="wrong" data-success="right" for="form29">Your email</label>                     
-                        </div>
-                    </div>
-                    <div class="modal-footer dark-background">
-                        <button type="button" class="btn btn-dark btn-sm" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-blue-grey btn-sm">Subscribe</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-    <!--Modal: modalJoinMail-->
-    <!--Success message modal-->
-    <div class="modal fade" id="modalJoinSuccess" tabindex="-1" role="dialog" aria-labelledby="modalJoinSuccess" aria-hidden="true">
-        <div class="modal-dialog modal-sm modal-notify" role="document">
-            <div class="modal-content">
-                <div class="modal-header dark-background">
-                    <h4 class="modal-title w-100 myModalLabel">Thanks for signing up, check your inbox for an exculsive discount!</h4> 
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
                 </div>
             </div>
         </div>
-    </div>
-    <!--Success message modal-->
-
-    <!--BANNER & MAIN NAVBAR -->
-    <div class="container-fluid" id="banner">
-        <div class="row">
-            <div class="col-md-3 logoContainer d-flex justify-content-center justify-content-md-start">
-                <a class="d-none d-md-block" href="index.html"><img class="logo" src="assets/images/logo.png" alt=""></a>
-            </div>
-            <div class="col-md-9 nav-container align-self-center">
-                <ul class="container" id="social-icons-banner">
-                    <li><a class="nav-link" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square hvr-grow"></i></a></li>
-                    <li><a class="nav-link" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram-square hvr-grow"></i></a></li>
-                    <li><a class="nav-link" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square hvr-grow"></i></a></li>
-                </ul>
-                <nav class="navbar navbar-expand-sm shadow-none" id="navbar">
-                    <button id="toggle-button" class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!--Success message modal-->
+        <!--BANNER & MAIN NAVBAR -->
+        <div class="container-fluid" id="banner">
+            <div class="row">
+                <div class="col-md-3 logoContainer d-flex justify-content-center justify-content-md-start">
+                    <a class="d-none d-md-block" href="index.html"><img class="logo" src="assets/images/logo.png" alt=""></a>
+                </div>
+                <div class="col-md-9 nav-container align-self-center">
+                    <ul class="container" id="social-icons-banner">
+                        <li><a class="nav-link" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square hvr-grow"></i></a></li>
+                        <li><a class="nav-link" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram-square hvr-grow"></i></a></li>
+                        <li><a class="nav-link" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square hvr-grow"></i></a></li>
+                    </ul>
+                    <nav class="navbar navbar-expand-sm shadow-none" id="navbar">
+                        <button id="toggle-button" class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-                    </button> 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="container" id="navbarItems">
-                        <div class="row d-block navbar-links">
-                            <ul class="navbar-nav">
-                                <li><a class="nav-link" href="index.html">HOME</a></li>
-                                <li><p class="nav-item-break">|</p></li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SERVICES<i id="nav-icon-plus" class="fa-plus fas"></i></a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="pages/mastering.html">MASTERING</a>
-                                    <a class="dropdown-item" href="pages/stem-mastering.html">STEM-MASTERING</a>
-                                    <a class="dropdown-item" href="pages/mixing.html">MIXING</a>
-                                    </div>
-                                </li>
-                                <li><p class="nav-item-break">|</p></li>
-                                <li><a class="nav-link" href="pages/service-finder.html">SERVICE FINDER</a></li>
-                                <li><p class="nav-item-break">|</p></li>
-                                <li><a class="nav-link" href="pages/rates.html">RATES</a></li>
-                                <li><p class="nav-item-break">|</p></li>
-                                <li><a class="nav-link" href="pages/contact.html">CONTACT</a></li>
-                                <li><p class="nav-item-break">|</p></li>
-                                <li><a class="nav-link" href="pages/faq.html">FAQ</a></li>
-                            </ul>
+                        </button> 
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div class="container" id="navbarItems">
+                                <div class="row d-block navbar-links">
+                                    <ul class="navbar-nav">
+                                        <li><a class="nav-link" href="index.html">HOME</a></li>
+                                        <li>
+                                            <p class="nav-item-break">|</p>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SERVICES<i id="nav-icon-plus" class="fa-plus fas"></i></a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="pages/mastering.html">MASTERING</a>
+                                                <a class="dropdown-item" href="pages/stem-mastering.html">STEM-MASTERING</a>
+                                                <a class="dropdown-item" href="pages/mixing.html">MIXING</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p class="nav-item-break">|</p>
+                                        </li>
+                                        <li><a class="nav-link" href="pages/service-finder.html">SERVICE FINDER</a></li>
+                                        <li>
+                                            <p class="nav-item-break">|</p>
+                                        </li>
+                                        <li><a class="nav-link" href="pages/rates.html">RATES</a></li>
+                                        <li>
+                                            <p class="nav-item-break">|</p>
+                                        </li>
+                                        <li><a class="nav-link" href="pages/contact.html">CONTACT</a></li>
+                                        <li>
+                                            <p class="nav-item-break">|</p>
+                                        </li>
+                                        <li><a class="nav-link" href="pages/faq.html">FAQ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </nav>
                 </div>
-            </nav>
             </div>
         </div>
-    </div>
-    <!--BANNER & MAIN NAVBAR -->
-
-    <div class="container-fluid dark-background" id="hero-landing">
-        
-        <!--CAROUSEL-PHOTOS-->
-        <div id="photo-carousel" class="carousel slide carousel-fade" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="inner-item">
-                        <div class="carousel-caption trickcenter">
-                            <div id="stroke-text-1">
-                                <p>FIND THE RIGHT SERVICE</p>
-                                <p>FOR YOU BY USING OUR</p>
-                                <p>INTELLIGENT HELPER</p>
+        <!--BANNER & MAIN NAVBAR -->
+        <div class="container-fluid dark-background" id="hero-landing">
+            <!--CAROUSEL-PHOTOS-->
+            <div id="photo-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="inner-item">
+                            <div class="carousel-caption trickcenter">
+                                <div id="stroke-text-1">
+                                    <p>FIND THE RIGHT SERVICE</p>
+                                    <p>FOR YOU BY USING OUR</p>
+                                    <p>INTELLIGENT HELPER</p>
+                                </div>
                             </div>
+                            <img class="img-fluid" src="assets/images/studio-landing.jpeg" alt="studio-photograph">
                         </div>
-                        <img class="img-fluid" src="assets/images/studio-landing.jpeg" alt="studio-photograph">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="inner-item">
+                            <div class="carousel-caption trickcenter">
+                                <div id="stroke-text-2">
+                                    <p>WE OFFER A RANGE OF SERVICES</p>
+                                    <p>SUITED TO YOUR NEEDS</p>
+                                    <p>GET IN TOUCH WITH US</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/images/mixer-landing.jpeg" alt="studio-photograph">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="inner-item">
+                            <div class="carousel-caption trickcenter">
+                                <div id="stroke-text-3">
+                                    <p>OUR TOP INDUSTRY PROFESSIONALS</p>
+                                    <p>ARE READY TO TAKE YOUR WORK</p>
+                                    <p>TO THE NEXT LEVEL</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/images/mastering-landing.jpeg" alt="studio-photograph">
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="inner-item">
-                        <div class="carousel-caption trickcenter">
-                            <div id="stroke-text-2">
-                                <p>WE OFFER A RANGE OF SERVICES</p>
-                                <p>SUITED TO YOUR NEEDS</p>
-                                <p>GET IN TOUCH WITH US</p>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="assets/images/mixer-landing.jpeg" alt="studio-photograph">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="inner-item">
-                        <div class="carousel-caption trickcenter">
-                            <div id="stroke-text-3">
-                                <p>OUR TOP INDUSTRY PROFESSIONALS</p>
-                                <p>ARE READY TO TAKE YOUR WORK</p>
-                                <p>TO THE NEXT LEVEL</p>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="assets/images/mastering-landing.jpeg" alt="studio-photograph">
-                    </div>
-                </div>
-            </div>
-            <!--CAROUSEL NAVIGATION-->
-            <a class="carousel-control-prev" href="#photo-carousel" data-slide="prev">
+                <!--CAROUSEL NAVIGATION-->
+                <a class="carousel-control-prev" href="#photo-carousel" data-slide="prev">
                 <span><i class="fa fa-arrow-left" aria-hidden="true"></i></span>
-            </a>
-            <a class="carousel-control-next" href="#photo-carousel" data-slide="next">
+                </a>
+                <a class="carousel-control-next" href="#photo-carousel" data-slide="next">
                 <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
-            </a>
-        </div>
-    </div>
-
-    
-    <div class="container-fluid" id="service-links">
-
-    <!--BUSINESS INFO-->
-    <div class="container" id="services">
-        <div class="row">
-            <div class="col d-flex justify-content-center">
-                <a href="index.html"><img id="logo-index-page" class="logo center-logo" src="assets/images/logo-circle.jpg" alt="brand-logo"></a>
+                </a>
             </div>
         </div>
-        <div class="row">
-            <div class="col" id="business-info">
-                <p class="center-text white-text">Wecome to SOMA Post Production Audio Services. Welcome to our site, we hope you can find all the information you need on here, but if not please don't hesitate to get in touch with us <a href="contact.html">here</a>.We are a small, experienced and focused team based in the West Midlands. Our aim at SOMA is to provide quality post production audio services to its clients, with outstanding service. We take time to understand our clients and put our heart into every piece of work, to get the best result for them.</p>
-                <hr class="break-line white">
-                <p class="text-center white-text">Our service finder can help you find the right service for your project, as well as provide you with a price estimate. This is achieved by asking you a series of questions about your audio.</p>
-                <p class="text-center white-text">Check out the service finder feature by clicking the button below.</p>
-                <a href="pages/service-finder.html"><h3 class="text-center white-text">SERVICE FINDER</h3></a>
-                <hr class="break-line white">
+        <div class="container-fluid" id="service-links">
+            <!--BUSINESS INFO-->
+            <div class="container" id="services">
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <a href="index.html"><img id="logo-index-page" class="logo center-logo" src="assets/images/logo-circle.jpg" alt="brand-logo"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" id="business-info">
+                        <p class="center-text white-text">Wecome to SOMA Post Production Audio Services. Welcome to our site, we hope you can find all the information you need on here, but if not please don't hesitate to get in touch with us <a href="contact.html">here</a>.We are a small, experienced and focused team based in the West Midlands. Our aim at SOMA is to provide quality post production audio services to its clients, with outstanding service. We take time to understand our clients and put our heart into every piece of work, to get the best result for them.</p>
+                        <hr class="break-line white">
+                        <p class="text-center white-text">Our service finder can help you find the right service for your project, as well as provide you with a price estimate. This is achieved by asking you a series of questions about your audio.</p>
+                        <p class="text-center white-text">Check out the service finder feature by clicking the button below.</p>
+                        <a href="pages/service-finder.html">
+                            <h3 class="text-center white-text">SERVICE FINDER</h3>
+                        </a>
+                        <hr class="break-line white">
+                    </div>
+                </div>
             </div>
-        </div>   
-    </div>
-    <!--BUSINESS INFO-->
-
-    <!--BUSINESS SERVICES-->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 d-flex flex-column justify-content-center">
-                    <a href="pages/mastering.html">
+            <!--BUSINESS INFO-->
+            <!--BUSINESS SERVICES-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 d-flex flex-column justify-content-center">
+                        <a href="pages/mastering.html">
                         <img class="service-images img-fluid" src="assets/images/services/mastering-service.png" alt="mastering-services">
-                    </a>
-                    <div class="service-info white-text text-center">
-                        <h3>MASTERING</h3>
-                        <p>Traditional mastering completed on a provided audio file, using the best hardware and software in the market, by one of our highly trained engineers.</p>
-                        <p>Starting from £25 per track</p>
-                        <a href="pages/mastering.html"><p class="more-info-link">MORE INFO</p></a>
+                        </a>
+                        <div class="service-info white-text text-center">
+                            <h3>MASTERING</h3>
+                            <p>Traditional mastering completed on a provided audio file, using the best hardware and software in the market, by one of our highly trained engineers.</p>
+                            <p>Starting from £25 per track</p>
+                            <a href="pages/mastering.html">
+                                <p class="more-info-link">MORE INFO</p>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4 d-flex flex-column justify-content-center">
-                    <a href="pages/stem-mastering.html">
+                    <div class="col-md-4 d-flex flex-column justify-content-center">
+                        <a href="pages/stem-mastering.html">
                         <img class="service-images" src="assets/images/services/stem-mastering-service.jpg" alt="stem-mastering-services">
-                    </a>
-                    <div class="service-info white-text text-center">
-                        <h3>STEM-MASTERING</h3>
-                        <p>Have mastering completed using stem audio files, giving our engineers full dynamic control throughout the mastering process of your music.</p>
-                        <p>Starting from £40 per track</p>
-                        <a href="pages/stem-mastering.html"><p class="more-info-link">MORE INFO</p></a>
+                        </a>
+                        <div class="service-info white-text text-center">
+                            <h3>STEM-MASTERING</h3>
+                            <p>Have mastering completed using stem audio files, giving our engineers full dynamic control throughout the mastering process of your music.</p>
+                            <p>Starting from £40 per track</p>
+                            <a href="pages/stem-mastering.html">
+                                <p class="more-info-link">MORE INFO</p>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4 d-flex flex-column justify-content-center">
-                    <a href="pages/mixing.html">
+                    <div class="col-md-4 d-flex flex-column justify-content-center">
+                        <a href="pages/mixing.html">
                         <img class="service-images" src="assets/images/services/mixing-service.jpg" alt="mixing-services">
-                    </a>
-                    <div class="service-info white-text text-center">
-                        <h3>MIXING</h3>
-                        <p>Get that professional, release ready sound.! We combine our experience with the latest in audio tech to ensure your mix stands out from the competition.</p>
-                        <p>Starting from £60 per track</p>
-                        <a href="pages/mixing.html"><p class="more-info-link">MORE INFO</p></a>
+                        </a>
+                        <div class="service-info white-text text-center">
+                            <h3>MIXING</h3>
+                            <p>Get that professional, release ready sound.! We combine our experience with the latest in audio tech to ensure your mix stands out from the competition.</p>
+                            <p>Starting from £60 per track</p>
+                            <a href="pages/mixing.html">
+                                <p class="more-info-link">MORE INFO</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--BUSINESS SERVICES-->
-    
-    <!-- Central Modal Medium Info -->
-    <div class="modal fade" id="serviceFinderPrompt" tabindex="-1" role="dialog" aria-labelledby="serviceFinderPrompt" aria-hidden="true">
-    <div class="modal-dialog modal-info modal-lg modal-side modal-bottom-right" role="document">
-        <!--Content-->
-        <div class="modal-content">
-            <!--Header-->
-            <div class="modal-header dark-background justify-content-center">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true" class="white-text">&times;</span>
-                </button>
+        <!--BUSINESS SERVICES-->
+        <!-- Central Modal Medium Info -->
+        <div class="modal fade" id="serviceFinderPrompt" tabindex="-1" role="dialog" aria-labelledby="serviceFinderPrompt" aria-hidden="true">
+            <div class="modal-dialog modal-info modal-lg modal-side modal-bottom-right" role="document">
+                <!--Content-->
+                <div class="modal-content">
+                    <!--Header-->
+                    <div class="modal-header dark-background justify-content-center">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white-text">&times;</span>
+                        </button>
+                    </div>
+                    <!--Body-->
+                    <div class="modal-body dark-brown">
+                        <div class="text-center">
+                            <i class="fas fa-sliders-h fa-4x mb-3 animated white-text rotateIn"></i>
+                            <p class="white-text"><strong>Check out our service finder, if you're unsure which service would be best suited for your project.</strong></p>
+                            <p class="white-text">Our intelligent helper will guide you through a series of questions and provide you with a price estimate.</p>
+                        </div>
+                    </div>
+                    <!--Footer-->
+                    <div class="modal-footer dark-background justify-content-center">
+                        <a href="pages/service-finder.html" class="btn btn-blue-grey">Take me there <i class="far fa-arrow-alt-circle-right white-text"></i></a>
+                        <a href="#" class="btn btn-dark waves-effect" data-dismiss="modal">No, thanks</a>
+                    </div>
+                </div>
+                <!--/.Content-->
             </div>
-
-       <!--Body-->
-       <div class="modal-body dark-brown">
-         <div class="text-center">
-           <i class="fas fa-sliders-h fa-4x mb-3 animated white-text rotateIn"></i>
-           <p class="white-text"><strong>Check out our service finder, if you're unsure which service would be best suited for your project.</strong></p>
-           <p class="white-text">Our intelligent helper will guide you through a series of questions and provide you with a price estimate.</p>
-         </div>
-       </div>
-
-       <!--Footer-->
-       <div class="modal-footer dark-background justify-content-center">
-            <a href="pages/service-finder.html" class="btn btn-blue-grey">Take me there <i class="far fa-arrow-alt-circle-right white-text"></i></a>
-            <a href="#" class="btn btn-dark waves-effect" data-dismiss="modal">No, thanks</a>
-       </div>
-     </div>
-     <!--/.Content-->
-   </div>
- </div>
- <!-- Central Modal Medium Info-->
-
-    <!--FOOTER-->
-    <footer class="footer mt-auto">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div id="newsletter-signup">
-                        <form onsubmit="return sendMail(this);">
-                            <p>Join our mailing list for news and special offers</p>
-                            <input type="email" name="email" placeholder="Email Address"><br>
-                            <button type="submit">Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-                <div class="col">
-                    <div id="copyright-credits">
-                        <ul id="social-icons-footer">
-                            <li><a class="nav-link" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square hvr-grow"></i></a></li>
-                            <li><a class="nav-link" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram-square hvr-grow"></i></a></li>
-                            <li><a class="nav-link" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square hvr-grow"></i></a></li>
-                        </ul>
-                        <p class="footer-text">Copyright 2020 - SOMA Post Production Services</p>
-                        <p class="footer-text">Site Design by Jamie Rolls</p>
-                    </div>
-                </div>
-            </div>    
         </div>
-    </footer>
-    <!--FOOTER-->
-
-    <!-- JQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Chosen - jQuery Plugin -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-    <!-- Main JavaScript File -->
-	<script src="assets/js/main.js" defer></script>
-    <!-- Service-Helper JavaScript File -->
-	<script src="assets/js/service-helper.js" defer></script>
-    <!-- Email Js JavaScript File -->
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script src="assets/js/emailJs.js"></script>
-</body>
+        <!-- Central Modal Medium Info-->
+        <!--FOOTER-->
+        <footer class="footer mt-auto">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div id="newsletter-signup">
+                            <form onsubmit="return sendMail(this);">
+                                <p>Join our mailing list for news and special offers</p>
+                                <input type="email" name="email" placeholder="Email Address"><br>
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div id="copyright-credits">
+                            <ul id="social-icons-footer">
+                                <li><a class="nav-link" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square hvr-grow"></i></a></li>
+                                <li><a class="nav-link" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram-square hvr-grow"></i></a></li>
+                                <li><a class="nav-link" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square hvr-grow"></i></a></li>
+                            </ul>
+                            <p class="footer-text">Copyright 2020 - SOMA Post Production Services</p>
+                            <p class="footer-text">Site Design by Jamie Rolls</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--FOOTER-->
+        <!-- JQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Chosen - jQuery Plugin -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+        <!-- Main JavaScript File -->
+        <script src="assets/js/main.js" defer></script>
+        <!-- Service-Helper JavaScript File -->
+        <script src="assets/js/service-helper.js" defer></script>
+        <!-- Email Js JavaScript File -->
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script src="assets/js/emailJs.js"></script>
+    </body>
 </html>

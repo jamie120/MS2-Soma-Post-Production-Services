@@ -1,372 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Bootstrap Core-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-    <!-- Hover CSS -->
-    <link href="../assets/css/hover.css" rel="stylesheet" media="all">
-    <!--Manual CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <!-- Favicon Links -->
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../assets/images/favicon/site.webmanifest">
-    <title>Soma - Post Production Services</title>
-</head>
-<body>
-    <!--TOP NAVIGATION -->
-    <div class="container-fluid" id="top-nav">
-        <div class="container d-flex justify-content-center justify-content-md-end">
-            <a data-toggle="modal" data-target="#modalJoinMail" class="top-nav-links d-block d-md-none">
-                <p>JOIN MAILING LIST</p>
-            </a> 
-        </div> 
-    </div>
-     <!--TOP NAVIGATION -->
-
-    <!--Modal: modalJoinMail-->
-    <div class="modal fade" id="modalJoinMail" tabindex="-1" role="dialog" aria-labelledby="modalJoinMail" aria-hidden="true">
-        <div class="modal-dialog modal-sm modal-notify" role="document">
-            <form onsubmit="return sendMail(this);">
-                <div class="modal-content">
-                    <div class="modal-header dark-background">
-                        <h4 class="modal-title w-100 myModalLabel">Join Mailing List</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Bootstrap Core-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+        <!-- Hover CSS -->
+        <link href="../assets/css/hover.css" rel="stylesheet" media="all">
+        <!--Manual CSS -->
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <!-- Favicon Links -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../assets/images/favicon/site.webmanifest">
+        <title>Soma - Post Production Services</title>
+    </head>
+    <body>
+        <!--TOP NAVIGATION -->
+        <div class="container-fluid" id="top-nav">
+            <div class="container d-flex justify-content-center justify-content-md-end">
+                <a data-toggle="modal" data-target="#modalJoinMail" class="top-nav-links d-block d-md-none">
+                    <p>JOIN MAILING LIST</p>
+                </a>
+            </div>
+        </div>
+        <!--TOP NAVIGATION -->
+        <!--Modal: modalJoinMail-->
+        <div class="modal fade" id="modalJoinMail" tabindex="-1" role="dialog" aria-labelledby="modalJoinMail" aria-hidden="true">
+            <div class="modal-dialog modal-sm modal-notify" role="document">
+                <form onsubmit="return sendMail(this);">
+                    <div class="modal-content">
+                        <div class="modal-header dark-background">
+                            <h4 class="modal-title w-100 myModalLabel">Join Mailing List</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body dark-brown">
-                        <div id="mail-modal-text" class="md-form">
-                            <i class="fas fa-envelope prefix white-text"></i>
-                            <input type="email" name="email" id="form29" class="form-control validate" required>
-                            <label data-error="wrong" data-success="right" for="form29">Your email</label>                     
+                            </button>
                         </div>
-                    </div>
-                    <div class="modal-footer dark-background">
-                        <button type="button" class="btn btn-dark btn-sm" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-blue-grey btn-sm">Subscribe</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-    <!--Modal: modalJoinMail-->
-    <!--Success message modal-->
-    <div class="modal fade" id="modalJoinSuccess" tabindex="-1" role="dialog" aria-labelledby="modalJoinSuccess" aria-hidden="true">
-        <div class="modal-dialog modal-sm modal-notify" role="document">
-            <div class="modal-content">
-                <div class="modal-header dark-background">
-                    <h4 class="modal-title w-100 myModalLabel">Thanks for signing up, check your inbox for an exculsive discount!</h4> 
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Success message modal-->
-
-    <!--BANNER & MAIN NAVBAR -->
-    <div class="container-fluid" id="banner">
-        <div class="row">
-            <div class="col-md-3 logoContainer d-flex justify-content-center justify-content-md-start">
-                <a class="d-none d-md-block" href="../index.html"><img class="logo" src="../assets/images/logo.png" alt=""></a>
-            </div>
-            <div class="col-md-9 nav-container align-self-center">
-                <ul class="container" id="social-icons-banner">
-                    <li><a class="nav-link" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square hvr-grow"></i></a></li>
-                    <li><a class="nav-link" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram-square hvr-grow"></i></a></li>
-                    <li><a class="nav-link" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square hvr-grow"></i></a></li>
-                </ul>
-                <nav class="navbar navbar-expand-sm shadow-none" id="navbar">
-                    <button id="toggle-button" class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-                    </button> 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="container" id="navbarItems">
-                        <div class="row d-block navbar-links">
-                            <ul class="navbar-nav">
-                                <li><a class="nav-link" href="../index.html">HOME</a></li>
-                                <li><p class="nav-item-break">|</p></li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SERVICES<i id="nav-icon-plus" class="fa-plus fas"></i></a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="mastering.html">MASTERING</a>
-                                    <a class="dropdown-item" href="stem-mastering.html">STEM-MASTERING</a>
-                                    <a class="dropdown-item" href="mixing.html">MIXING</a>
-                                    </div>
-                                </li>
-                                <li><p class="nav-item-break">|</p></li>
-                                <li><a class="nav-link" href="service-finder.html">SERVICE FINDER</a></li>
-                                <li><p class="nav-item-break">|</p></li>
-                                <li><a class="nav-link" href="rates.html">RATES</a></li>
-                                <li><p class="nav-item-break">|</p></li>
-                                <li><a class="nav-link" href="contact.html">CONTACT</a></li>
-                                <li><p class="nav-item-break">|</p></li>
-                                <li><a class="nav-link" href="faq.html">FAQ</a></li>
-                            </ul>
+                        <div class="modal-body dark-brown">
+                            <div id="mail-modal-text" class="md-form">
+                                <i class="fas fa-envelope prefix white-text"></i>
+                                <input type="email" name="email" id="form29" class="form-control validate" required>
+                                <label data-error="wrong" data-success="right" for="form29">Your email</label>                     
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </nav>
-            </div>
-        </div>
-    </div>
-    <!--BANNER & MAIN NAVBAR -->
-
-    <!--PAGE HEADER -->
-    <div class="container-fluid" id="page-header-rates">
-        <h2 id="rates-heading">RATES</h2>
-        <div class="row">
-            <div class="col d-flex justify-content-center">
-                <form>
-                    <div class="form-group">
-                        <label for="rates-table"></label>
-                        <select class="form-control" id="rates-table">
-                            <option value="none">CHOOSE SERVICE TO SEE RATES</option>
-                            <option value="mastering">Standard Mastering</option>
-                            <option value="stem-mastering">Stem Mastering</option>
-                            <option value="timed-mastering">Timed Mastering (DJ MIX / PODCAST)</option>
-                            <option value="mixing">Mixing</option>
-                        </select>
+                        <div class="modal-footer dark-background">
+                            <button type="button" class="btn btn-dark btn-sm" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-blue-grey btn-sm">Subscribe</button>
+                        </div>
                     </div>
                 </form>
             </div>
         </div>
-        <p id="rates-initial-text" class="white-text text-center">The table below shows rates for Standard Mastering.</p> 
-        <hr class="break-line white" id="rates-hr">
-    </div>
-
-    <!--TABLE OF PRICES -->
-    <div class="container-fluid" id="rates-container">
-        <div class="container">
-            <div class="row">
-                <div class="col d-flex justify-content-center">
-                    <table id="mastering-table" style="width:100%">    
-                <thead>
-                    <tr>
-                        <th>SERVICE</th>
-                        <th>1-4 SONGS</th>
-                        <th>5-8 SONGS</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Standard Master</td>
-                        <td>£25 Per Song</td>
-                        <td>£20 Per Song</td>
-                    </tr>
-                    <tr>
-                        <td>Priority Master</td>
-                        <td>£50 Per Song</td>
-                        <td>£40 Per Song</td>
-                    </tr>
-                    <tr>
-                        <td>Vinyl Master</td>
-                        <td>£30 Per Song</td>
-                        <td>£24 Per Song</td>
-                    </tr>
-                </tbody>
-            </table>
-                </div>
-            </div>
-            
-        </div>
-        <div class="container d-flex justify-content-center stem-mastering-table">
-            <div class="row">
-                <div class="col d-flex justify-content-center">
-                <table id="stem-mastering-table" style="width:100%">    
-                <thead>
-                    <tr>
-                        <th>SERVICE</th>
-                        <th>1-4 SONGS</th>
-                        <th>5-8 SONGS</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1 - 4 Channel Stem Master</td>
-                        <td>£40 Per Song</td>
-                        <td>£32 Per Song</td>
-                    </tr>
-                    <tr>
-                        <td>5 - 8 Channel Stem Master</td>
-                        <td>£50 Per Song</td>
-                        <td>£40 Per Song</td>
-                    </tr>
-                    <tr>
-                        <td>9 - 12 Channel Stem Master</td>
-                        <td>£60 Per Song</td>
-                        <td>£48 Per Song</td>
-                    </tr>
-                    <tr>
-                        <td>1 - 4 Channel Stem Master ( Vinyl )</td>
-                        <td>£50 Per Song</td>
-                        <td>£40 Per Song</td>
-                    </tr>
-                    <tr>
-                        <td>5 - 8 Channel Stem Master ( Vinyl )</td>
-                        <td>£60 Per Song</td>
-                        <td>£48 Per Song</td>
-                    </tr>
-                    <tr>
-                        <td>9 - 12 Channel Stem Master ( Vinyl )</td>
-                        <td>£70 Per Song</td>
-                        <td>£56 Per Song</td>
-                    </tr>
-                </tbody>
-                </table>
-                </div>
-            </div>
-            
-        </div>
-        <div class="container timed-mastering-table">
-            <div class="row">
-                <div class="col d-flex justify-content-center">
-<table id="timed-mastering-table" style="width:100%">    
-                <thead>
-                    <tr>
-                        <th>SERVICE</th>
-                        <th>1-2 SONGS</th>
-                        <th>3-4 SONGS</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>DJ Mix Master</td>
-                        <td>£40 Per Hour</td>
-                        <td>£36 Per Hour</td>
-                    </tr>
-                    <tr>
-                        <td>Podcast Master</td>
-                        <td>£40 Per Hour</td>
-                        <td>£36 Per Hour</td>
-                    </tr>
-                </tbody>
-            </table>
-                </div>
-            </div>
-            
-        </div>
-        <div class="container mixing-table">
-            <div class="row">
-                <div class="col d-flex justify-content-center">
-<table id="mixing-table" style="width:100%">    
-                <thead>
-                    <tr>
-                        <th>SERVICE</th>
-                        <th>1-4 SONGS</th>
-                        <th>5-8 SONGS</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1-10 Tracks</td>
-                        <td>£60 Per Song</td>
-                        <td>£54 Per Song</td>
-                    </tr>
-                    <tr>
-                        <td>11-20 Tracks</td>
-                        <td>£80 Per Song</td>
-                        <td>£72 Per Song</td>
-                    </tr>
-                    <tr>
-                        <td>21-30 Tracks</td>
-                        <td>£100 Per Song</td>
-                        <td>£90 Per Song</td>
-                    </tr>
-                    <tr>
-                        <td>31-40 Tracks</td>
-                        <td>£120 Per Song</td>
-                        <td>£108 Per Song</td>
-                    </tr>
-                    <tr>
-                        <td>41-50 Tracks</td>
-                        <td>£140 Per Song</td>
-                        <td>£126 Per Song</td>
-                    </tr>
-                    <tr>
-                        <td>51-60 Tracks</td>
-                        <td>£160 Per Song</td>
-                        <td>£144 Per Song</td>
-                    </tr>
-                </tbody>
-            </table>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-
-    <!--SERVICE PROMISE-->
-    <div class="container-fluid" id="service-promise">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h2 id="service-promise-header">OUR SERVICE PROMISE</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="container col-xs-offset-2 col-xs-8 d-flex justify-content-center">
-                    <p>At SOMA Audio Services we strive to ensure every piece of work is completed to the highest of standards. Our engineers work closely with you to ensure they are able to get the best sound, as desired by you. We are able to complete revisions on mixing and mastering and your delegated engineer will work with you throughout shaping your sound.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--FOOTER-->
-    <footer class="footer mt-auto">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div id="newsletter-signup">
-                        <form onsubmit="return sendMail(this);">
-                            <p>Join our mailing list for news and special offers</p>
-                            <input type="email" name="email" placeholder="Email Address"><br>
-                            <button type="submit">Subscribe</button>
-                        </form>
+        <!--Modal: modalJoinMail-->
+        <!--Success message modal-->
+        <div class="modal fade" id="modalJoinSuccess" tabindex="-1" role="dialog" aria-labelledby="modalJoinSuccess" aria-hidden="true">
+            <div class="modal-dialog modal-sm modal-notify" role="document">
+                <div class="modal-content">
+                    <div class="modal-header dark-background">
+                        <h4 class="modal-title w-100 myModalLabel">Thanks for signing up, check your inbox for an exculsive discount!</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
                 </div>
-                <div class="col">
-                    <div id="copyright-credits">
-                        <ul id="social-icons-footer">
-                            <li><a class="nav-link" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square hvr-grow"></i></a></li>
-                            <li><a class="nav-link" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram-square hvr-grow"></i></a></li>
-                            <li><a class="nav-link" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square hvr-grow"></i></a></li>
-                        </ul>
-                        <p class="footer-text">Copyright 2020 - SOMA Post Production Services</p>
-                        <p class="footer-text">Site Design by Jamie Rolls</p>
+            </div>
+        </div>
+        <!--Success message modal-->
+        <!--BANNER & MAIN NAVBAR -->
+        <div class="container-fluid" id="banner">
+            <div class="row">
+                <div class="col-md-3 logoContainer d-flex justify-content-center justify-content-md-start">
+                    <a class="d-none d-md-block" href="../index.html"><img class="logo" src="../assets/images/logo.png" alt=""></a>
+                </div>
+                <div class="col-md-9 nav-container align-self-center">
+                    <ul class="container" id="social-icons-banner">
+                        <li><a class="nav-link" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square hvr-grow"></i></a></li>
+                        <li><a class="nav-link" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram-square hvr-grow"></i></a></li>
+                        <li><a class="nav-link" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square hvr-grow"></i></a></li>
+                    </ul>
+                    <nav class="navbar navbar-expand-sm shadow-none" id="navbar">
+                        <button id="toggle-button" class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                        </button> 
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div class="container" id="navbarItems">
+                                <div class="row d-block navbar-links">
+                                    <ul class="navbar-nav">
+                                        <li><a class="nav-link" href="../index.html">HOME</a></li>
+                                        <li>
+                                            <p class="nav-item-break">|</p>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SERVICES<i id="nav-icon-plus" class="fa-plus fas"></i></a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="mastering.html">MASTERING</a>
+                                                <a class="dropdown-item" href="stem-mastering.html">STEM-MASTERING</a>
+                                                <a class="dropdown-item" href="mixing.html">MIXING</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p class="nav-item-break">|</p>
+                                        </li>
+                                        <li><a class="nav-link" href="service-finder.html">SERVICE FINDER</a></li>
+                                        <li>
+                                            <p class="nav-item-break">|</p>
+                                        </li>
+                                        <li><a class="nav-link" href="rates.html">RATES</a></li>
+                                        <li>
+                                            <p class="nav-item-break">|</p>
+                                        </li>
+                                        <li><a class="nav-link" href="contact.html">CONTACT</a></li>
+                                        <li>
+                                            <p class="nav-item-break">|</p>
+                                        </li>
+                                        <li><a class="nav-link" href="faq.html">FAQ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!--BANNER & MAIN NAVBAR -->
+        <!--PAGE HEADER -->
+        <div class="container-fluid" id="page-header-rates">
+            <h2 id="rates-heading">RATES</h2>
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <form>
+                        <div class="form-group">
+                            <label for="rates-table"></label>
+                            <select class="form-control" id="rates-table">
+                                <option value="none">CHOOSE SERVICE TO SEE RATES</option>
+                                <option value="mastering">Standard Mastering</option>
+                                <option value="stem-mastering">Stem Mastering</option>
+                                <option value="timed-mastering">Timed Mastering (DJ MIX / PODCAST)</option>
+                                <option value="mixing">Mixing</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <p id="rates-initial-text" class="white-text text-center">The table below shows rates for Standard Mastering.</p>
+            <hr class="break-line white" id="rates-hr">
+        </div>
+        <!--TABLE OF PRICES -->
+        <div class="container-fluid" id="rates-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <table id="mastering-table" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>SERVICE</th>
+                                    <th>1-4 SONGS</th>
+                                    <th>5-8 SONGS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Standard Master</td>
+                                    <td>£25 Per Song</td>
+                                    <td>£20 Per Song</td>
+                                </tr>
+                                <tr>
+                                    <td>Priority Master</td>
+                                    <td>£50 Per Song</td>
+                                    <td>£40 Per Song</td>
+                                </tr>
+                                <tr>
+                                    <td>Vinyl Master</td>
+                                    <td>£30 Per Song</td>
+                                    <td>£24 Per Song</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-            </div>    
+            </div>
+            <div class="container d-flex justify-content-center stem-mastering-table">
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <table id="stem-mastering-table" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>SERVICE</th>
+                                    <th>1-4 SONGS</th>
+                                    <th>5-8 SONGS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1 - 4 Channel Stem Master</td>
+                                    <td>£40 Per Song</td>
+                                    <td>£32 Per Song</td>
+                                </tr>
+                                <tr>
+                                    <td>5 - 8 Channel Stem Master</td>
+                                    <td>£50 Per Song</td>
+                                    <td>£40 Per Song</td>
+                                </tr>
+                                <tr>
+                                    <td>9 - 12 Channel Stem Master</td>
+                                    <td>£60 Per Song</td>
+                                    <td>£48 Per Song</td>
+                                </tr>
+                                <tr>
+                                    <td>1 - 4 Channel Stem Master ( Vinyl )</td>
+                                    <td>£50 Per Song</td>
+                                    <td>£40 Per Song</td>
+                                </tr>
+                                <tr>
+                                    <td>5 - 8 Channel Stem Master ( Vinyl )</td>
+                                    <td>£60 Per Song</td>
+                                    <td>£48 Per Song</td>
+                                </tr>
+                                <tr>
+                                    <td>9 - 12 Channel Stem Master ( Vinyl )</td>
+                                    <td>£70 Per Song</td>
+                                    <td>£56 Per Song</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="container timed-mastering-table">
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <table id="timed-mastering-table" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>SERVICE</th>
+                                    <th>1-2 SONGS</th>
+                                    <th>3-4 SONGS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>DJ Mix Master</td>
+                                    <td>£40 Per Hour</td>
+                                    <td>£36 Per Hour</td>
+                                </tr>
+                                <tr>
+                                    <td>Podcast Master</td>
+                                    <td>£40 Per Hour</td>
+                                    <td>£36 Per Hour</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="container mixing-table">
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <table id="mixing-table" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>SERVICE</th>
+                                    <th>1-4 SONGS</th>
+                                    <th>5-8 SONGS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1-10 Tracks</td>
+                                    <td>£60 Per Song</td>
+                                    <td>£54 Per Song</td>
+                                </tr>
+                                <tr>
+                                    <td>11-20 Tracks</td>
+                                    <td>£80 Per Song</td>
+                                    <td>£72 Per Song</td>
+                                </tr>
+                                <tr>
+                                    <td>21-30 Tracks</td>
+                                    <td>£100 Per Song</td>
+                                    <td>£90 Per Song</td>
+                                </tr>
+                                <tr>
+                                    <td>31-40 Tracks</td>
+                                    <td>£120 Per Song</td>
+                                    <td>£108 Per Song</td>
+                                </tr>
+                                <tr>
+                                    <td>41-50 Tracks</td>
+                                    <td>£140 Per Song</td>
+                                    <td>£126 Per Song</td>
+                                </tr>
+                                <tr>
+                                    <td>51-60 Tracks</td>
+                                    <td>£160 Per Song</td>
+                                    <td>£144 Per Song</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
-
-    <!-- JQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Chosen - jQuery Plugin -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-    <!-- Main JavaScript File -->
-	<script src="../assets/js/main.js" defer></script>
-    <!-- Service-Helper JavaScript File -->
-	<script src="../assets/js/service-helper.js" defer></script>
-    <!-- Email Js JavaScript File -->
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script src="../assets/js/emailJs.js"></script>
-</body>
+        <!--SERVICE PROMISE-->
+        <div class="container-fluid" id="service-promise">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2 id="service-promise-header">OUR SERVICE PROMISE</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="container col-xs-offset-2 col-xs-8 d-flex justify-content-center">
+                        <p>At SOMA Audio Services we strive to ensure every piece of work is completed to the highest of standards. Our engineers work closely with you to ensure they are able to get the best sound, as desired by you. We are able to complete revisions on mixing and mastering and your delegated engineer will work with you throughout shaping your sound.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--FOOTER-->
+        <footer class="footer mt-auto">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div id="newsletter-signup">
+                            <form onsubmit="return sendMail(this);">
+                                <p>Join our mailing list for news and special offers</p>
+                                <input type="email" name="email" placeholder="Email Address"><br>
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div id="copyright-credits">
+                            <ul id="social-icons-footer">
+                                <li><a class="nav-link" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square hvr-grow"></i></a></li>
+                                <li><a class="nav-link" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram-square hvr-grow"></i></a></li>
+                                <li><a class="nav-link" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square hvr-grow"></i></a></li>
+                            </ul>
+                            <p class="footer-text">Copyright 2020 - SOMA Post Production Services</p>
+                            <p class="footer-text">Site Design by Jamie Rolls</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- JQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Chosen - jQuery Plugin -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+        <!-- Main JavaScript File -->
+        <script src="../assets/js/main.js" defer></script>
+        <!-- Service-Helper JavaScript File -->
+        <script src="../assets/js/service-helper.js" defer></script>
+        <!-- Email Js JavaScript File -->
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script src="../assets/js/emailJs.js"></script>
+    </body>
 </html>
