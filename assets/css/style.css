@@ -544,6 +544,12 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
     background-color: #607d8b;
 }
 
+.audio-container {
+    padding-bottom: 50px;
+}
+
+
+
 @media (max-width: 991px) {
     #logo-index-page {
         display: inline-block;
@@ -774,7 +780,7 @@ div#mixing_prices_chosen {
 }
 
 .audio-example {
-    margin-bottom: 60px;
+    margin-bottom: 0px;
     padding: 10px;
 }
 
