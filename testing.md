@@ -151,8 +151,6 @@ All of my code passed the following validation tests/services:
 - CSS: [W3C Markup Validation Service](https://jigsaw.w3.org/css-validator/)
 - JS: [jshint](https://jshint.com/)
 
-Screenshots of validations for each page of code can be found [here](https://github.com/jamie120/MS2-Soma-Post-Production-Services/blob/master/documentation/testing/validation)
-
 * There were various HTML and CSS validation issues to resolve. These mainly referred to formatting my code and were easily fixable across the site.
 * JS Validation highlighted the need the service-helper code to be parsed through Babel with the template literal plugin. This enables the code to be compatible with IE 11. 
 * Various missing semicolons, unnecessary semicolons and various formatting errors were also highlighted. All have been resolved as required.
