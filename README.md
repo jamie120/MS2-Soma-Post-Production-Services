@@ -59,11 +59,10 @@ A live version of the site is available [here.](https://jamie120.github.io/MS2-S
     * [API](#api)
     * [Tools](#tools)
 9.  [Testing](#testing)
-10. [Post Testing Fixes](#post-testing-fixes)
-11. [Deployment](#deployment)
+10. [Deployment](#deployment)
     * [Hosting on GitHub Pages](#hosting-on-github-pages)
     * [Cloning](#cloning)
-12. [Credits](#credits)
+11. [Credits](#credits)
     * [Content](#content)
     * [Media](#media)
         * [Images](#images)
@@ -420,49 +419,6 @@ It was imported from 'Google Fonts' in the head of each page. I applied the font
 
 All-testing has been documented [testing.md](https://github.com/jamie120/MS2-Soma-Post-Production-Services/blob/master/testing.md)
 
-# Post Testing Fixes
-
-* The following was addressed post testing and feedback. (changes are detailed in commit history dated 20/12/2020 onwards) :
-    
-    1. Carousel width expanded to occupy majority of viewport.
-    2. Home link added to navbar.
-    3. Services drop down links added to navbar - to contain 'mastering', 'stem-mastering' and 'mixing'.
-    4. Remove 'mastering-landing' page from the site - this is no longer required with expanded service links into navbar.
-    5. Contact and FAQ links - added to navbar. Removed from top-nav links.
-    6. Nav-bar and top-links fixed to the top of site.
-    7. index.html - Info added to section containing the service finder link - to assist users better understand its purpose.
-    8. Service Finder.
-        
-        * Bring labels closer to select menus.
-        * Remove buttons which contain links to service pages. Replace with paragraphs and remove button style.
-        * Move reset button alongside calculate button, when both elements are present on the screen.
-        * Remove border and background style on initial question and corresponding content within its element.
-        * Address responsive design, to increase user experience on smaller devices - adjusting padding, margin and order to support changes.
-
-    9. Service Pages.
-
-        * Price Estimate section - Move text 'price estimate' to become a section header.
-        * Remove service finder link from service page - no longer required.
-
-    10. Rates Page - Display a table as default when the user visits the page. (Standard Mastering Table set as default)
-
-    10. Add favicon to site - which will add a small icon next to the url within users browsers.  
-
-    11. CSS Style Sheet.
-        
-        * Reduce code, by removing duplicate entries.
-        * Combine media queries where possible to reduce code.
-        * Use shorthand padding and margin where possible, to reduce lines of code where possible.  
-
-    12. JavaScript.
-
-        * Add additional, more expressive notes / documentation to JS files.
-        * Create const's where possible to reduce repeat code and tidy up code blocks.
-
-    13. File Structure.
-        * Remove .gitpod.dockerfile, .gitpod.yml, -r .theia files from repo.
-        * Move html pages into newly created pages dir, apart from index.html.
-    
 # Deployment
 
 * The site was developed in GitPod and pushed to the following remote GitHub repository - [REPO](https://github.com/jamie120/MS2-Soma-Post-Production-Services)
