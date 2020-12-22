@@ -391,7 +391,7 @@ div#navbarItems {
 .carousel-caption div p {
     font-size: 3rem;
     font-weight: 600;
-    line-height: 0.6;
+    line-height: 0.8;
 }
 
 /* 
@@ -475,11 +475,19 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
 
 #logo-index-page {
     border: 1px solid rgba(119, 119, 119, 0.6);
-  
     border-radius: 50%;
     object-fit: scale-down;
     height: 150px;
     width: 150px;
+    display: none;
+}
+
+#logo-index-page-hero {
+    border: 1px solid rgba(119, 119, 119, 0.6);
+    border-radius: 50%;
+    object-fit: scale-down;
+    height: 200px;
+    width: 200px;
 }
 
 #business-info a {
@@ -526,6 +534,12 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
 
 .more-info-link:hover, #business-info a h3:hover {
     background-color: #607d8b;
+}
+
+@media (max-width: 991px) {
+    #logo-index-page {
+        display: inline-block;
+    }
 }
 
 /*---------- Services Styling ----------*/

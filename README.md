@@ -192,7 +192,8 @@ A live version of the site is available [here.](https://jamie120.github.io/MS2-S
 
 * ![FLOW DIAGRAM](https://github.com/jamie120/MS2-Soma-Post-Production-Services/blob/master/assets/images/service-helper-flowchart.png "Desktop - Wireframe screenshot")
 
-
+* A GitHub repository containing my testing code can be found here : https://github.com/jamie120/MS2---Logic
+    * This was used to write JS code, to control some basic HTML elements that represents the user flowchart which was developed.
 
 # Skeleton
 
