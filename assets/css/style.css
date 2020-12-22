@@ -774,6 +774,9 @@ div#mixing_prices_chosen {
     .mixing-text > p {
         margin-bottom: 30px; 
     }
+    .service-text > h2 {
+        margin-top: 0;
+    }
 }
 
 /*---------- Rates Page Styling ----------*/
@@ -1059,6 +1062,12 @@ footer {
     margin: 3px;
 }
 
+#newsletter-signup p {
+    overflow-wrap: break-word;
+    width: 250px;
+    text-align: center;
+}
+
 #newsletter-signup button {
     background-color: rgb(34, 34, 34);
     color: white;
@@ -1073,7 +1082,7 @@ footer {
 #social-icons-footer {
     width: 100%;
     text-align: right;
-    margin-top: 30px; 
+    margin-top: 20px; 
 }
 
 #social-icons-footer li {
@@ -1084,6 +1093,32 @@ footer {
 
 #social-icons-footer li a{
     color: black;
+}
+
+@media(max-width: 767px) {
+    #social-icons-footer li a {
+        font-size: 35px;
+    }
+    .footer-text {
+        margin: 5px;
+        margin-bottom: 15px;
+    }
+}
+
+
+@media(max-width: 575px) {
+    #newsletter-signup {
+        display: flex;
+        justify-content: center;
+    }
+    #social-icons-footer {
+        margin-top: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .footer-text {
+        text-align: center;
+    }
 }
 
 
