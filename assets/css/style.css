@@ -498,6 +498,10 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
     margin: 0 auto;
 }
 
+#business-info {
+    margin-top: 25px;
+}
+
 #business-info p a {
     color: #46e3e9;
 }
