@@ -115,6 +115,10 @@ https://css-tricks.com/make-a-smooth-shadow-friend/
 
 
 /*---------- Site Header Styling ----------*/
+#logo-container {
+    justify-content: center;
+    display: flex;
+}
 
 #social-icons-banner li a{
     color: black;
@@ -354,7 +358,7 @@ div#navbarItems {
     z-index: 3;
 }
 
-.carousel-inner > .item > img {
+.hero-image-full {
     width: 100%;
 }
 
