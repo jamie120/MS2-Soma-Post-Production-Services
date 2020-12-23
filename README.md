@@ -52,7 +52,7 @@ A live version of the site is available [here.](https://jamie120.github.io/MS2-S
     * [FAQ Page](#faq-page)
     * [Service Finder](#service-finder)
 6.  [Future Features](#future-features)
-7. [Known Bugs & Fixes to implement](#bugs-and-fixes-to-implement)
+7. [Known Bugs & Fixes to implement](#known-bugs-and-fixes-to-implement)
 8.  [Technologies Used](#technologies-used)
     * [Languages](#languages)
     * [Libraries](#libraries)
