@@ -428,9 +428,6 @@ All-testing has been documented [testing.md](https://github.com/jamie120/MS2-Som
         * **git commit -m " "**  ------ to commit the files.
         * **git push** ------ to push the files to the master branch of the GitHub repo.
 
-    * NOTE : commit text on this project was written in 'past tense' up until 4th November 2020.
-    * All future commits from 4th November date are written in present tense - following action suggested by my mentor.
-
 ### Hosting on GitHub Pages
 
 * This site is hosted using GitHub pages, deployed directly from the master branch. - [LIVE SITE](https://jamie120.github.io/MS2-Soma-Post-Production-Services/index.html)
