@@ -21,7 +21,7 @@
 5. [User Testing](#user-testing)
     * [My Mentor](#my-mentor)
     * [User review](#user-review)
-6. [Post Testing Changes](#post-review-changes)
+6. [Post Review Changes](#post-review-changes)
 
 ## Manual Testing
 
@@ -188,15 +188,15 @@ All of my code passed the following validation tests/services:
 
 ## My-Mentor
 
-A series of feedback and suggestions had been highlighted during the second call on Friday 18th December 2020. Action has been taken for all of these suggestions and changes to the site and code. 
+A series of feedback and suggestions had been highlighted during a call on Friday 18th December 2020. Action has been taken for all of these suggestions and changes to the site and code. 
 
-All changes are documented in Section 11 (Post Testing Fixes) in the main README file. Found [here](https://github.com/jamie120/MS2-Soma-Post-Production-Services/blob/master/README.md) 
+All changes are documented in Section 6 of this document (Post Review Changes)
 
 ## User Testing
 
 A fellow Code Institure student took the time to thoroughly review the site content and code. They provided me with several ideas to improve both the user experience and improve the code efficiency.
 
-All changes made have been documented in Section 11 (Post Testing Fixes) in the main README file. Found [here](https://github.com/jamie120/MS2-Soma-Post-Production-Services/blob/master/README.md) 
+All changes are documented in Section 6 of this document (Post Review Changes)
 
 # Post Review Changes
 
