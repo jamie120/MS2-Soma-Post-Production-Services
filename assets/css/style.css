@@ -510,6 +510,14 @@ https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootst
     color: rgb(248, 116, 7);
 }
 
+#index-portrait-business-heading {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 2px black, 0 0 28px rgb(1, 89, 70), 0 0 6px rgb(1, 89, 70);
+}
+
 #business-info > h2 {
     margin-top: 60px;
     font-weight: 400;
